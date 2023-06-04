@@ -1,4 +1,5 @@
-# Communication Flow
+
+## Communication Flow
 
 ```mermaid
 flowchart LR
@@ -89,19 +90,19 @@ The diagram includes the following components and flows:
 
 The flows in the diagram are as follows:
 
-a. Configuration and Control:
+### Configuration and Control:
 
 - User applications send MQTT configuration messages to the backend server.
 - The backend server forwards the configuration updates to the Zigbee gateway in MQTT format.
 - The gateway translates the MQTT messages to Zigbee protocol and communicates with the corresponding light bulbs to apply the configuration changes.
 
-b. Physical Button Interaction:
+### Physical Button Interaction:
 
 - When a physical button on a light bulb is pressed, the bulb sends a Zigbee message to the Zigbee gateway indicating the state change.
 - The gateway converts the Zigbee message to MQTT format and forwards it to the backend server.
 - The server updates the state of the respective light bulb and sends notifications to the user applications via MQTT, indicating the state change.
 
-c. User Access and Sharing:
+### User Access and Sharing:
 
 - The backend server manages user authentication and authorization using an IAM system.
 - Users can share access to specific light bulbs with others through the applications.

@@ -1,4 +1,5 @@
-# Comparative Study of IoT Technologies and Protocols
+
+## Comparative Study of IoT Technologies and Protocols
 
 Here's a comparison table for Zigbee, MQTT, Z-Wave, Wi-Fi Direct, AWS IoT, and Cloud Storage based on various factors:
 

@@ -1,23 +1,12 @@
-# Overview of Research Document
-
-## Table of Contents
-
-- [Simple Architecture Description](#simple-architecture-description)
-- [Comparative Study of IoT Technologies and Protocols](#comparative-study-of-iot-technologies-and-protocols)
-- [Technical stack combinations for the development](#technical-stack-combinations-for-the-development)
-- [Why suggest Zigbee + MQTT ?](#why-suggest-zigbee--mqtt-)
-- [Communication Flow](#communication-flow)
-- [Simple Functionality interaction diagrams](#simple-functionality-interaction-diagrams)
-- [Full System Interaction with Features](#full-system-interaction-with-features)
-
 ## Simple Architecture Description
 
 ```mermaid
 graph LR
 
 subgraph Smart Light Bulb System
-    A(Smart Light Bulb) -->|Zigbee| B(Zigbee Gateway)
-    B -->|MQTT| C(Backend Server)
+    A(Smart Light Bulb) <-->|Zigbee| B(Zigbee Gateway)
+    B <-->|MQTT| C(Backend Server)
+
     C -->|MQTT| D(User Applications)
 end
 
@@ -138,7 +127,6 @@ Choosing the right tech stack for an IoT application depends on several factors 
 6. Cloud Storage: Cloud storage allows easy access to data from anywhere, making it suitable for applications that require remote data management and analysis. It has low maintenance cost and low setup cost. However, it relies on a stable internet connection, and the network consumption can be high.
 
 7. Bluetooth: Bluetooth offers low power consumption and is suitable for battery-operated devices. Bluetooth Classic provides wide device compatibility but has limited range and data throughput. BLE is suitable for low power applications with small data payloads. Bluetooth Mesh offers a scalable mesh network but has higher setup complexity and maintenance cost compared to other Bluetooth technologies.
-
 ## Technical stack combinations for the development
 
 1. LoRaWAN + MQTT + AWS IoT + Cloud Storage:
@@ -177,7 +165,6 @@ Choosing the right tech stack for an IoT application depends on several factors 
 | Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing | BLE, MQTT              | Azure IoT               | Edge computing | Not applicable | - Short-range communication with low power consumption, efficient and reliable messaging protocol, device management, data processing, and edge computing with Azure IoT, real-time analytics and decision-making at the network edge      |
 | Thread + CoAP + Google Cloud IoT + Cloud Functions             | Thread, CoAP           | Google Cloud IoT        | Not applicable | Cloud storage  | - Low-power, mesh networking protocol for IoT devices, efficient communication with resource-constrained devices, device management, integration with Google Cloud services, serverless functions for triggering actions based on IoT data |
 | NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain           | NB-IoT, MQTT           | IBM Watson IoT Platform | Not applicable | Blockchain     | - Wide-area coverage and low-power communication, lightweight messaging protocol, device management, data visualization, and analytics with IBM Watson IoT Platform, secure and transparent transaction recording with blockchain          |
-
 ## Why suggest Zigbee + MQTT ?
 
 Zigbee, being a low-power wireless communication protocol, is well-suited for connecting and controlling devices in a local area network. It enables efficient communication between devices, consuming minimal network resources. Zigbee devices can operate in a mesh network, allowing them to relay messages and form a robust and scalable network infrastructure.
@@ -340,7 +327,6 @@ The flows in the diagram are as follows:
 - Users can share access to specific light bulbs with others through the applications.
 - The server updates the access permissions, and notifications are sent to the invited users via MQTT.
 - Invited users can control and configure the shared light bulbs through their authorized user applications.
-
 ## Simple Functionality interaction diagrams
 
 ### Time-based Modes

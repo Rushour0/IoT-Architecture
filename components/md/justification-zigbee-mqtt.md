@@ -1,4 +1,4 @@
-# Why suggest Zigbee + MQTT ?
+## Why suggest Zigbee + MQTT ?
 
 Zigbee, being a low-power wireless communication protocol, is well-suited for connecting and controlling devices in a local area network. It enables efficient communication between devices, consuming minimal network resources. Zigbee devices can operate in a mesh network, allowing them to relay messages and form a robust and scalable network infrastructure.
 

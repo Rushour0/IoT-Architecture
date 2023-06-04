@@ -1,6 +1,6 @@
-# Simple Functionality interaction diagrams:
+## Simple Functionality interaction diagrams
 
-## Time-based Modes
+### Time-based Modes
 
 ```mermaid
 flowchart LR
@@ -21,7 +21,7 @@ UA -->|MQTT Mode Change| BS
 BS -->|MQTT Mode Change| LB
 ```
 
-## Motion Sensor Mode
+### Motion Sensor Mode
 
 ```mermaid
 flowchart LR
@@ -42,7 +42,7 @@ MS -->|Motion Detection| LB
 LB -->|MQTT State Change| BS
 ```
 
-## Light Sensor Mode
+### Light Sensor Mode
 
 ```mermaid
 flowchart LR
@@ -63,7 +63,7 @@ LS -->|Light Level| LB
 LS -->|Light Level| BS
 ```
 
-## Environment-based Sensors
+### Environment-based Sensors
 
 ```mermaid
 flowchart LR
@@ -84,7 +84,7 @@ ES -->|Sensor Data| LB
 ES -->|Sensor Data| BS
 ```
 
-## Mood-based Modes
+### Mood-based Modes
 
 ```mermaid
 flowchart LR
@@ -105,7 +105,7 @@ UA -->|MQTT Mode Change| BS
 BS -->|MQTT Mode Change| LB
 ```
 
-# Full System Interaction with Features
+## Full System Interaction with Features
 
 The functionalities described below pertain to the smart light bulb system, which incorporates various modes and sensor-based controls to enhance user experience and energy efficiency. Here is a summary of each functionality:
 
@@ -143,7 +143,7 @@ The functionalities described below pertain to the smart light bulb system, whic
 
 Overall, these functionalities provide users with flexibility and automation in controlling their smart light bulbs. The integration of sensors, MQTT communication, and coordination with the backend server enable dynamic adjustments, energy efficiency, and a tailored lighting experience.
 
-## Complete System Diagram
+### Complete System Diagram
 
 ```mermaid
 flowchart LR

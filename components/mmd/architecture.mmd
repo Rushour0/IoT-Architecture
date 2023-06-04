@@ -1,8 +1,9 @@
 graph LR
 
 subgraph Smart Light Bulb System
-    A(Smart Light Bulb) -->|Zigbee| B(Zigbee Gateway)
-    B -->|MQTT| C(Backend Server)
+    A(Smart Light Bulb) <-->|Zigbee| B(Zigbee Gateway)
+    B <-->|MQTT| C(Backend Server)
+
     C -->|MQTT| D(User Applications)
 end
 

@@ -1,4 +1,5 @@
-# Technical stack combinations for the development:
+
+## Technical stack combinations for the development
 
 1. LoRaWAN + MQTT + AWS IoT + Cloud Storage:
 
@@ -28,11 +29,11 @@
    - IBM Watson IoT Platform for device management, data visualization, and analytics.
    - Blockchain for secure and transparent transaction recording and smart contract execution.
 
-## Comparative analysis of technical stacks:
+### Comparative analysis of technical stacks:
 
-| Technical Stack Combination    | Communication Protocol   | Cloud Platform       | Edge Computing       | Data Storage       | Key Features and Benefits                                    |
-|-------------------------------|--------------------------|----------------------|----------------------|--------------------|--------------------------------------------------------------|
-| LoRaWAN + MQTT + AWS IoT + Cloud Storage | LoRaWAN, MQTT              | AWS IoT              | Not applicable       | Cloud storage      | - Long-range, low-power communication, lightweight messaging protocol, device management, data processing, and analytics with AWS IoT, scalable and reliable cloud storage |
-| Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing | BLE, MQTT                  | Azure IoT            | Edge computing       | Not applicable     | - Short-range communication with low power consumption, efficient and reliable messaging protocol, device management, data processing, and edge computing with Azure IoT, real-time analytics and decision-making at the network edge |
-| Thread + CoAP + Google Cloud IoT + Cloud Functions | Thread, CoAP                | Google Cloud IoT     | Not applicable       | Cloud storage      | - Low-power, mesh networking protocol for IoT devices, efficient communication with resource-constrained devices, device management, integration with Google Cloud services, serverless functions for triggering actions based on IoT data |
-| NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain | NB-IoT, MQTT                | IBM Watson IoT Platform | Not applicable       | Blockchain         | - Wide-area coverage and low-power communication, lightweight messaging protocol, device management, data visualization, and analytics with IBM Watson IoT Platform, secure and transparent transaction recording with blockchain |
+| Technical Stack Combination                                    | Communication Protocol | Cloud Platform          | Edge Computing | Data Storage   | Key Features and Benefits                                                                                                                                                                                                                  |
+| -------------------------------------------------------------- | ---------------------- | ----------------------- | -------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| LoRaWAN + MQTT + AWS IoT + Cloud Storage                       | LoRaWAN, MQTT          | AWS IoT                 | Not applicable | Cloud storage  | - Long-range, low-power communication, lightweight messaging protocol, device management, data processing, and analytics with AWS IoT, scalable and reliable cloud storage                                                                 |
+| Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing | BLE, MQTT              | Azure IoT               | Edge computing | Not applicable | - Short-range communication with low power consumption, efficient and reliable messaging protocol, device management, data processing, and edge computing with Azure IoT, real-time analytics and decision-making at the network edge      |
+| Thread + CoAP + Google Cloud IoT + Cloud Functions             | Thread, CoAP           | Google Cloud IoT        | Not applicable | Cloud storage  | - Low-power, mesh networking protocol for IoT devices, efficient communication with resource-constrained devices, device management, integration with Google Cloud services, serverless functions for triggering actions based on IoT data |
+| NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain           | NB-IoT, MQTT           | IBM Watson IoT Platform | Not applicable | Blockchain     | - Wide-area coverage and low-power communication, lightweight messaging protocol, device management, data visualization, and analytics with IBM Watson IoT Platform, secure and transparent transaction recording with blockchain          |

@@ -1,13 +1,13 @@
 ## Simple Architecture Description
 
 ```mermaid
-flowchart LR
+graph LR
 
 subgraph Smart Light Bulb System
     A(Smart Light Bulb) <-->|Zigbee| B(Zigbee Gateway)
     B <-->|MQTT| C(Backend Server)
 
-    C -->|Internet| D(User Applications)
+    C -->|MQTT| D(User Applications)
 end
 
 subgraph Surrounding Sensors
