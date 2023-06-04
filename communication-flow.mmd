@@ -1,0 +1,75 @@
+flowchart LR
+
+subgraph User Applications
+  UA1((User Application 1))
+  UA2((User Application 2))
+end
+
+subgraph Zigbee Gateway
+  ZG((Zigbee Gateway))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+  subgraph Database
+    DB
+  end
+
+  subgraph Message Queue
+    MQ
+  end
+
+  subgraph Identity and Access Management
+    IAM
+  end
+end
+
+subgraph Smart Light Bulbs
+  LB1((Light Bulb 1))
+  LB2((Light Bulb 2))
+end
+
+subgraph Invited Users
+  IU1((Invited User 1))
+  IU2((Invited User 2))
+end
+
+LB1 -->|Zigbee State Change| ZG
+LB2 -->|Zigbee State Change| ZG
+
+ZG -->|Zigbee Config| LB1
+ZG -->|Zigbee Config| LB2
+ZG <-->|MQTT State Change| BS
+
+UA1 -->|MQTT Config| BS
+UA1 -->|MQTT Access| BS
+UA1 -->|MQTT Notifications| IU1
+UA1 -->|MQTT Notifications| IU2
+UA2 -->|MQTT Config| BS
+UA2 -->|MQTT Access| BS
+UA2 -->|MQTT Notifications| IU1
+UA2 -->|MQTT Notifications| IU2
+
+
+BS -->|MQTT Config| ZG
+BS -->|MQTT Access| UA1
+BS -->|MQTT Access| UA2
+BS -->|MQTT Access| IU1
+BS -->|MQTT Access| IU2
+BS -->|MQTT Control| LB1
+BS -->|MQTT Control| LB2
+BS -->|MQTT State Change| UA1
+BS -->|MQTT State Change| UA2
+
+IU1 -->|MQTT Access| BS
+IU1 -->|MQTT Config| BS
+IU1 -->|MQTT Control| BS
+IU1 -->|MQTT State Change| LB1
+IU1 -->|MQTT State Change| LB2
+IU2 -->|MQTT Access| BS
+IU2 -->|MQTT Config| BS
+IU2 -->|MQTT Control| BS
+IU2 -->|MQTT State Change| LB1
+IU2 -->|MQTT State Change| LB2
+
+

@@ -1,0 +1,135 @@
+flowchart LR
+
+subgraph User Applications
+  UA1((User Application 1))
+  UA2((User Application 2))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+  subgraph Database
+    DB
+  end
+
+  subgraph Message Queue
+    MQ
+  end
+
+  subgraph Identity and Access Management
+    IAM
+  end
+end
+
+subgraph Smart Devices
+  subgraph Zigbee Gateway
+    ZG((Zigbee Gateway))
+  end
+
+  subgraph Smart Light Bulbs
+    LB((Smart Light Bulb))
+  end
+
+  subgraph Motion Sensors
+    MS((Motion Sensor))
+  end
+
+  subgraph Light Sensors
+    LS((Light Sensor))
+  end
+
+  subgraph Environment Sensors
+    ES((Environment Sensors))
+  end
+
+  MM((Mood-based Modes))
+end
+
+subgraph Invited Users
+  IU1((Invited User 1))
+  IU2((Invited User 2))
+end
+
+UA1 -->|MQTT Config| BS
+UA2 -->|MQTT Config| BS
+BS -->|MQTT Config| ZG
+ZG -->|Zigbee Config| LB
+LB -->|Time-based Mode Command| MM
+LB -->|Motion Sensor Command| MS
+LB -->|Light Sensor Command| LS
+LB -->|Environment Sensor Data| ES
+LB -->|Mood-based Mode Command| MM
+
+LB -->|State Change Notification| BS
+LB -->|Sensor Data| BS
+LB -->|Mode Change Notification| BS
+LB -->|State Change Notification| UA1
+LB -->|State Change Notification| UA2
+
+UA1 -->|MQTT Notifications| IU1
+UA1 -->|MQTT Notifications| IU2
+UA2 -->|MQTT Notifications| IU1
+UA2 -->|MQTT Notifications| IU2
+
+IU1 -->|MQTT Control| BS
+IU2 -->|MQTT Control| BS
+BS -->|MQTT Control| LB
+LB -->|Motion Sensor Command| MS
+LB -->|Light Sensor Command| LS
+LB -->|Environment Sensor Data| ES
+LB -->|Mood-based Mode Command| MM
+IU1 -->|MQTT Config| BS
+IU2 -->|MQTT Config| BS
+BS -->|MQTT Config| ZG
+ZG -->|Zigbee Config| LB
+IU1 -->|MQTT State Change| LB
+IU2 -->|MQTT State Change| LB
+LB -->|Motion Detection Command| MS
+LB -->|Light Sensor Data| LS
+LB -->|Environment Sensor Data| ES
+LB -->|Mode Configuration| MM
+IU1 -->|MQTT Access| BS
+IU2 -->|MQTT Access| BS
+BS -->|MQTT Access| IU1
+BS -->|MQTT Access| IU2
+
+subgraph Backend Server
+  BS
+end
+
+subgraph Identity and Access Management
+  IAM
+end
+
+subgraph User Applications
+  UA1
+  UA2
+end
+
+subgraph Smart Devices
+  ZG
+  LB
+  MS
+  LS
+  ES
+  MM
+end
+
+subgraph Sensors
+  MS
+  LS
+  ES
+end
+
+BS -->|MQTT Config| UA1
+BS -->|MQTT Config| UA2
+BS -->|MQTT State Change| LB
+BS -->|MQTT Access| IU1
+BS -->|MQTT Access| IU2
+BS -->|MQTT Control| LB
+BS -->|MQTT Notifications| UA1
+BS -->|MQTT Notifications| UA2
+LB -->|Sensor Data| BS
+LS -->|Light Sensor Data| LB
+MS -->|Motion Detection Command| LB
+ES -->|Environment Sensor Data| LB
+MM -->|Mode Configuration| LB
