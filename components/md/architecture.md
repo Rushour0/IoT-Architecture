@@ -1,10 +1,13 @@
+## Simple Architecture Description
+
 ```mermaid
-graph LR
+flowchart LR
 
 subgraph Smart Light Bulb System
-    A(Smart Light Bulb) -->|Zigbee| B(Zigbee Gateway)
-    B -->|MQTT| C(Backend Server)
-    C -->|MQTT| D(User Applications)
+    A(Smart Light Bulb) <-->|Zigbee| B(Zigbee Gateway)
+    B <-->|MQTT| C(Backend Server)
+
+    C -->|Internet| D(User Applications)
 end
 
 subgraph Surrounding Sensors
@@ -31,26 +34,24 @@ style I fill:#A9DFBF,stroke:#196F3D
 style J fill:#FADBD8,stroke:#D91E18
 ```
 
-# Simple Architecture Description
-
 The proposed architecture for the smart light bulb system with seamless connectivity to home IoT devices like Alexa and Google Home can be described as follows:
 
-## 1. Backend and Synchronization:
+### 1. Backend and Synchronization:
 
 - Utilize serverless functions (e.g., AWS Lambda) for handling backend logic and API endpoints.
 - Use Firebase Realtime Database to maintain the state of IoT nodes and applications, ensuring real-time synchronization and offline capabilities.
 - Employ Apache Kafka or AWS IoT Core for pub/sub messaging, enabling real-time updates and notifications to connected applications and home IoT devices.
 
-## 2. User Access and Authentication:
+### 2. User Access and Authentication:
 
 - Integrate an Identity and Access Management (IAM) system like AWS Cognito or Auth0 for user authentication and authorization.
 - Enable sharing functionality by leveraging the IAM system to securely manage user access to light bulbs.
 
-## 3. Hybrid Application Development:
+### 3. Hybrid Application Development:
 
 - Utilize a hybrid framework like React Native or Flutter to build applications that work seamlessly on iOS, Android, and Web platforms.
 
-## 4. Integration with Home IoT Devices:
+### 4. Integration with Home IoT Devices:
 
 - Integrate with Alexa using the Alexa Skills Kit (ASK) and AWS Lambda for developing Alexa skills.
 - Integrate with Google Home using the Actions on Google platform and Cloud Functions for Firebase to create conversational actions for Google Assistant.
