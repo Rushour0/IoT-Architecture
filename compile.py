@@ -10,7 +10,12 @@ def to_pdf(file_path: str, output_path: str = None):
 def research_document():
     order = ['architecture.md', 'comparative-study.md', 'technical-stacks.md',
              'justification-zigbee-mqtt.md', 'communication-flow.md', 'functionalities.md']
+
     content = ""
+
+    with open("base.md", "r") as f:
+        content = f.read()
+
     for file in order:
 
         if file.endswith(".md"):

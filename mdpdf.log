@@ -1,729 +1,746 @@
-    INFO: 2023-06-04 18:53:41,606:               log.py:   20: Logging to D:\internships\lamintus\mdpdf.log
-   DEBUG: 2023-06-04 18:53:41,606:               cli.py:  103: research-document.md
-    INFO: 2023-06-04 18:53:41,607:         converter.py:   14: research-document.md
-   DEBUG: 2023-06-04 18:53:41,617:      pdf_renderer.py:  470: printSegment: Simple Architecture Description
-   DEBUG: 2023-06-04 18:53:41,619:      pdf_renderer.py:  470: printSegment: graph LR
-   DEBUG: 2023-06-04 18:53:41,619:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb System
-   DEBUG: 2023-06-04 18:53:41,620:      pdf_renderer.py:  470: printSegment:     A(Smart Light Bulb) <-->|Zigbee| B(Zigbee Gateway)
-   DEBUG: 2023-06-04 18:53:41,620:      pdf_renderer.py:  470: printSegment:     B <-->|MQTT| C(Backend Server)
-   DEBUG: 2023-06-04 18:53:41,620:      pdf_renderer.py:  470: printSegment:     C -->|MQTT| D(User Applications)
-   DEBUG: 2023-06-04 18:53:41,620:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,620:      pdf_renderer.py:  470: printSegment: subgraph Surrounding Sensors
-   DEBUG: 2023-06-04 18:53:41,620:      pdf_renderer.py:  470: printSegment:     E(Daylight Sensor) -->|Zigbee| B
-   DEBUG: 2023-06-04 18:53:41,620:      pdf_renderer.py:  470: printSegment:     F(Motion Sensor) -->|Zigbee| B
-   DEBUG: 2023-06-04 18:53:41,620:      pdf_renderer.py:  470: printSegment:     G(Time Sensor) -->|Zigbee| B
-   DEBUG: 2023-06-04 18:53:41,621:      pdf_renderer.py:  470: printSegment:     H(Environment-based Sensors) -->|Zigbee| B
-   DEBUG: 2023-06-04 18:53:41,621:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,621:      pdf_renderer.py:  470: printSegment: subgraph Home IoT Devices
-   DEBUG: 2023-06-04 18:53:41,621:      pdf_renderer.py:  470: printSegment:     I(Alexa) -->|Skills Kit| C
-   DEBUG: 2023-06-04 18:53:41,621:      pdf_renderer.py:  470: printSegment:     J(Google Home) -->|Actions on Google| C
-   DEBUG: 2023-06-04 18:53:41,621:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,621:      pdf_renderer.py:  470: printSegment: style A fill:#85C1E9,stroke:#1F618D
-   DEBUG: 2023-06-04 18:53:41,621:      pdf_renderer.py:  470: printSegment: style B fill:#D7BDE2,stroke:#5B2C6F
-   DEBUG: 2023-06-04 18:53:41,621:      pdf_renderer.py:  470: printSegment: style C fill:#82E0AA,stroke:#1E8449
-   DEBUG: 2023-06-04 18:53:41,622:      pdf_renderer.py:  470: printSegment: style D fill:#F9E79F,stroke:#B7950B
-   DEBUG: 2023-06-04 18:53:41,622:      pdf_renderer.py:  470: printSegment: style E fill:#AED6F1,stroke:#2471A3
-   DEBUG: 2023-06-04 18:53:41,622:      pdf_renderer.py:  470: printSegment: style F fill:#F8C471,stroke:#D35400
-   DEBUG: 2023-06-04 18:53:41,622:      pdf_renderer.py:  470: printSegment: style G fill:#D2B4DE,stroke:#7D3C98
-   DEBUG: 2023-06-04 18:53:41,622:      pdf_renderer.py:  470: printSegment: style H fill:#F5B7B1,stroke:#E74C3C
-   DEBUG: 2023-06-04 18:53:41,622:      pdf_renderer.py:  470: printSegment: style I fill:#A9DFBF,stroke:#196F3D
-   DEBUG: 2023-06-04 18:53:41,622:      pdf_renderer.py:  470: printSegment: style J fill:#FADBD8,stroke:#D91E18
-   DEBUG: 2023-06-04 18:53:41,623:      pdf_renderer.py:  470: printSegment: The proposed architecture for the smart light bulb system with seamless connectivity to home IoT devices like Alexa
-   DEBUG: 2023-06-04 18:53:41,624:      pdf_renderer.py:  470: printSegment: and Google Home can be described as follows:
-   DEBUG: 2023-06-04 18:53:41,624:      pdf_renderer.py:  470: printSegment: 1. Backend and Synchronization:
-   DEBUG: 2023-06-04 18:53:41,624:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,624:      pdf_renderer.py:  470: printSegment: Utilize serverless functions (e.g., AWS Lambda) for handling backend logic and API endpoints.
-   DEBUG: 2023-06-04 18:53:41,624:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,625:      pdf_renderer.py:  470: printSegment: Use Firebase Realtime Database to maintain the state of IoT nodes and applications, ensuring
-   DEBUG: 2023-06-04 18:53:41,625:      pdf_renderer.py:  470: printSegment: real-time synchronization and offline capabilities.
-   DEBUG: 2023-06-04 18:53:41,625:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,625:      pdf_renderer.py:  470: printSegment: Employ Apache Kafka or AWS IoT Core for pub/sub messaging, enabling real-time updates and
-   DEBUG: 2023-06-04 18:53:41,625:      pdf_renderer.py:  470: printSegment: notifications to connected applications and home IoT devices.
-   DEBUG: 2023-06-04 18:53:41,625:      pdf_renderer.py:  470: printSegment: 2. User Access and Authentication:
-   DEBUG: 2023-06-04 18:53:41,626:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,626:      pdf_renderer.py:  470: printSegment: Integrate an Identity and Access Management (IAM) system like AWS Cognito or Auth0 for user
-   DEBUG: 2023-06-04 18:53:41,626:      pdf_renderer.py:  470: printSegment: authentication and authorization.
-   DEBUG: 2023-06-04 18:53:41,626:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,626:      pdf_renderer.py:  470: printSegment: Enable sharing functionality by leveraging the IAM system to securely manage user access to light
-   DEBUG: 2023-06-04 18:53:41,626:      pdf_renderer.py:  470: printSegment: bulbs.
-   DEBUG: 2023-06-04 18:53:41,626:      pdf_renderer.py:  470: printSegment: 3. Hybrid Application Development:
-   DEBUG: 2023-06-04 18:53:41,627:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,627:      pdf_renderer.py:  470: printSegment: Utilize a hybrid framework like React Native or Flutter to build applications that work seamlessly
-   DEBUG: 2023-06-04 18:53:41,627:      pdf_renderer.py:  470: printSegment: on iOS, Android, and Web platforms.
-   DEBUG: 2023-06-04 18:53:41,627:      pdf_renderer.py:  470: printSegment: 4. Integration with Home IoT Devices:
-   DEBUG: 2023-06-04 18:53:41,628:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,628:      pdf_renderer.py:  470: printSegment: Integrate with Alexa using the Alexa Skills Kit (ASK) and AWS Lambda for developing Alexa
-   DEBUG: 2023-06-04 18:53:41,628:      pdf_renderer.py:  470: printSegment: skills.
-   DEBUG: 2023-06-04 18:53:41,628:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,629:      pdf_renderer.py:  470: printSegment: Integrate with Google Home using the Actions on Google platform and Cloud Functions for
-   DEBUG: 2023-06-04 18:53:41,629:      pdf_renderer.py:  470: printSegment: Firebase to create conversational actions for Google Assistant.
-   DEBUG: 2023-06-04 18:53:41,629:      pdf_renderer.py:  470: printSegment: Comparative Study of IoT Technologies and Protocols
-   DEBUG: 2023-06-04 18:53:41,629:      pdf_renderer.py:  470: printSegment: Here
-   DEBUG: 2023-06-04 18:53:41,629:      pdf_renderer.py:  470: printSegment: '
-   DEBUG: 2023-06-04 18:53:41,629:      pdf_renderer.py:  470: printSegment: s a comparison table for Zigbee, MQTT, Z-Wave, Wi-Fi Direct, AWS IoT, and Cloud Storage based on
-   DEBUG: 2023-06-04 18:53:41,629:      pdf_renderer.py:  470: printSegment: various factors:
-   DEBUG: 2023-06-04 18:53:41,630:      pdf_renderer.py:  470: printSegment: | Technology                 | Maintenance Cost | Setup Cost | Setup Time | Setup Complexity | Scalability | Pricing  |
-   DEBUG: 2023-06-04 18:53:41,630:      pdf_renderer.py:  470: printSegment: Network Consumption | Interferences | Pros                                                  | Cons                                            |
-   DEBUG: 2023-06-04 18:53:41,630:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,631:      pdf_renderer.py:  470: printSegment: |
-   DEBUG: 2023-06-04 18:53:41,631:      pdf_renderer.py:  470: printSegment: -------------------------- | ---------------- | ---------- | ---------- | ---------------- | ----------- | -------- | ------------------- |
-   DEBUG: 2023-06-04 18:53:41,631:      pdf_renderer.py:  470: printSegment: ------------- | ----------------------------------------------------- | ----------------------------------------------- |
-   DEBUG: 2023-06-04 18:53:41,631:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,631:      pdf_renderer.py:  470: printSegment: | Zigbee               
-   DEBUG: 2023-06-04 18:53:41,632:      pdf_renderer.py:  470: printSegment:      | Medium           | Medium     | Medium     | Medium           | High        | Moderate | Low                 | Low           | -
-   DEBUG: 2023-06-04 18:53:41,632:      pdf_renderer.py:  470: printSegment: Low power consumption                               | - Limited range                                 |
-   DEBUG: 2023-06-04 18:53:41,632:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,632:      pdf_renderer.py:  470: printSegment: | MQTT                       | Low         
-   DEBUG: 2023-06-04 18:53:41,633:      pdf_renderer.py:  470: printSegment:     | Low        | Low        | Low              | High        | Low      | Low                 | Low           | - Lightweight and efficient
-   DEBUG: 2023-06-04 18:53:41,633:      pdf_renderer.py:  470: printSegment: messaging protocol        | - Requires an additional communication layer    |
-   DEBUG: 2023-06-04 18:53:41,633:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,633:      pdf_renderer.py:  470: printSegment: | Z-Wave                     | Low              |
-   DEBUG: 2023-06-04 18:53:41,633:      pdf_renderer.py:  470: printSegment: High       | Medium     | High             | High        | High     | Low                 | Low           | - Secure and reliable wireless
-   DEBUG: 2023-06-04 18:53:41,634:      pdf_renderer.py:  470: printSegment: communication          | - Limited device compatibility and ecosystem    |
-   DEBUG: 2023-06-04 18:53:41,634:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,634:      pdf_renderer.py:  470: printSegment: | Wi-Fi Direct               | High             | Low  
-   DEBUG: 2023-06-04 18:53:41,634:      pdf_renderer.py:  470: printSegment:      | Low        | Low              | High        | Low      | High                | Medium        | - Direct connection between
-   DEBUG: 2023-06-04 18:53:41,635:      pdf_renderer.py:  470: printSegment: devices without a network | - High power consumption                        |
-   DEBUG: 2023-06-04 18:53:41,635:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,635:      pdf_renderer.py:  470: printSegment: | AWS IoT                    | High             | High   
-   DEBUG: 2023-06-04 18:53:41,635:      pdf_renderer.py:  470: printSegment:    | High       | High             | High        | High     | Low                 | Low           | - Integration with AWS services and
-   DEBUG: 2023-06-04 18:53:41,635:      pdf_renderer.py:  470: printSegment: scalability       | - Higher cost compared to self-hosted solutions |
-   DEBUG: 2023-06-04 18:53:41,636:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,636:      pdf_renderer.py:  470: printSegment: | Cloud Storage              | Low              | Low        |
-   DEBUG: 2023-06-04 18:53:41,636:      pdf_renderer.py:  470: printSegment: Low        | Low              | High        | Variable | High                | Low           | - Easy access to data from anywhere        
-   DEBUG: 2023-06-04 18:53:41,636:      pdf_renderer.py:  470: printSegment:           | - Relies on a stable internet connection        |
-   DEBUG: 2023-06-04 18:53:41,636:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,637:      pdf_renderer.py:  470: printSegment: | Bluetooth Classic          | Low              | Low        | Low        |
-   DEBUG: 2023-06-04 18:53:41,637:      pdf_renderer.py:  470: printSegment: Low              | Medium      | Low      | Low                 | Medium        | - Wide device compatibility                           | -
-   DEBUG: 2023-06-04 18:53:41,637:      pdf_renderer.py:  470: printSegment: Limited range and data throughput             |
-   DEBUG: 2023-06-04 18:53:41,637:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,638:      pdf_renderer.py:  470: printSegment: | Bluetooth Low Energy (BLE) | Low              | Low        | Low        |
-   DEBUG: 2023-06-04 18:53:41,638:      pdf_renderer.py:  470: printSegment: Low              | High        | Low      | Low                 | Low           | - Low power consumption                               | -
-   DEBUG: 2023-06-04 18:53:41,638:      pdf_renderer.py:  470: printSegment: Limited data payload and range                |
-   DEBUG: 2023-06-04 18:53:41,638:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,638:      pdf_renderer.py:  470: printSegment: | Bluetooth Mesh             | Medium           | Medium     | Medium     |
-   DEBUG: 2023-06-04 18:53:41,639:      pdf_renderer.py:  470: printSegment: Medium           | High        | Low      | Low                 | Medium        | - Scalable mesh network                               | -
-   DEBUG: 2023-06-04 18:53:41,639:      pdf_renderer.py:  470: printSegment: Higher setup complexity and maintenance cost  |
-   DEBUG: 2023-06-04 18:53:41,639:      pdf_renderer.py:  470: printSegment: Choosing the right tech stack for an IoT application depends on several factors, including the specific requirements
-   DEBUG: 2023-06-04 18:53:41,639:      pdf_renderer.py:  470: printSegment: of the application, the environment in which it will operate, and the available resources. Let
-   DEBUG: 2023-06-04 18:53:41,639:      pdf_renderer.py:  470: printSegment: '
-   DEBUG: 2023-06-04 18:53:41,640:      pdf_renderer.py:  470: printSegment: s analyze the table to
-   DEBUG: 2023-06-04 18:53:41,640:      pdf_renderer.py:  470: printSegment: understand the considerations for selecting the appropriate technology stack:
-   DEBUG: 2023-06-04 18:53:41,640:      pdf_renderer.py:  470: printSegment:  1 
-   DEBUG: 2023-06-04 18:53:41,640:      pdf_renderer.py:  470: printSegment: Zigbee:
-   DEBUG: 2023-06-04 18:53:41,640:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,640:      pdf_renderer.py:  470: printSegment: Pros: Zigbee offers low power consumption and is suitable for battery-operated
-   DEBUG: 2023-06-04 18:53:41,641:      pdf_renderer.py:  470: printSegment: devices. It provides moderate pricing and low network consumption.
-   DEBUG: 2023-06-04 18:53:41,641:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,641:      pdf_renderer.py:  470: printSegment: Cons: However, Zigbee has limited range, which may restrict its usability in larger
-   DEBUG: 2023-06-04 18:53:41,641:      pdf_renderer.py:  470: printSegment: deployments.
-   DEBUG: 2023-06-04 18:53:41,641:      pdf_renderer.py:  470: printSegment:  2 
-   DEBUG: 2023-06-04 18:53:41,641:      pdf_renderer.py:  470: printSegment: MQTT:
-   DEBUG: 2023-06-04 18:53:41,641:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,641:      pdf_renderer.py:  470: printSegment: Pros: MQTT is a lightweight and efficient messaging protocol, making it ideal for
-   DEBUG: 2023-06-04 18:53:41,642:      pdf_renderer.py:  470: printSegment: IoT applications. It has low maintenance costs, low setup complexity, and low
-   DEBUG: 2023-06-04 18:53:41,642:      pdf_renderer.py:  470: printSegment: network consumption.
-   DEBUG: 2023-06-04 18:53:41,642:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,642:      pdf_renderer.py:  470: printSegment: Cons: MQTT requires an additional communication layer, which may increase
-   DEBUG: 2023-06-04 18:53:41,642:      pdf_renderer.py:  470: printSegment: implementation complexity.
-   DEBUG: 2023-06-04 18:53:41,642:      pdf_renderer.py:  470: printSegment:  3 
-   DEBUG: 2023-06-04 18:53:41,642:      pdf_renderer.py:  470: printSegment: Z-Wave:
-   DEBUG: 2023-06-04 18:53:41,643:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,643:      pdf_renderer.py:  470: printSegment: Pros: Z-Wave is known for its secure and reliable wireless communication. It offers
-   DEBUG: 2023-06-04 18:53:41,643:      pdf_renderer.py:  470: printSegment: high scalability and has a low maintenance cost.
-   DEBUG: 2023-06-04 18:53:41,643:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,644:      pdf_renderer.py:  470: printSegment: Cons: Z-Wave has limited device compatibility and ecosystem, which may limit the
-   DEBUG: 2023-06-04 18:53:41,644:      pdf_renderer.py:  470: printSegment: options for integrating with other devices or systems.
-   DEBUG: 2023-06-04 18:53:41,644:      pdf_renderer.py:  470: printSegment:  4 
-   DEBUG: 2023-06-04 18:53:41,644:      pdf_renderer.py:  470: printSegment: Wi-Fi Direct:
-   DEBUG: 2023-06-04 18:53:41,644:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,645:      pdf_renderer.py:  470: printSegment: Pros: Wi-Fi Direct allows direct device-to-device connection without the need for a
-   DEBUG: 2023-06-04 18:53:41,645:      pdf_renderer.py:  470: printSegment: network. It offers low setup costs and low complexity.
-   DEBUG: 2023-06-04 18:53:41,645:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,645:      pdf_renderer.py:  470: printSegment: Cons: However, Wi-Fi Direct consumes high network resources and requires higher
-   DEBUG: 2023-06-04 18:53:41,645:      pdf_renderer.py:  470: printSegment: power consumption, which may not be suitable for battery-powered devices.
-   DEBUG: 2023-06-04 18:53:41,645:      pdf_renderer.py:  470: printSegment:  5 
-   DEBUG: 2023-06-04 18:53:41,646:      pdf_renderer.py:  470: printSegment: AWS IoT:
-   DEBUG: 2023-06-04 18:53:41,646:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,646:      pdf_renderer.py:  470: printSegment: Pros: AWS IoT provides seamless integration with AWS services and offers
-   DEBUG: 2023-06-04 18:53:41,646:      pdf_renderer.py:  470: printSegment: scalability. It enables easy access to data from anywhere and provides reliable cloud
-   DEBUG: 2023-06-04 18:53:41,646:      pdf_renderer.py:  470: printSegment: storage.
-   DEBUG: 2023-06-04 18:53:41,646:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,646:      pdf_renderer.py:  470: printSegment: Cons: However, AWS IoT has higher setup costs, high maintenance costs, and
-   DEBUG: 2023-06-04 18:53:41,647:      pdf_renderer.py:  470: printSegment: higher pricing compared to self-hosted solutions.
-   DEBUG: 2023-06-04 18:53:41,647:      pdf_renderer.py:  470: printSegment:  6 
-   DEBUG: 2023-06-04 18:53:41,647:      pdf_renderer.py:  470: printSegment: Cloud Storage:
-   DEBUG: 2023-06-04 18:53:41,647:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,647:      pdf_renderer.py:  470: printSegment: Pros: Cloud storage enables easy access to data from anywhere and offers high
-   DEBUG: 2023-06-04 18:53:41,647:      pdf_renderer.py:  470: printSegment: scalability.
-   DEBUG: 2023-06-04 18:53:41,647:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,648:      pdf_renderer.py:  470: printSegment: Cons: It relies on a stable internet connection and may have variable pricing based
-   DEBUG: 2023-06-04 18:53:41,648:      pdf_renderer.py:  470: printSegment: on usage.
-   DEBUG: 2023-06-04 18:53:41,648:      pdf_renderer.py:  470: printSegment: When choosing the right tech stack for an IoT application, consider the following factors:
-   DEBUG: 2023-06-04 18:53:41,648:      pdf_renderer.py:  470: printSegment:  1 
-   DEBUG: 2023-06-04 18:53:41,648:      pdf_renderer.py:  470: printSegment: Power consumption: If low power consumption is crucial, Zigbee or MQTT may be preferred.
-   DEBUG: 2023-06-04 18:53:41,648:      pdf_renderer.py:  470: printSegment:  2 
-   DEBUG: 2023-06-04 18:53:41,648:      pdf_renderer.py:  470: printSegment: Range: Consider the coverage area and choose a technology that provides sufficient range, such as
-   DEBUG: 2023-06-04 18:53:41,649:      pdf_renderer.py:  470: printSegment: Wi-Fi Direct or AWS IoT.
-   DEBUG: 2023-06-04 18:53:41,649:      pdf_renderer.py:  470: printSegment:  3 
-   DEBUG: 2023-06-04 18:53:41,649:      pdf_renderer.py:  470: printSegment: Security: Evaluate the security features provided by the technology, such as Z-Wave
-   DEBUG: 2023-06-04 18:53:41,649:      pdf_renderer.py:  470: printSegment: '
-   DEBUG: 2023-06-04 18:53:41,649:      pdf_renderer.py:  470: printSegment: s secure
-   DEBUG: 2023-06-04 18:53:41,649:      pdf_renderer.py:  470: printSegment: communication.
-   DEBUG: 2023-06-04 18:53:41,649:      pdf_renderer.py:  470: printSegment:  4 
-   DEBUG: 2023-06-04 18:53:41,650:      pdf_renderer.py:  470: printSegment: Device compatibility: Ensure that the selected technology supports the devices you intend to use in
-   DEBUG: 2023-06-04 18:53:41,650:      pdf_renderer.py:  470: printSegment: your IoT application.
-   DEBUG: 2023-06-04 18:53:41,650:      pdf_renderer.py:  470: printSegment:  5 
-   DEBUG: 2023-06-04 18:53:41,650:      pdf_renderer.py:  470: printSegment: Integration requirements: If integration with other services or systems is essential, AWS IoT
-   DEBUG: 2023-06-04 18:53:41,650:      pdf_renderer.py:  470: printSegment: '
-   DEBUG: 2023-06-04 18:53:41,650:      pdf_renderer.py:  470: printSegment: s
-   DEBUG: 2023-06-04 18:53:41,650:      pdf_renderer.py:  470: printSegment: seamless integration may be advantageous.
-   DEBUG: 2023-06-04 18:53:41,650:      pdf_renderer.py:  470: printSegment:  6 
-   DEBUG: 2023-06-04 18:53:41,651:      pdf_renderer.py:  470: printSegment: Cost: Consider the maintenance costs, setup costs, and pricing associated with the technology stack.
-   DEBUG: 2023-06-04 18:53:41,651:      pdf_renderer.py:  470: printSegment: Choosing the right tech stack for an IoT application depends on several factors and requirements. Here
-   DEBUG: 2023-06-04 18:53:41,651:      pdf_renderer.py:  470: printSegment: '
-   DEBUG: 2023-06-04 18:53:41,651:      pdf_renderer.py:  470: printSegment: s a brief
-   DEBUG: 2023-06-04 18:53:41,651:      pdf_renderer.py:  470: printSegment: discussion based on the comparison table provided:
-   DEBUG: 2023-06-04 18:53:41,651:      pdf_renderer.py:  470: printSegment:  1 
-   DEBUG: 2023-06-04 18:53:41,651:      pdf_renderer.py:  470: printSegment: Zigbee: Zigbee offers low power consumption and is suitable for applications that require a
-   DEBUG: 2023-06-04 18:53:41,652:      pdf_renderer.py:  470: printSegment: moderate setup cost, moderate setup time, and scalability. It is commonly used in smart home
-   DEBUG: 2023-06-04 18:53:41,652:      pdf_renderer.py:  470: printSegment: automation systems. However, its limited range may be a drawback for larger deployments.
-   DEBUG: 2023-06-04 18:53:41,652:      pdf_renderer.py:  470: printSegment:  2 
-   DEBUG: 2023-06-04 18:53:41,652:      pdf_renderer.py:  470: printSegment: MQTT: MQTT is a lightweight and efficient messaging protocol, making it ideal for
-   DEBUG: 2023-06-04 18:53:41,652:      pdf_renderer.py:  470: printSegment: resource-constrained devices. It has low maintenance cost, low setup cost, and low setup time.
-   DEBUG: 2023-06-04 18:53:41,653:      pdf_renderer.py:  470: printSegment: MQTT is commonly used in IoT applications where low overhead and reliable messaging are
-   DEBUG: 2023-06-04 18:53:41,653:      pdf_renderer.py:  470: printSegment: crucial. However, it requires an additional communication layer to establish the MQTT broker.
-   DEBUG: 2023-06-04 18:53:41,653:      pdf_renderer.py:  470: printSegment:  3 
-   DEBUG: 2023-06-04 18:53:41,653:      pdf_renderer.py:  470: printSegment: Z-Wave: Z-Wave provides secure and reliable wireless communication. It offers high scalability and
-   DEBUG: 2023-06-04 18:53:41,653:      pdf_renderer.py:  470: printSegment: is suitable for applications where a high level of interoperability is required. However, Z-Wave
-   DEBUG: 2023-06-04 18:53:41,654:      pdf_renderer.py:  470: printSegment: devices may have limited compatibility with other ecosystems, and the setup cost can be higher
-   DEBUG: 2023-06-04 18:53:41,654:      pdf_renderer.py:  470: printSegment: compared to other technologies.
-   DEBUG: 2023-06-04 18:53:41,654:      pdf_renderer.py:  470: printSegment:  4 
-   DEBUG: 2023-06-04 18:53:41,654:      pdf_renderer.py:  470: printSegment: Wi-Fi Direct: Wi-Fi Direct allows direct device-to-device connection without the need for a network
-   DEBUG: 2023-06-04 18:53:41,654:      pdf_renderer.py:  470: printSegment: infrastructure. It has low setup cost and low setup time, making it suitable for peer-to-peer IoT
-   DEBUG: 2023-06-04 18:53:41,654:      pdf_renderer.py:  470: printSegment: applications. However, Wi-Fi Direct consumes higher network resources and may have moderate
-   DEBUG: 2023-06-04 18:53:41,655:      pdf_renderer.py:  470: printSegment: interferences.
-   DEBUG: 2023-06-04 18:53:41,655:      pdf_renderer.py:  470: printSegment:  5 
-   DEBUG: 2023-06-04 18:53:41,655:      pdf_renderer.py:  470: printSegment: AWS IoT: AWS IoT offers integration with various AWS services and provides scalability for
-   DEBUG: 2023-06-04 18:53:41,656:      pdf_renderer.py:  470: printSegment: cloud-based IoT applications. It is suitable for enterprise-level deployments. However, it has higher
-   DEBUG: 2023-06-04 18:53:41,656:      pdf_renderer.py:  470: printSegment: maintenance cost, setup cost, and setup time compared to other technologies. AWS IoT may be
-   DEBUG: 2023-06-04 18:53:41,656:      pdf_renderer.py:  470: printSegment: more suitable for projects with specific requirements that align with AWS services.
-   DEBUG: 2023-06-04 18:53:41,656:      pdf_renderer.py:  470: printSegment:  6 
-   DEBUG: 2023-06-04 18:53:41,656:      pdf_renderer.py:  470: printSegment: Cloud Storage: Cloud storage allows easy access to data from anywhere, making it suitable for
-   DEBUG: 2023-06-04 18:53:41,657:      pdf_renderer.py:  470: printSegment: applications that require remote data management and analysis. It has low maintenance cost and low
-   DEBUG: 2023-06-04 18:53:41,657:      pdf_renderer.py:  470: printSegment: setup cost. However, it relies on a stable internet connection, and the network consumption can be
-   DEBUG: 2023-06-04 18:53:41,657:      pdf_renderer.py:  470: printSegment: high.
-   DEBUG: 2023-06-04 18:53:41,657:      pdf_renderer.py:  470: printSegment:  7 
-   DEBUG: 2023-06-04 18:53:41,657:      pdf_renderer.py:  470: printSegment: Bluetooth: Bluetooth offers low power consumption and is suitable for battery-operated devices.
-   DEBUG: 2023-06-04 18:53:41,658:      pdf_renderer.py:  470: printSegment: Bluetooth Classic provides wide device compatibility but has limited range and data throughput.
-   DEBUG: 2023-06-04 18:53:41,658:      pdf_renderer.py:  470: printSegment: BLE is suitable for low power applications with small data payloads. Bluetooth Mesh offers a
-   DEBUG: 2023-06-04 18:53:41,658:      pdf_renderer.py:  470: printSegment: scalable mesh network but has higher setup complexity and maintenance cost compared to other
-   DEBUG: 2023-06-04 18:53:41,658:      pdf_renderer.py:  470: printSegment: Bluetooth technologies.
-   DEBUG: 2023-06-04 18:53:41,658:      pdf_renderer.py:  470: printSegment: Technical stack combinations for the development
-   DEBUG: 2023-06-04 18:53:41,659:      pdf_renderer.py:  470: printSegment:  1 
-   DEBUG: 2023-06-04 18:53:41,659:      pdf_renderer.py:  470: printSegment: LoRaWAN + MQTT + AWS IoT + Cloud Storage:
-   DEBUG: 2023-06-04 18:53:41,659:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,659:      pdf_renderer.py:  470: printSegment: LoRaWAN for long-range, low-power wireless communication.
-   DEBUG: 2023-06-04 18:53:41,659:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,660:      pdf_renderer.py:  470: printSegment: MQTT as the messaging protocol for lightweight communication.
-   DEBUG: 2023-06-04 18:53:41,660:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,660:      pdf_renderer.py:  470: printSegment: AWS IoT for device management, data processing, and analytics.
-   DEBUG: 2023-06-04 18:53:41,660:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,660:      pdf_renderer.py:  470: printSegment: Cloud storage for storing and retrieving IoT data.
-   DEBUG: 2023-06-04 18:53:41,660:      pdf_renderer.py:  470: printSegment:  2 
-   DEBUG: 2023-06-04 18:53:41,660:      pdf_renderer.py:  470: printSegment: Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing:
-   DEBUG: 2023-06-04 18:53:41,661:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,661:      pdf_renderer.py:  470: printSegment: BLE for short-range communication with low power consumption.
-   DEBUG: 2023-06-04 18:53:41,661:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,661:      pdf_renderer.py:  470: printSegment: MQTT for efficient and reliable messaging.
-   DEBUG: 2023-06-04 18:53:41,661:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,661:      pdf_renderer.py:  470: printSegment: Azure IoT for device management, data processing, and edge computing
-   DEBUG: 2023-06-04 18:53:41,661:      pdf_renderer.py:  470: printSegment: capabilities.
-   DEBUG: 2023-06-04 18:53:41,662:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,662:      pdf_renderer.py:  470: printSegment: Edge computing to perform real-time analytics and decision-making at the network
-   DEBUG: 2023-06-04 18:53:41,662:      pdf_renderer.py:  470: printSegment: edge.
-   DEBUG: 2023-06-04 18:53:41,662:      pdf_renderer.py:  470: printSegment:  3 
-   DEBUG: 2023-06-04 18:53:41,662:      pdf_renderer.py:  470: printSegment: Thread + CoAP + Google Cloud IoT + Cloud Functions:
-   DEBUG: 2023-06-04 18:53:41,662:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,662:      pdf_renderer.py:  470: printSegment: Thread as a low-power, mesh networking protocol for IoT devices.
-   DEBUG: 2023-06-04 18:53:41,663:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,663:      pdf_renderer.py:  470: printSegment: CoAP (Constrained Application Protocol) for resource-constrained devices and
-   DEBUG: 2023-06-04 18:53:41,663:      pdf_renderer.py:  470: printSegment: efficient communication.
-   DEBUG: 2023-06-04 18:53:41,663:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,663:      pdf_renderer.py:  470: printSegment: Google Cloud IoT for device registration, management, and integration with Google
-   DEBUG: 2023-06-04 18:53:41,663:      pdf_renderer.py:  470: printSegment: Cloud services.
-   DEBUG: 2023-06-04 18:53:41,663:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,664:      pdf_renderer.py:  470: printSegment: Cloud Functions to trigger serverless functions and perform actions based on IoT
-   DEBUG: 2023-06-04 18:53:41,664:      pdf_renderer.py:  470: printSegment: data.
-   DEBUG: 2023-06-04 18:53:41,664:      pdf_renderer.py:  470: printSegment:  4 
-   DEBUG: 2023-06-04 18:53:41,664:      pdf_renderer.py:  470: printSegment: NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain ( not low cost ):
-   DEBUG: 2023-06-04 18:53:41,664:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,664:      pdf_renderer.py:  470: printSegment: NB-IoT (Narrowband IoT) for wide-area coverage and low-power communication.
-   DEBUG: 2023-06-04 18:53:41,664:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,665:      pdf_renderer.py:  470: printSegment: MQTT for lightweight messaging between devices and the cloud.
-   DEBUG: 2023-06-04 18:53:41,665:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,665:      pdf_renderer.py:  470: printSegment: IBM Watson IoT Platform for device management, data visualization, and analytics.
-   DEBUG: 2023-06-04 18:53:41,665:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,665:      pdf_renderer.py:  470: printSegment: Blockchain for secure and transparent transaction recording and smart contract
-   DEBUG: 2023-06-04 18:53:41,666:      pdf_renderer.py:  470: printSegment: execution.
-   DEBUG: 2023-06-04 18:53:41,666:      pdf_renderer.py:  470: printSegment: Comparative analysis of technical stacks:
-   DEBUG: 2023-06-04 18:53:41,667:      pdf_renderer.py:  470: printSegment: | Technical Stack Combination                                    | Communication Protocol | Cloud Platform          | Edge
-   DEBUG: 2023-06-04 18:53:41,667:      pdf_renderer.py:  470: printSegment: Computing | Data Storage   | Key Features and Benefits                                                                                                  
-   DEBUG: 2023-06-04 18:53:41,667:      pdf_renderer.py:  470: printSegment:                                                                                                                |
-   DEBUG: 2023-06-04 18:53:41,668:      pdf_renderer.py:  470: printSegment:  
-   DEBUG: 2023-06-04 18:53:41,668:      pdf_renderer.py:  470: printSegment: |
-   DEBUG: 2023-06-04 18:53:41,668:      pdf_renderer.py:  470: printSegment: -------------------------------------------------------------- | ---------------------- | ----------------------- | -------------- |
-   DEBUG: 2023-06-04 18:53:41,668:      pdf_renderer.py:  470: printSegment: -------------- |
-   DEBUG: 2023-06-04 18:53:41,668:      pdf_renderer.py:  470: printSegment: ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-   DEBUG: 2023-06-04 18:53:41,669:      pdf_renderer.py:  470: printSegment: | LoRaWAN + MQTT + AWS IoT + Cloud Storage                       | LoRaWAN, MQTT          | AWS IoT                 | Not applicable | Cloud storage  | - Long-range, low-power communication, lightweight messaging protocol, device management, data processing, and analytics with AWS IoT, scalable and reliable cloud storage                                                                 |
-   DEBUG: 2023-06-04 18:53:41,670:      pdf_renderer.py:  470: printSegment: | Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing | BLE, MQTT              | Azure IoT               | Edge computing | Not applicable | - Short-range communication with low power consumption, efficient and reliable messaging protocol, device management, data processing, and edge computing with Azure IoT, real-time analytics and decision-making at the network edge      |
-   DEBUG: 2023-06-04 18:53:41,670:      pdf_renderer.py:  470: printSegment: | Thread + CoAP + Google Cloud IoT + Cloud Functions             | Thread, CoAP           | Google Cloud IoT        | Not applicable | Cloud storage  | - Low-power, mesh networking protocol for IoT devices, efficient communication with resource-constrained devices, device management, integration with Google Cloud services, serverless functions for triggering actions based on IoT data |
-   DEBUG: 2023-06-04 18:53:41,671:      pdf_renderer.py:  470: printSegment: | NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain           | NB-IoT, MQTT           | IBM Watson IoT Platform | Not applicable | Blockchain     | - Wide-area coverage and low-power communication, lightweight messaging protocol, device management, data visualization, and analytics with IBM Watson IoT Platform, secure and transparent transaction recording with blockchain          |
-   DEBUG: 2023-06-04 18:53:41,671:      pdf_renderer.py:  470: printSegment: Why suggest Zigbee + MQTT ?
-   DEBUG: 2023-06-04 18:53:41,671:      pdf_renderer.py:  470: printSegment: Zigbee, being a low-power wireless communication protocol, is well-suited for connecting and controlling devices
-   DEBUG: 2023-06-04 18:53:41,672:      pdf_renderer.py:  470: printSegment: in a local area network. It enables efficient communication between devices, consuming minimal network resources.
-   DEBUG: 2023-06-04 18:53:41,672:      pdf_renderer.py:  470: printSegment: Zigbee devices can operate in a mesh network, allowing them to relay messages and form a robust and scalable
-   DEBUG: 2023-06-04 18:53:41,672:      pdf_renderer.py:  470: printSegment: network infrastructure.
-   DEBUG: 2023-06-04 18:53:41,672:      pdf_renderer.py:  470: printSegment: On the other hand, MQTT is a lightweight messaging protocol designed for efficient data exchange in IoT
-   DEBUG: 2023-06-04 18:53:41,672:      pdf_renderer.py:  470: printSegment: applications. It follows a publish-subscribe pattern, where devices (publishers) publish messages to a central broker,
-   DEBUG: 2023-06-04 18:53:41,673:      pdf_renderer.py:  470: printSegment: and other devices (subscribers) receive those messages based on their subscription topics. MQTT is highly efficient
-   DEBUG: 2023-06-04 18:53:41,673:      pdf_renderer.py:  470: printSegment: in terms of network consumption, minimizing the amount of data sent over the network.
-   DEBUG: 2023-06-04 18:53:41,673:      pdf_renderer.py:  470: printSegment: By combining Zigbee and MQTT, the sync operations can be performed in the following way:
-   DEBUG: 2023-06-04 18:53:41,673:      pdf_renderer.py:  470: printSegment:  1 
-   DEBUG: 2023-06-04 18:53:41,673:      pdf_renderer.py:  470: printSegment: Devices (such as smart light bulbs) connected through Zigbee protocol can have their configurations
-   DEBUG: 2023-06-04 18:53:41,673:      pdf_renderer.py:  470: printSegment: synchronized using MQTT messages.
-   DEBUG: 2023-06-04 18:53:41,673:      pdf_renderer.py:  470: printSegment:  2 
-   DEBUG: 2023-06-04 18:53:41,673:      pdf_renderer.py:  470: printSegment: When a user updates the configuration parameters in the user application, the application sends an
-   DEBUG: 2023-06-04 18:53:41,674:      pdf_renderer.py:  470: printSegment: MQTT message to the backend server indicating the desired changes.
-   DEBUG: 2023-06-04 18:53:41,674:      pdf_renderer.py:  470: printSegment:  3 
-   DEBUG: 2023-06-04 18:53:41,674:      pdf_renderer.py:  470: printSegment: The backend server receives the MQTT message and updates the respective device
-   DEBUG: 2023-06-04 18:53:41,674:      pdf_renderer.py:  470: printSegment: '
-   DEBUG: 2023-06-04 18:53:41,674:      pdf_renderer.py:  470: printSegment: s configuration
-   DEBUG: 2023-06-04 18:53:41,674:      pdf_renderer.py:  470: printSegment: information in its database.
-   DEBUG: 2023-06-04 18:53:41,674:      pdf_renderer.py:  470: printSegment:  4 
-   DEBUG: 2023-06-04 18:53:41,674:      pdf_renderer.py:  470: printSegment: The backend server then forwards the configuration update to the Zigbee gateway using MQTT,
-   DEBUG: 2023-06-04 18:53:41,674:      pdf_renderer.py:  470: printSegment: which acts as a bridge between the Zigbee devices and the server.
-   DEBUG: 2023-06-04 18:53:41,675:      pdf_renderer.py:  470: printSegment:  5 
-   DEBUG: 2023-06-04 18:53:41,675:      pdf_renderer.py:  470: printSegment: The Zigbee gateway translates the MQTT message to Zigbee protocol and communicates with the
-   DEBUG: 2023-06-04 18:53:41,675:      pdf_renderer.py:  470: printSegment: corresponding Zigbee devices to apply the configuration changes.
-   DEBUG: 2023-06-04 18:53:41,675:      pdf_renderer.py:  470: printSegment: This approach offloads the heavy lifting of device synchronization from the server by utilizing the efficient Zigbee
-   DEBUG: 2023-06-04 18:53:41,675:      pdf_renderer.py:  470: printSegment: protocol for local device communication. MQTT is used as a lightweight and scalable messaging protocol for
-   DEBUG: 2023-06-04 18:53:41,675:      pdf_renderer.py:  470: printSegment: transmitting configuration updates between the server, gateway, and devices. This helps in minimizing the load on
-   DEBUG: 2023-06-04 18:53:41,676:      pdf_renderer.py:  470: printSegment: the server and network during sync operations.
-   DEBUG: 2023-06-04 18:53:41,676:      pdf_renderer.py:  470: printSegment: Here
-   DEBUG: 2023-06-04 18:53:41,676:      pdf_renderer.py:  470: printSegment: '
-   DEBUG: 2023-06-04 18:53:41,676:      pdf_renderer.py:  470: printSegment: s a small diagram illustrating the sync operations using Zigbee + MQTT:
-   DEBUG: 2023-06-04 18:53:41,676:      pdf_renderer.py:  470: printSegment: graph LR
-   DEBUG: 2023-06-04 18:53:41,676:      pdf_renderer.py:  470: printSegment: subgraph User Applications
-   DEBUG: 2023-06-04 18:53:41,676:      pdf_renderer.py:  470: printSegment:   UA((User Application))
-   DEBUG: 2023-06-04 18:53:41,676:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment: subgraph Zigbee Gateway
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment:   ZG((Zigbee Gateway))
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulbs
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment:   LB1((Light Bulb 1))
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment:   LB2((Light Bulb 2))
-   DEBUG: 2023-06-04 18:53:41,677:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,678:      pdf_renderer.py:  470: printSegment: UA -->|MQTT Config| BS
-   DEBUG: 2023-06-04 18:53:41,678:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| ZG
-   DEBUG: 2023-06-04 18:53:41,678:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB1
-   DEBUG: 2023-06-04 18:53:41,678:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB2
-   DEBUG: 2023-06-04 18:53:41,678:      pdf_renderer.py:  470: printSegment: In the diagram, the user application (UA) sends an MQTT configuration message to the backend server (BS). The
-   DEBUG: 2023-06-04 18:53:41,679:      pdf_renderer.py:  470: printSegment: backend server then forwards the configuration update to the Zigbee gateway (ZG) using MQTT. The Zigbee
-   DEBUG: 2023-06-04 18:53:41,679:      pdf_renderer.py:  470: printSegment: gateway translates the MQTT message to Zigbee protocol and communicates with the respective smart light bulbs
-   DEBUG: 2023-06-04 18:53:41,679:      pdf_renderer.py:  470: printSegment: (LB1, LB2) to apply the configuration changes.
-   DEBUG: 2023-06-04 18:53:41,679:      pdf_renderer.py:  470: printSegment: This architecture ensures minimal load on the server and network as the synchronization is performed efficiently
-   DEBUG: 2023-06-04 18:53:41,679:      pdf_renderer.py:  470: printSegment: through the Zigbee protocol for local communication and MQTT for lightweight messaging between the server and
-   DEBUG: 2023-06-04 18:53:41,679:      pdf_renderer.py:  470: printSegment: gateway.
-   DEBUG: 2023-06-04 18:53:41,680:      pdf_renderer.py:  470: printSegment: Communication Flow
-   DEBUG: 2023-06-04 18:53:41,680:      pdf_renderer.py:  470: printSegment: flowchart LR
-   DEBUG: 2023-06-04 18:53:41,680:      pdf_renderer.py:  470: printSegment: subgraph User Applications
-   DEBUG: 2023-06-04 18:53:41,680:      pdf_renderer.py:  470: printSegment:   UA1((User Application 1))
-   DEBUG: 2023-06-04 18:53:41,680:      pdf_renderer.py:  470: printSegment:   UA2((User Application 2))
-   DEBUG: 2023-06-04 18:53:41,680:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,680:      pdf_renderer.py:  470: printSegment: subgraph Zigbee Gateway
-   DEBUG: 2023-06-04 18:53:41,681:      pdf_renderer.py:  470: printSegment:   ZG((Zigbee Gateway))
-   DEBUG: 2023-06-04 18:53:41,681:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,681:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
-   DEBUG: 2023-06-04 18:53:41,681:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
-   DEBUG: 2023-06-04 18:53:41,681:      pdf_renderer.py:  470: printSegment:   subgraph Database
-   DEBUG: 2023-06-04 18:53:41,681:      pdf_renderer.py:  470: printSegment:     DB
-   DEBUG: 2023-06-04 18:53:41,681:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,681:      pdf_renderer.py:  470: printSegment:   subgraph Message Queue
-   DEBUG: 2023-06-04 18:53:41,681:      pdf_renderer.py:  470: printSegment:     MQ
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment:   subgraph Identity and Access Management
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment:     IAM
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulbs
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment:   LB1((Light Bulb 1))
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment:   LB2((Light Bulb 2))
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,682:      pdf_renderer.py:  470: printSegment: subgraph Invited Users
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment:   IU1((Invited User 1))
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment:   IU2((Invited User 2))
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment: LB1 -->|Zigbee State Change| ZG
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment: LB2 -->|Zigbee State Change| ZG
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB1
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB2
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment: ZG <-->|MQTT State Change| BS
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Config| BS
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Access| BS
-   DEBUG: 2023-06-04 18:53:41,683:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Notifications| IU1
-   DEBUG: 2023-06-04 18:53:41,684:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Notifications| IU2
-   DEBUG: 2023-06-04 18:53:41,684:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Config| BS
-   DEBUG: 2023-06-04 18:53:41,684:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Access| BS
-   DEBUG: 2023-06-04 18:53:41,684:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Notifications| IU1
-   DEBUG: 2023-06-04 18:53:41,684:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Notifications| IU2
-   DEBUG: 2023-06-04 18:53:41,684:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| ZG
-   DEBUG: 2023-06-04 18:53:41,684:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| UA1
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| UA2
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU1
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU2
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Control| LB1
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Control| LB2
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: BS -->|MQTT State Change| UA1
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: BS -->|MQTT State Change| UA2
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Access| BS
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Config| BS
-   DEBUG: 2023-06-04 18:53:41,685:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Control| BS
-   DEBUG: 2023-06-04 18:53:41,686:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT State Change| LB1
-   DEBUG: 2023-06-04 18:53:41,686:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT State Change| LB2
-   DEBUG: 2023-06-04 18:53:41,686:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Access| BS
-   DEBUG: 2023-06-04 18:53:41,686:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Config| BS
-   DEBUG: 2023-06-04 18:53:41,686:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Control| BS
-   DEBUG: 2023-06-04 18:53:41,686:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT State Change| LB1
-   DEBUG: 2023-06-04 18:53:41,686:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT State Change| LB2
-   DEBUG: 2023-06-04 18:53:41,686:      pdf_renderer.py:  470: printSegment: The above diagram illustrates the communication flow for the given points - ( other smart devices are not included
-   DEBUG: 2023-06-04 18:53:41,687:      pdf_renderer.py:  470: printSegment: in the diagram )
-   DEBUG: 2023-06-04 18:53:41,687:      pdf_renderer.py:  470: printSegment: The diagram includes the following components and flows:
-   DEBUG: 2023-06-04 18:53:41,687:      pdf_renderer.py:  470: printSegment:  1 
-   DEBUG: 2023-06-04 18:53:41,687:      pdf_renderer.py:  470: printSegment: User Applications (UA1, UA2): User applications through which users configure parameters and
-   DEBUG: 2023-06-04 18:53:41,687:      pdf_renderer.py:  470: printSegment: send MQTT messages to the backend server.
-   DEBUG: 2023-06-04 18:53:41,687:      pdf_renderer.py:  470: printSegment:  2 
-   DEBUG: 2023-06-04 18:53:41,687:      pdf_renderer.py:  470: printSegment: Backend Server (BS): Manages configuration updates, state changes, and access permissions.
-   DEBUG: 2023-06-04 18:53:41,687:      pdf_renderer.py:  470: printSegment:  3 
-   DEBUG: 2023-06-04 18:53:41,688:      pdf_renderer.py:  470: printSegment: Zigbee Gateway (ZG): Acts as a bridge between the backend server and the smart light bulbs,
-   DEBUG: 2023-06-04 18:53:41,688:      pdf_renderer.py:  470: printSegment: translating messages between MQTT and Zigbee protocols.
-   DEBUG: 2023-06-04 18:53:41,688:      pdf_renderer.py:  470: printSegment:  4 
-   DEBUG: 2023-06-04 18:53:41,688:      pdf_renderer.py:  470: printSegment: Smart Light Bulbs (LB1, LB2): Light bulbs that receive configuration changes and state change
-   DEBUG: 2023-06-04 18:53:41,688:      pdf_renderer.py:  470: printSegment: notifications via Zigbee messages.
-   DEBUG: 2023-06-04 18:53:41,688:      pdf_renderer.py:  470: printSegment:  5 
-   DEBUG: 2023-06-04 18:53:41,688:      pdf_renderer.py:  470: printSegment: IAM System (IAM): Manages user authentication and authorization.
-   DEBUG: 2023-06-04 18:53:41,688:      pdf_renderer.py:  470: printSegment:  6 
-   DEBUG: 2023-06-04 18:53:41,688:      pdf_renderer.py:  470: printSegment: Invited Users (IU1, IU2): Users who have been granted access to specific light bulbs by the backend
-   DEBUG: 2023-06-04 18:53:41,689:      pdf_renderer.py:  470: printSegment: server.
-   DEBUG: 2023-06-04 18:53:41,689:      pdf_renderer.py:  470: printSegment: The flows in the diagram are as follows:
-   DEBUG: 2023-06-04 18:53:41,689:      pdf_renderer.py:  470: printSegment: Configuration and Control:
-   DEBUG: 2023-06-04 18:53:41,689:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,689:      pdf_renderer.py:  470: printSegment: User applications send MQTT configuration messages to the backend server.
-   DEBUG: 2023-06-04 18:53:41,689:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,690:      pdf_renderer.py:  470: printSegment: The backend server forwards the configuration updates to the Zigbee gateway in MQTT format.
-   DEBUG: 2023-06-04 18:53:41,690:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,690:      pdf_renderer.py:  470: printSegment: The gateway translates the MQTT messages to Zigbee protocol and communicates with the
-   DEBUG: 2023-06-04 18:53:41,690:      pdf_renderer.py:  470: printSegment: corresponding light bulbs to apply the configuration changes.
-   DEBUG: 2023-06-04 18:53:41,690:      pdf_renderer.py:  470: printSegment: Physical Button Interaction:
-   DEBUG: 2023-06-04 18:53:41,690:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,691:      pdf_renderer.py:  470: printSegment: When a physical button on a light bulb is pressed, the bulb sends a Zigbee message to the Zigbee
-   DEBUG: 2023-06-04 18:53:41,691:      pdf_renderer.py:  470: printSegment: gateway indicating the state change.
-   DEBUG: 2023-06-04 18:53:41,691:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,691:      pdf_renderer.py:  470: printSegment: The gateway converts the Zigbee message to MQTT format and forwards it to the backend server.
-   DEBUG: 2023-06-04 18:53:41,691:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,691:      pdf_renderer.py:  470: printSegment: The server updates the state of the respective light bulb and sends notifications to the user
-   DEBUG: 2023-06-04 18:53:41,691:      pdf_renderer.py:  470: printSegment: applications via MQTT, indicating the state change.
-   DEBUG: 2023-06-04 18:53:41,692:      pdf_renderer.py:  470: printSegment: User Access and Sharing:
-   DEBUG: 2023-06-04 18:53:41,692:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,692:      pdf_renderer.py:  470: printSegment: The backend server manages user authentication and authorization using an IAM system.
-   DEBUG: 2023-06-04 18:53:41,693:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,693:      pdf_renderer.py:  470: printSegment: Users can share access to specific light bulbs with others through the applications.
-   DEBUG: 2023-06-04 18:53:41,693:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,693:      pdf_renderer.py:  470: printSegment: The server updates the access permissions, and notifications are sent to the invited users via MQTT.
-   DEBUG: 2023-06-04 18:53:41,693:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,693:      pdf_renderer.py:  470: printSegment: Invited users can control and configure the shared light bulbs through their authorized user
-   DEBUG: 2023-06-04 18:53:41,693:      pdf_renderer.py:  470: printSegment: applications.
-   DEBUG: 2023-06-04 18:53:41,693:      pdf_renderer.py:  470: printSegment: Simple Functionality interaction diagrams
-   DEBUG: 2023-06-04 18:53:41,694:      pdf_renderer.py:  470: printSegment: Time-based Modes
-   DEBUG: 2023-06-04 18:53:41,694:      pdf_renderer.py:  470: printSegment: flowchart LR
-   DEBUG: 2023-06-04 18:53:41,694:      pdf_renderer.py:  470: printSegment: subgraph User Applications
-   DEBUG: 2023-06-04 18:53:41,694:      pdf_renderer.py:  470: printSegment:   UA((User Application))
-   DEBUG: 2023-06-04 18:53:41,694:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,694:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
-   DEBUG: 2023-06-04 18:53:41,694:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
-   DEBUG: 2023-06-04 18:53:41,694:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,695:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
-   DEBUG: 2023-06-04 18:53:41,695:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
-   DEBUG: 2023-06-04 18:53:41,695:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,695:      pdf_renderer.py:  470: printSegment: UA -->|MQTT Mode Change| BS
-   DEBUG: 2023-06-04 18:53:41,695:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Mode Change| LB
-   DEBUG: 2023-06-04 18:53:41,695:      pdf_renderer.py:  470: printSegment: Motion Sensor Mode
-   DEBUG: 2023-06-04 18:53:41,695:      pdf_renderer.py:  470: printSegment: flowchart LR
-   DEBUG: 2023-06-04 18:53:41,695:      pdf_renderer.py:  470: printSegment: subgraph Motion Sensor
-   DEBUG: 2023-06-04 18:53:41,695:      pdf_renderer.py:  470: printSegment:   MS((Motion Sensor))
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment: MS -->|Motion Detection| LB
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment: LB -->|MQTT State Change| BS
-   DEBUG: 2023-06-04 18:53:41,696:      pdf_renderer.py:  470: printSegment: Light Sensor Mode
-   DEBUG: 2023-06-04 18:53:41,697:      pdf_renderer.py:  470: printSegment: flowchart LR
-   DEBUG: 2023-06-04 18:53:41,697:      pdf_renderer.py:  470: printSegment: subgraph Light Sensor
-   DEBUG: 2023-06-04 18:53:41,697:      pdf_renderer.py:  470: printSegment:   LS((Light Sensor))
-   DEBUG: 2023-06-04 18:53:41,697:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,697:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
-   DEBUG: 2023-06-04 18:53:41,697:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
-   DEBUG: 2023-06-04 18:53:41,697:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,698:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
-   DEBUG: 2023-06-04 18:53:41,698:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
-   DEBUG: 2023-06-04 18:53:41,698:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,698:      pdf_renderer.py:  470: printSegment: LS -->|Light Level| LB
-   DEBUG: 2023-06-04 18:53:41,698:      pdf_renderer.py:  470: printSegment: LS -->|Light Level| BS
-   DEBUG: 2023-06-04 18:53:41,698:      pdf_renderer.py:  470: printSegment: Environment-based Sensors
-   DEBUG: 2023-06-04 18:53:41,699:      pdf_renderer.py:  470: printSegment: flowchart LR
-   DEBUG: 2023-06-04 18:53:41,699:      pdf_renderer.py:  470: printSegment: subgraph Environment Sensors
-   DEBUG: 2023-06-04 18:53:41,699:      pdf_renderer.py:  470: printSegment:   ES((Environment Sensors))
-   DEBUG: 2023-06-04 18:53:41,699:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,699:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
-   DEBUG: 2023-06-04 18:53:41,699:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
-   DEBUG: 2023-06-04 18:53:41,700:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,700:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
-   DEBUG: 2023-06-04 18:53:41,700:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
-   DEBUG: 2023-06-04 18:53:41,700:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,700:      pdf_renderer.py:  470: printSegment: ES -->|Sensor Data| LB
-   DEBUG: 2023-06-04 18:53:41,700:      pdf_renderer.py:  470: printSegment: ES -->|Sensor Data| BS
-   DEBUG: 2023-06-04 18:53:41,700:      pdf_renderer.py:  470: printSegment: Mood-based Modes
-   DEBUG: 2023-06-04 18:53:41,700:      pdf_renderer.py:  470: printSegment: flowchart LR
-   DEBUG: 2023-06-04 18:53:41,701:      pdf_renderer.py:  470: printSegment: subgraph User Applications
-   DEBUG: 2023-06-04 18:53:41,701:      pdf_renderer.py:  470: printSegment:   UA((User Application))
-   DEBUG: 2023-06-04 18:53:41,701:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,701:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
-   DEBUG: 2023-06-04 18:53:41,701:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
-   DEBUG: 2023-06-04 18:53:41,701:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,701:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
-   DEBUG: 2023-06-04 18:53:41,701:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
-   DEBUG: 2023-06-04 18:53:41,701:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,702:      pdf_renderer.py:  470: printSegment: UA -->|MQTT Mode Change| BS
-   DEBUG: 2023-06-04 18:53:41,702:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Mode Change| LB
-   DEBUG: 2023-06-04 18:53:41,702:      pdf_renderer.py:  470: printSegment: Full System Interaction with Features
-   DEBUG: 2023-06-04 18:53:41,702:      pdf_renderer.py:  470: printSegment: The functionalities described below pertain to the smart light bulb system, which incorporates various modes and
-   DEBUG: 2023-06-04 18:53:41,702:      pdf_renderer.py:  470: printSegment: sensor-based controls to enhance user experience and energy efficiency. Here is a summary of each functionality:
-   DEBUG: 2023-06-04 18:53:41,702:      pdf_renderer.py:  470: printSegment:  1 
-   DEBUG: 2023-06-04 18:53:41,703:      pdf_renderer.py:  470: printSegment: Time-based Modes:
-   DEBUG: 2023-06-04 18:53:41,703:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,703:      pdf_renderer.py:  470: printSegment: The smart light bulb adjusts its lighting configuration based on different time
-   DEBUG: 2023-06-04 18:53:41,703:      pdf_renderer.py:  470: printSegment: periods such as Morning, Daytime, Evening, and Night.
-   DEBUG: 2023-06-04 18:53:41,703:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,703:      pdf_renderer.py:  470: printSegment: Mode changes are scheduled by the backend server, and the bulb receives
-   DEBUG: 2023-06-04 18:53:41,703:      pdf_renderer.py:  470: printSegment: commands via MQTT to adjust its color, brightness, and other parameters
-   DEBUG: 2023-06-04 18:53:41,704:      pdf_renderer.py:  470: printSegment: accordingly.
-   DEBUG: 2023-06-04 18:53:41,704:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,704:      pdf_renderer.py:  470: printSegment: This feature ensures appropriate lighting for different times of the day, creating a
-   DEBUG: 2023-06-04 18:53:41,704:      pdf_renderer.py:  470: printSegment: comfortable and suitable environment.
-   DEBUG: 2023-06-04 18:53:41,704:      pdf_renderer.py:  470: printSegment:  2 
-   DEBUG: 2023-06-04 18:53:41,704:      pdf_renderer.py:  470: printSegment: Motion Sensor Mode:
-   DEBUG: 2023-06-04 18:53:41,704:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,704:      pdf_renderer.py:  470: printSegment: When the motion sensor detects activity, the smart light bulb automatically turns on.
-   DEBUG: 2023-06-04 18:53:41,705:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,705:      pdf_renderer.py:  470: printSegment: The motion sensor sends a signal to the bulb or backend server upon detecting
-   DEBUG: 2023-06-04 18:53:41,705:      pdf_renderer.py:  470: printSegment: motion, and the bulb adjusts its state accordingly.
-   DEBUG: 2023-06-04 18:53:41,705:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,705:      pdf_renderer.py:  470: printSegment: This functionality ensures that the light is activated only when someone is present in
-   DEBUG: 2023-06-04 18:53:41,706:      pdf_renderer.py:  470: printSegment: the area, improving energy efficiency and convenience.
-   DEBUG: 2023-06-04 18:53:41,706:      pdf_renderer.py:  470: printSegment:  3 
-   DEBUG: 2023-06-04 18:53:41,706:      pdf_renderer.py:  470: printSegment: Light Sensor Mode:
-   DEBUG: 2023-06-04 18:53:41,706:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,706:      pdf_renderer.py:  470: printSegment: The smart light bulb adjusts its brightness based on the ambient light level.
-   DEBUG: 2023-06-04 18:53:41,706:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,707:      pdf_renderer.py:  470: printSegment: The light sensor continuously measures the surrounding light, and the bulb or
-   DEBUG: 2023-06-04 18:53:41,707:      pdf_renderer.py:  470: printSegment: backend server receives the sensor data.
-   DEBUG: 2023-06-04 18:53:41,707:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,707:      pdf_renderer.py:  470: printSegment: The bulb then adjusts its brightness or turns off based on the received light sensor
-   DEBUG: 2023-06-04 18:53:41,707:      pdf_renderer.py:  470: printSegment: data.
-   DEBUG: 2023-06-04 18:53:41,707:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,707:      pdf_renderer.py:  470: printSegment: This feature optimizes lighting based on the available natural light, enhancing
-   DEBUG: 2023-06-04 18:53:41,707:      pdf_renderer.py:  470: printSegment: comfort and energy savings.
-   DEBUG: 2023-06-04 18:53:41,707:      pdf_renderer.py:  470: printSegment:  4 
-   DEBUG: 2023-06-04 18:53:41,708:      pdf_renderer.py:  470: printSegment: Environment-based Sensors:
-   DEBUG: 2023-06-04 18:53:41,708:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,708:      pdf_renderer.py:  470: printSegment: Additional sensors like temperature, humidity, or air quality sensors can be
-   DEBUG: 2023-06-04 18:53:41,708:      pdf_renderer.py:  470: printSegment: integrated with the smart light bulb.
-   DEBUG: 2023-06-04 18:53:41,708:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,708:      pdf_renderer.py:  470: printSegment: These sensors provide data about the surrounding environment, allowing the bulb to
-   DEBUG: 2023-06-04 18:53:41,708:      pdf_renderer.py:  470: printSegment: respond accordingly.
-   DEBUG: 2023-06-04 18:53:41,708:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,708:      pdf_renderer.py:  470: printSegment: The collected sensor data is analyzed by the bulb or backend server, triggering
-   DEBUG: 2023-06-04 18:53:41,709:      pdf_renderer.py:  470: printSegment: appropriate actions or changes in the bulb
-   DEBUG: 2023-06-04 18:53:41,709:      pdf_renderer.py:  470: printSegment: '
-   DEBUG: 2023-06-04 18:53:41,709:      pdf_renderer.py:  470: printSegment: s behavior.
-   DEBUG: 2023-06-04 18:53:41,709:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,709:      pdf_renderer.py:  470: printSegment: This functionality enables the bulb to indicate warnings or adjust its lighting based
-   DEBUG: 2023-06-04 18:53:41,709:      pdf_renderer.py:  470: printSegment: on environmental conditions, promoting safety and comfort.
-   DEBUG: 2023-06-04 18:53:41,709:      pdf_renderer.py:  470: printSegment:  5 
-   DEBUG: 2023-06-04 18:53:41,709:      pdf_renderer.py:  470: printSegment: Mood-based Modes:
-   DEBUG: 2023-06-04 18:53:41,709:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,710:      pdf_renderer.py:  470: printSegment: The smart light bulb offers pre-defined or customizable modes to create different
-   DEBUG: 2023-06-04 18:53:41,710:      pdf_renderer.py:  470: printSegment: moods or atmospheres.
-   DEBUG: 2023-06-04 18:53:41,710:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,710:      pdf_renderer.py:  470: printSegment: Users can select desired modes, such as Relaxing, Energizing, or Romantic, from the
-   DEBUG: 2023-06-04 18:53:41,710:      pdf_renderer.py:  470: printSegment: application.
-   DEBUG: 2023-06-04 18:53:41,710:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,710:      pdf_renderer.py:  470: printSegment: The backend server sends the mode configuration to the bulb via MQTT, adjusting
-   DEBUG: 2023-06-04 18:53:41,711:      pdf_renderer.py:  470: printSegment: its color, brightness, and effects accordingly.
-   DEBUG: 2023-06-04 18:53:41,711:      pdf_renderer.py:  470: printSegment: l
-   DEBUG: 2023-06-04 18:53:41,711:      pdf_renderer.py:  470: printSegment: This feature allows users to personalize their lighting experience and create desired
-   DEBUG: 2023-06-04 18:53:41,711:      pdf_renderer.py:  470: printSegment: ambiances for different occasions.
-   DEBUG: 2023-06-04 18:53:41,711:      pdf_renderer.py:  470: printSegment: Overall, these functionalities provide users with flexibility and automation in controlling their smart light bulbs. The
-   DEBUG: 2023-06-04 18:53:41,711:      pdf_renderer.py:  470: printSegment: integration of sensors, MQTT communication, and coordination with the backend server enable dynamic
-   DEBUG: 2023-06-04 18:53:41,711:      pdf_renderer.py:  470: printSegment: adjustments, energy efficiency, and a tailored lighting experience.
-   DEBUG: 2023-06-04 18:53:41,711:      pdf_renderer.py:  470: printSegment: Complete System Diagram
-   DEBUG: 2023-06-04 18:53:41,712:      pdf_renderer.py:  470: printSegment: flowchart LR
-   DEBUG: 2023-06-04 18:53:41,712:      pdf_renderer.py:  470: printSegment: subgraph User Applications
-   DEBUG: 2023-06-04 18:53:41,712:      pdf_renderer.py:  470: printSegment:   UA1((User Application 1))
-   DEBUG: 2023-06-04 18:53:41,712:      pdf_renderer.py:  470: printSegment:   UA2((User Application 2))
-   DEBUG: 2023-06-04 18:53:41,712:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,713:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
-   DEBUG: 2023-06-04 18:53:41,713:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
-   DEBUG: 2023-06-04 18:53:41,713:      pdf_renderer.py:  470: printSegment:   subgraph Database
-   DEBUG: 2023-06-04 18:53:41,713:      pdf_renderer.py:  470: printSegment:     DB
-   DEBUG: 2023-06-04 18:53:41,713:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,713:      pdf_renderer.py:  470: printSegment:   subgraph Message Queue
-   DEBUG: 2023-06-04 18:53:41,713:      pdf_renderer.py:  470: printSegment:     MQ
-   DEBUG: 2023-06-04 18:53:41,713:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,713:      pdf_renderer.py:  470: printSegment:   subgraph Identity and Access Management
-   DEBUG: 2023-06-04 18:53:41,714:      pdf_renderer.py:  470: printSegment:     IAM
-   DEBUG: 2023-06-04 18:53:41,714:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,714:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,714:      pdf_renderer.py:  470: printSegment: subgraph Smart Devices
-   DEBUG: 2023-06-04 18:53:41,714:      pdf_renderer.py:  470: printSegment:   subgraph Zigbee Gateway
-   DEBUG: 2023-06-04 18:53:41,714:      pdf_renderer.py:  470: printSegment:     ZG((Zigbee Gateway))
-   DEBUG: 2023-06-04 18:53:41,714:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:   subgraph Smart Light Bulbs
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:     LB((Smart Light Bulb))
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:   subgraph Motion Sensors
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:     MS((Motion Sensor))
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:   subgraph Light Sensors
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:     LS((Light Sensor))
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:   subgraph Environment Sensors
-   DEBUG: 2023-06-04 18:53:41,715:      pdf_renderer.py:  470: printSegment:     ES((Environment Sensors))
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment:   end
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment:   MM((Mood-based Modes))
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment: subgraph Invited Users
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment:   IU1((Invited User 1))
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment:   IU2((Invited User 2))
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Config| BS
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Config| BS
-   DEBUG: 2023-06-04 18:53:41,716:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| ZG
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: LB -->|Time-based Mode Command| MM
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: LB -->|Motion Sensor Command| MS
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: LB -->|Light Sensor Command| LS
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: LB -->|Environment Sensor Data| ES
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: LB -->|Mood-based Mode Command| MM
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: LB -->|State Change Notification| BS
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: LB -->|Sensor Data| BS
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: LB -->|Mode Change Notification| BS
-   DEBUG: 2023-06-04 18:53:41,717:      pdf_renderer.py:  470: printSegment: LB -->|State Change Notification| UA1
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: LB -->|State Change Notification| UA2
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Notifications| IU1
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Notifications| IU2
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Notifications| IU1
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Notifications| IU2
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Control| BS
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Control| BS
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Control| LB
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: LB -->|Motion Sensor Command| MS
-   DEBUG: 2023-06-04 18:53:41,718:      pdf_renderer.py:  470: printSegment: LB -->|Light Sensor Command| LS
-   DEBUG: 2023-06-04 18:53:41,719:      pdf_renderer.py:  470: printSegment: LB -->|Environment Sensor Data| ES
-   DEBUG: 2023-06-04 18:53:41,719:      pdf_renderer.py:  470: printSegment: LB -->|Mood-based Mode Command| MM
-   DEBUG: 2023-06-04 18:53:41,719:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Config| BS
-   DEBUG: 2023-06-04 18:53:41,719:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Config| BS
-   DEBUG: 2023-06-04 18:53:41,719:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| ZG
-   DEBUG: 2023-06-04 18:53:41,719:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB
-   DEBUG: 2023-06-04 18:53:41,719:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT State Change| LB
-   DEBUG: 2023-06-04 18:53:41,720:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT State Change| LB
-   DEBUG: 2023-06-04 18:53:41,720:      pdf_renderer.py:  470: printSegment: LB -->|Motion Detection Command| MS
-   DEBUG: 2023-06-04 18:53:41,720:      pdf_renderer.py:  470: printSegment: LB -->|Light Sensor Data| LS
-   DEBUG: 2023-06-04 18:53:41,720:      pdf_renderer.py:  470: printSegment: LB -->|Environment Sensor Data| ES
-   DEBUG: 2023-06-04 18:53:41,720:      pdf_renderer.py:  470: printSegment: LB -->|Mode Configuration| MM
-   DEBUG: 2023-06-04 18:53:41,720:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Access| BS
-   DEBUG: 2023-06-04 18:53:41,720:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Access| BS
-   DEBUG: 2023-06-04 18:53:41,720:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU1
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU2
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment:   BS
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment: subgraph Identity and Access Management
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment:   IAM
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment: subgraph User Applications
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment:   UA1
-   DEBUG: 2023-06-04 18:53:41,721:      pdf_renderer.py:  470: printSegment:   UA2
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment: subgraph Smart Devices
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment:   ZG
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment:   LB
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment:   MS
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment:   LS
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment:   ES
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment:   MM
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment: subgraph Sensors
-   DEBUG: 2023-06-04 18:53:41,722:      pdf_renderer.py:  470: printSegment:   MS
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment:   LS
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment:   ES
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment: end
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| UA1
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| UA2
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment: BS -->|MQTT State Change| LB
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU1
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU2
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Control| LB
-   DEBUG: 2023-06-04 18:53:41,723:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Notifications| UA1
-   DEBUG: 2023-06-04 18:53:41,724:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Notifications| UA2
-   DEBUG: 2023-06-04 18:53:41,724:      pdf_renderer.py:  470: printSegment: LB -->|Sensor Data| BS
-   DEBUG: 2023-06-04 18:53:41,724:      pdf_renderer.py:  470: printSegment: LS -->|Light Sensor Data| LB
-   DEBUG: 2023-06-04 18:53:41,724:      pdf_renderer.py:  470: printSegment: MS -->|Motion Detection Command| LB
-   DEBUG: 2023-06-04 18:53:41,724:      pdf_renderer.py:  470: printSegment: ES -->|Environment Sensor Data| LB
-   DEBUG: 2023-06-04 18:53:41,724:      pdf_renderer.py:  470: printSegment: MM -->|Mode Configuration| LB
-   DEBUG: 2023-06-04 18:53:41,724:      pdf_renderer.py:   53: 0, [2, 'Simple Architecture Description', 1, 70.0]
-   DEBUG: 2023-06-04 18:53:41,724:      pdf_renderer.py:   53: 1, [3, '1. Backend and Synchronization:', 1, 457.2]
-   DEBUG: 2023-06-04 18:53:41,724:      pdf_renderer.py:   53: 2, [3, '2. User Access and Authentication:', 1, 557.9999999999999]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 3, [3, '3. Hybrid Application Development:', 1, 646.7999999999998]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 4, [3, '4. Integration with Home IoT Devices:', 2, 72.0]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 5, [2, 'Comparative Study of IoT Technologies and Protocols', 2, 161.20000000000002]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 6, [2, 'Technical stack combinations for the development', 4, 248.8]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 7, [3, 'Comparative analysis of technical stacks:', 4, 654.0]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 8, [2, 'Why suggest Zigbee + MQTT ?', 5, 182.8]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 9, [2, 'Communication Flow', 6, 224.8]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 10, [3, 'Configuration and Control:', 7, 542.4]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 11, [3, 'Physical Button Interaction:', 7, 631.1999999999999]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 12, [3, 'User Access and Sharing:', 8, 92.4]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 13, [2, 'Simple Functionality interaction diagrams', 8, 193.60000000000002]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 14, [3, 'Time-based Modes', 8, 226.80000000000004]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 15, [3, 'Motion Sensor Mode', 8, 411.6]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 16, [3, 'Light Sensor Mode', 8, 596.4]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 17, [3, 'Environment-based Sensors', 9, 140.4]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 18, [3, 'Mood-based Modes', 9, 325.2]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 19, [2, 'Full System Interaction with Features', 9, 510.4]
-   DEBUG: 2023-06-04 18:53:41,725:      pdf_renderer.py:   53: 20, [3, 'Complete System Diagram', 10, 524.4]
-   ERROR: 2023-06-04 18:53:41,725:      pdf_renderer.py:   57: Bad heading level.  More information:
-Traceback (most recent call last):
-  File "C:\Users\Rushikesh Patade\AppData\Local\Programs\Python\Python39\lib\site-packages\mdpdf\pdf_renderer.py", line 55, in __del__
-    self.doc.set_toc(self.toc)
-  File "C:\Users\Rushikesh Patade\AppData\Local\Programs\Python\Python39\lib\site-packages\fitz\utils.py", line 1325, in set_toc
-    raise ValueError("hierarchy level of item 0 must be 1")
-ValueError: hierarchy level of item 0 must be 1
-    INFO: 2023-06-04 18:53:41,727:      pdf_renderer.py:   59: [3, '1. Backend and Synchronization:', 1, 457.2]
+    INFO: 2023-06-04 20:35:23,876:               log.py:   20: Logging to D:\internships\lamintus\mdpdf.log
+   DEBUG: 2023-06-04 20:35:23,876:               cli.py:  103: research-document.md
+    INFO: 2023-06-04 20:35:23,877:         converter.py:   14: research-document.md
+   DEBUG: 2023-06-04 20:35:23,893:      pdf_renderer.py:  470: printSegment: Overview of Research Document
+   DEBUG: 2023-06-04 20:35:23,894:      pdf_renderer.py:  470: printSegment: Table of Contents
+   DEBUG: 2023-06-04 20:35:23,895:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,896:      pdf_renderer.py:  470: printSegment: Simple Architecture Description
+   ERROR: 2023-06-04 20:35:23,897:      pdf_renderer.py:  217: D:\internships\lamintus\research-document.md:5: #simple-architecture-description: No such file or directory
+   DEBUG: 2023-06-04 20:35:23,898:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,898:      pdf_renderer.py:  470: printSegment: Comparative Study of IoT Technologies and Protocols
+   ERROR: 2023-06-04 20:35:23,898:      pdf_renderer.py:  217: D:\internships\lamintus\research-document.md:6: #comparative-study-of-iot-technologies-and-protocols: No such file or directory
+   DEBUG: 2023-06-04 20:35:23,898:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,899:      pdf_renderer.py:  470: printSegment: Technical stack combinations for the development
+   ERROR: 2023-06-04 20:35:23,899:      pdf_renderer.py:  217: D:\internships\lamintus\research-document.md:7: #technical-stack-combinations-for-the-development: No such file or directory
+   DEBUG: 2023-06-04 20:35:23,899:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,900:      pdf_renderer.py:  470: printSegment: Why suggest Zigbee + MQTT ?
+   ERROR: 2023-06-04 20:35:23,900:      pdf_renderer.py:  217: D:\internships\lamintus\research-document.md:8: #why-suggest-zigbee--mqtt-: No such file or directory
+   DEBUG: 2023-06-04 20:35:23,900:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,900:      pdf_renderer.py:  470: printSegment: Communication Flow
+   ERROR: 2023-06-04 20:35:23,901:      pdf_renderer.py:  217: D:\internships\lamintus\research-document.md:9: #communication-flow: No such file or directory
+   DEBUG: 2023-06-04 20:35:23,901:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,901:      pdf_renderer.py:  470: printSegment: Simple Functionality interaction diagrams
+   ERROR: 2023-06-04 20:35:23,901:      pdf_renderer.py:  217: D:\internships\lamintus\research-document.md:10: #simple-functionality-interaction-diagrams: No such file or directory
+   DEBUG: 2023-06-04 20:35:23,902:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,902:      pdf_renderer.py:  470: printSegment: Full System Interaction with Features
+   ERROR: 2023-06-04 20:35:23,902:      pdf_renderer.py:  217: D:\internships\lamintus\research-document.md:11: #full-system-interaction-with-features: No such file or directory
+   DEBUG: 2023-06-04 20:35:23,902:      pdf_renderer.py:  470: printSegment: Simple Architecture Description
+   DEBUG: 2023-06-04 20:35:23,903:      pdf_renderer.py:  470: printSegment: graph LR
+   DEBUG: 2023-06-04 20:35:23,904:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb System
+   DEBUG: 2023-06-04 20:35:23,904:      pdf_renderer.py:  470: printSegment:     A(Smart Light Bulb) <-->|Zigbee| B(Zigbee Gateway)
+   DEBUG: 2023-06-04 20:35:23,904:      pdf_renderer.py:  470: printSegment:     B <-->|MQTT| C(Backend Server)
+   DEBUG: 2023-06-04 20:35:23,904:      pdf_renderer.py:  470: printSegment:     C -->|MQTT| D(User Applications)
+   DEBUG: 2023-06-04 20:35:23,904:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,904:      pdf_renderer.py:  470: printSegment: subgraph Surrounding Sensors
+   DEBUG: 2023-06-04 20:35:23,905:      pdf_renderer.py:  470: printSegment:     E(Daylight Sensor) -->|Zigbee| B
+   DEBUG: 2023-06-04 20:35:23,905:      pdf_renderer.py:  470: printSegment:     F(Motion Sensor) -->|Zigbee| B
+   DEBUG: 2023-06-04 20:35:23,905:      pdf_renderer.py:  470: printSegment:     G(Time Sensor) -->|Zigbee| B
+   DEBUG: 2023-06-04 20:35:23,905:      pdf_renderer.py:  470: printSegment:     H(Environment-based Sensors) -->|Zigbee| B
+   DEBUG: 2023-06-04 20:35:23,905:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,905:      pdf_renderer.py:  470: printSegment: subgraph Home IoT Devices
+   DEBUG: 2023-06-04 20:35:23,905:      pdf_renderer.py:  470: printSegment:     I(Alexa) -->|Skills Kit| C
+   DEBUG: 2023-06-04 20:35:23,905:      pdf_renderer.py:  470: printSegment:     J(Google Home) -->|Actions on Google| C
+   DEBUG: 2023-06-04 20:35:23,906:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,906:      pdf_renderer.py:  470: printSegment: style A fill:#85C1E9,stroke:#1F618D
+   DEBUG: 2023-06-04 20:35:23,906:      pdf_renderer.py:  470: printSegment: style B fill:#D7BDE2,stroke:#5B2C6F
+   DEBUG: 2023-06-04 20:35:23,906:      pdf_renderer.py:  470: printSegment: style C fill:#82E0AA,stroke:#1E8449
+   DEBUG: 2023-06-04 20:35:23,906:      pdf_renderer.py:  470: printSegment: style D fill:#F9E79F,stroke:#B7950B
+   DEBUG: 2023-06-04 20:35:23,906:      pdf_renderer.py:  470: printSegment: style E fill:#AED6F1,stroke:#2471A3
+   DEBUG: 2023-06-04 20:35:23,906:      pdf_renderer.py:  470: printSegment: style F fill:#F8C471,stroke:#D35400
+   DEBUG: 2023-06-04 20:35:23,906:      pdf_renderer.py:  470: printSegment: style G fill:#D2B4DE,stroke:#7D3C98
+   DEBUG: 2023-06-04 20:35:23,906:      pdf_renderer.py:  470: printSegment: style H fill:#F5B7B1,stroke:#E74C3C
+   DEBUG: 2023-06-04 20:35:23,907:      pdf_renderer.py:  470: printSegment: style I fill:#A9DFBF,stroke:#196F3D
+   DEBUG: 2023-06-04 20:35:23,907:      pdf_renderer.py:  470: printSegment: style J fill:#FADBD8,stroke:#D91E18
+   DEBUG: 2023-06-04 20:35:23,907:      pdf_renderer.py:  470: printSegment: The proposed architecture for the smart light bulb system with seamless connectivity to home IoT devices like Alexa
+   DEBUG: 2023-06-04 20:35:23,907:      pdf_renderer.py:  470: printSegment: and Google Home can be described as follows:
+   DEBUG: 2023-06-04 20:35:23,907:      pdf_renderer.py:  470: printSegment: 1. Backend and Synchronization:
+   DEBUG: 2023-06-04 20:35:23,907:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,907:      pdf_renderer.py:  470: printSegment: Utilize serverless functions (e.g., AWS Lambda) for handling backend logic and API endpoints.
+   DEBUG: 2023-06-04 20:35:23,908:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,908:      pdf_renderer.py:  470: printSegment: Use Firebase Realtime Database to maintain the state of IoT nodes and applications, ensuring
+   DEBUG: 2023-06-04 20:35:23,908:      pdf_renderer.py:  470: printSegment: real-time synchronization and offline capabilities.
+   DEBUG: 2023-06-04 20:35:23,908:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,908:      pdf_renderer.py:  470: printSegment: Employ Apache Kafka or AWS IoT Core for pub/sub messaging, enabling real-time updates and
+   DEBUG: 2023-06-04 20:35:23,908:      pdf_renderer.py:  470: printSegment: notifications to connected applications and home IoT devices.
+   DEBUG: 2023-06-04 20:35:23,909:      pdf_renderer.py:  470: printSegment: 2. User Access and Authentication:
+   DEBUG: 2023-06-04 20:35:23,909:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,909:      pdf_renderer.py:  470: printSegment: Integrate an Identity and Access Management (IAM) system like AWS Cognito or Auth0 for user
+   DEBUG: 2023-06-04 20:35:23,910:      pdf_renderer.py:  470: printSegment: authentication and authorization.
+   DEBUG: 2023-06-04 20:35:23,910:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,910:      pdf_renderer.py:  470: printSegment: Enable sharing functionality by leveraging the IAM system to securely manage user access to light
+   DEBUG: 2023-06-04 20:35:23,910:      pdf_renderer.py:  470: printSegment: bulbs.
+   DEBUG: 2023-06-04 20:35:23,910:      pdf_renderer.py:  470: printSegment: 3. Hybrid Application Development:
+   DEBUG: 2023-06-04 20:35:23,911:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,911:      pdf_renderer.py:  470: printSegment: Utilize a hybrid framework like React Native or Flutter to build applications that work seamlessly
+   DEBUG: 2023-06-04 20:35:23,911:      pdf_renderer.py:  470: printSegment: on iOS, Android, and Web platforms.
+   DEBUG: 2023-06-04 20:35:23,911:      pdf_renderer.py:  470: printSegment: 4. Integration with Home IoT Devices:
+   DEBUG: 2023-06-04 20:35:23,911:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,911:      pdf_renderer.py:  470: printSegment: Integrate with Alexa using the Alexa Skills Kit (ASK) and AWS Lambda for developing Alexa
+   DEBUG: 2023-06-04 20:35:23,911:      pdf_renderer.py:  470: printSegment: skills.
+   DEBUG: 2023-06-04 20:35:23,912:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,912:      pdf_renderer.py:  470: printSegment: Integrate with Google Home using the Actions on Google platform and Cloud Functions for
+   DEBUG: 2023-06-04 20:35:23,912:      pdf_renderer.py:  470: printSegment: Firebase to create conversational actions for Google Assistant.
+   DEBUG: 2023-06-04 20:35:23,912:      pdf_renderer.py:  470: printSegment: Comparative Study of IoT Technologies and Protocols
+   DEBUG: 2023-06-04 20:35:23,912:      pdf_renderer.py:  470: printSegment: Here
+   DEBUG: 2023-06-04 20:35:23,912:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-06-04 20:35:23,912:      pdf_renderer.py:  470: printSegment: s a comparison table for Zigbee, MQTT, Z-Wave, Wi-Fi Direct, AWS IoT, and Cloud Storage based on
+   DEBUG: 2023-06-04 20:35:23,913:      pdf_renderer.py:  470: printSegment: various factors:
+   DEBUG: 2023-06-04 20:35:23,913:      pdf_renderer.py:  470: printSegment: | Technology                 | Maintenance Cost | Setup Cost | Setup Time | Setup Complexity | Scalability | Pricing  |
+   DEBUG: 2023-06-04 20:35:23,913:      pdf_renderer.py:  470: printSegment: Network Consumption | Interferences | Pros                                                  | Cons                                            |
+   DEBUG: 2023-06-04 20:35:23,913:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,913:      pdf_renderer.py:  470: printSegment: |
+   DEBUG: 2023-06-04 20:35:23,914:      pdf_renderer.py:  470: printSegment: -------------------------- | ---------------- | ---------- | ---------- | ---------------- | ----------- | -------- | ------------------- |
+   DEBUG: 2023-06-04 20:35:23,914:      pdf_renderer.py:  470: printSegment: ------------- | ----------------------------------------------------- | ----------------------------------------------- |
+   DEBUG: 2023-06-04 20:35:23,914:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,914:      pdf_renderer.py:  470: printSegment: | Zigbee               
+   DEBUG: 2023-06-04 20:35:23,915:      pdf_renderer.py:  470: printSegment:      | Medium           | Medium     | Medium     | Medium           | High        | Moderate | Low                 | Low           | -
+   DEBUG: 2023-06-04 20:35:23,915:      pdf_renderer.py:  470: printSegment: Low power consumption                               | - Limited range                                 |
+   DEBUG: 2023-06-04 20:35:23,915:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,915:      pdf_renderer.py:  470: printSegment: | MQTT                       | Low         
+   DEBUG: 2023-06-04 20:35:23,915:      pdf_renderer.py:  470: printSegment:     | Low        | Low        | Low              | High        | Low      | Low                 | Low           | - Lightweight and efficient
+   DEBUG: 2023-06-04 20:35:23,916:      pdf_renderer.py:  470: printSegment: messaging protocol        | - Requires an additional communication layer    |
+   DEBUG: 2023-06-04 20:35:23,916:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,916:      pdf_renderer.py:  470: printSegment: | Z-Wave                     | Low              |
+   DEBUG: 2023-06-04 20:35:23,916:      pdf_renderer.py:  470: printSegment: High       | Medium     | High             | High        | High     | Low                 | Low           | - Secure and reliable wireless
+   DEBUG: 2023-06-04 20:35:23,916:      pdf_renderer.py:  470: printSegment: communication          | - Limited device compatibility and ecosystem    |
+   DEBUG: 2023-06-04 20:35:23,917:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,917:      pdf_renderer.py:  470: printSegment: | Wi-Fi Direct               | High             | Low  
+   DEBUG: 2023-06-04 20:35:23,917:      pdf_renderer.py:  470: printSegment:      | Low        | Low              | High        | Low      | High                | Medium        | - Direct connection between
+   DEBUG: 2023-06-04 20:35:23,917:      pdf_renderer.py:  470: printSegment: devices without a network | - High power consumption                        |
+   DEBUG: 2023-06-04 20:35:23,917:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,918:      pdf_renderer.py:  470: printSegment: | AWS IoT                    | High             | High   
+   DEBUG: 2023-06-04 20:35:23,918:      pdf_renderer.py:  470: printSegment:    | High       | High             | High        | High     | Low                 | Low           | - Integration with AWS services and
+   DEBUG: 2023-06-04 20:35:23,918:      pdf_renderer.py:  470: printSegment: scalability       | - Higher cost compared to self-hosted solutions |
+   DEBUG: 2023-06-04 20:35:23,918:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,919:      pdf_renderer.py:  470: printSegment: | Cloud Storage              | Low              | Low        |
+   DEBUG: 2023-06-04 20:35:23,919:      pdf_renderer.py:  470: printSegment: Low        | Low              | High        | Variable | High                | Low           | - Easy access to data from anywhere        
+   DEBUG: 2023-06-04 20:35:23,919:      pdf_renderer.py:  470: printSegment:           | - Relies on a stable internet connection        |
+   DEBUG: 2023-06-04 20:35:23,919:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,919:      pdf_renderer.py:  470: printSegment: | Bluetooth Classic          | Low              | Low        | Low        |
+   DEBUG: 2023-06-04 20:35:23,920:      pdf_renderer.py:  470: printSegment: Low              | Medium      | Low      | Low                 | Medium        | - Wide device compatibility                           | -
+   DEBUG: 2023-06-04 20:35:23,920:      pdf_renderer.py:  470: printSegment: Limited range and data throughput             |
+   DEBUG: 2023-06-04 20:35:23,920:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,920:      pdf_renderer.py:  470: printSegment: | Bluetooth Low Energy (BLE) | Low              | Low        | Low        |
+   DEBUG: 2023-06-04 20:35:23,920:      pdf_renderer.py:  470: printSegment: Low              | High        | Low      | Low                 | Low           | - Low power consumption                               | -
+   DEBUG: 2023-06-04 20:35:23,921:      pdf_renderer.py:  470: printSegment: Limited data payload and range                |
+   DEBUG: 2023-06-04 20:35:23,921:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,921:      pdf_renderer.py:  470: printSegment: | Bluetooth Mesh             | Medium           | Medium     | Medium     |
+   DEBUG: 2023-06-04 20:35:23,921:      pdf_renderer.py:  470: printSegment: Medium           | High        | Low      | Low                 | Medium        | - Scalable mesh network                               | -
+   DEBUG: 2023-06-04 20:35:23,921:      pdf_renderer.py:  470: printSegment: Higher setup complexity and maintenance cost  |
+   DEBUG: 2023-06-04 20:35:23,922:      pdf_renderer.py:  470: printSegment: Choosing the right tech stack for an IoT application depends on several factors, including the specific requirements
+   DEBUG: 2023-06-04 20:35:23,922:      pdf_renderer.py:  470: printSegment: of the application, the environment in which it will operate, and the available resources. Let
+   DEBUG: 2023-06-04 20:35:23,922:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-06-04 20:35:23,922:      pdf_renderer.py:  470: printSegment: s analyze the table to
+   DEBUG: 2023-06-04 20:35:23,922:      pdf_renderer.py:  470: printSegment: understand the considerations for selecting the appropriate technology stack:
+   DEBUG: 2023-06-04 20:35:23,922:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-06-04 20:35:23,922:      pdf_renderer.py:  470: printSegment: Zigbee:
+   DEBUG: 2023-06-04 20:35:23,923:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,923:      pdf_renderer.py:  470: printSegment: Pros: Zigbee offers low power consumption and is suitable for battery-operated
+   DEBUG: 2023-06-04 20:35:23,923:      pdf_renderer.py:  470: printSegment: devices. It provides moderate pricing and low network consumption.
+   DEBUG: 2023-06-04 20:35:23,924:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,924:      pdf_renderer.py:  470: printSegment: Cons: However, Zigbee has limited range, which may restrict its usability in larger
+   DEBUG: 2023-06-04 20:35:23,924:      pdf_renderer.py:  470: printSegment: deployments.
+   DEBUG: 2023-06-04 20:35:23,924:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-06-04 20:35:23,924:      pdf_renderer.py:  470: printSegment: MQTT:
+   DEBUG: 2023-06-04 20:35:23,924:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,925:      pdf_renderer.py:  470: printSegment: Pros: MQTT is a lightweight and efficient messaging protocol, making it ideal for
+   DEBUG: 2023-06-04 20:35:23,925:      pdf_renderer.py:  470: printSegment: IoT applications. It has low maintenance costs, low setup complexity, and low
+   DEBUG: 2023-06-04 20:35:23,925:      pdf_renderer.py:  470: printSegment: network consumption.
+   DEBUG: 2023-06-04 20:35:23,925:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,925:      pdf_renderer.py:  470: printSegment: Cons: MQTT requires an additional communication layer, which may increase
+   DEBUG: 2023-06-04 20:35:23,925:      pdf_renderer.py:  470: printSegment: implementation complexity.
+   DEBUG: 2023-06-04 20:35:23,925:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2023-06-04 20:35:23,926:      pdf_renderer.py:  470: printSegment: Z-Wave:
+   DEBUG: 2023-06-04 20:35:23,926:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,926:      pdf_renderer.py:  470: printSegment: Pros: Z-Wave is known for its secure and reliable wireless communication. It offers
+   DEBUG: 2023-06-04 20:35:23,926:      pdf_renderer.py:  470: printSegment: high scalability and has a low maintenance cost.
+   DEBUG: 2023-06-04 20:35:23,926:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,926:      pdf_renderer.py:  470: printSegment: Cons: Z-Wave has limited device compatibility and ecosystem, which may limit the
+   DEBUG: 2023-06-04 20:35:23,926:      pdf_renderer.py:  470: printSegment: options for integrating with other devices or systems.
+   DEBUG: 2023-06-04 20:35:23,927:      pdf_renderer.py:  470: printSegment:  4 
+   DEBUG: 2023-06-04 20:35:23,927:      pdf_renderer.py:  470: printSegment: Wi-Fi Direct:
+   DEBUG: 2023-06-04 20:35:23,927:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,927:      pdf_renderer.py:  470: printSegment: Pros: Wi-Fi Direct allows direct device-to-device connection without the need for a
+   DEBUG: 2023-06-04 20:35:23,927:      pdf_renderer.py:  470: printSegment: network. It offers low setup costs and low complexity.
+   DEBUG: 2023-06-04 20:35:23,927:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,927:      pdf_renderer.py:  470: printSegment: Cons: However, Wi-Fi Direct consumes high network resources and requires higher
+   DEBUG: 2023-06-04 20:35:23,928:      pdf_renderer.py:  470: printSegment: power consumption, which may not be suitable for battery-powered devices.
+   DEBUG: 2023-06-04 20:35:23,928:      pdf_renderer.py:  470: printSegment:  5 
+   DEBUG: 2023-06-04 20:35:23,928:      pdf_renderer.py:  470: printSegment: AWS IoT:
+   DEBUG: 2023-06-04 20:35:23,928:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,928:      pdf_renderer.py:  470: printSegment: Pros: AWS IoT provides seamless integration with AWS services and offers
+   DEBUG: 2023-06-04 20:35:23,928:      pdf_renderer.py:  470: printSegment: scalability. It enables easy access to data from anywhere and provides reliable cloud
+   DEBUG: 2023-06-04 20:35:23,928:      pdf_renderer.py:  470: printSegment: storage.
+   DEBUG: 2023-06-04 20:35:23,929:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,929:      pdf_renderer.py:  470: printSegment: Cons: However, AWS IoT has higher setup costs, high maintenance costs, and
+   DEBUG: 2023-06-04 20:35:23,929:      pdf_renderer.py:  470: printSegment: higher pricing compared to self-hosted solutions.
+   DEBUG: 2023-06-04 20:35:23,929:      pdf_renderer.py:  470: printSegment:  6 
+   DEBUG: 2023-06-04 20:35:23,929:      pdf_renderer.py:  470: printSegment: Cloud Storage:
+   DEBUG: 2023-06-04 20:35:23,929:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,929:      pdf_renderer.py:  470: printSegment: Pros: Cloud storage enables easy access to data from anywhere and offers high
+   DEBUG: 2023-06-04 20:35:23,930:      pdf_renderer.py:  470: printSegment: scalability.
+   DEBUG: 2023-06-04 20:35:23,930:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,930:      pdf_renderer.py:  470: printSegment: Cons: It relies on a stable internet connection and may have variable pricing based
+   DEBUG: 2023-06-04 20:35:23,930:      pdf_renderer.py:  470: printSegment: on usage.
+   DEBUG: 2023-06-04 20:35:23,930:      pdf_renderer.py:  470: printSegment: When choosing the right tech stack for an IoT application, consider the following factors:
+   DEBUG: 2023-06-04 20:35:23,930:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-06-04 20:35:23,930:      pdf_renderer.py:  470: printSegment: Power consumption: If low power consumption is crucial, Zigbee or MQTT may be preferred.
+   DEBUG: 2023-06-04 20:35:23,931:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-06-04 20:35:23,931:      pdf_renderer.py:  470: printSegment: Range: Consider the coverage area and choose a technology that provides sufficient range, such as
+   DEBUG: 2023-06-04 20:35:23,931:      pdf_renderer.py:  470: printSegment: Wi-Fi Direct or AWS IoT.
+   DEBUG: 2023-06-04 20:35:23,931:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2023-06-04 20:35:23,931:      pdf_renderer.py:  470: printSegment: Security: Evaluate the security features provided by the technology, such as Z-Wave
+   DEBUG: 2023-06-04 20:35:23,931:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-06-04 20:35:23,931:      pdf_renderer.py:  470: printSegment: s secure
+   DEBUG: 2023-06-04 20:35:23,932:      pdf_renderer.py:  470: printSegment: communication.
+   DEBUG: 2023-06-04 20:35:23,932:      pdf_renderer.py:  470: printSegment:  4 
+   DEBUG: 2023-06-04 20:35:23,932:      pdf_renderer.py:  470: printSegment: Device compatibility: Ensure that the selected technology supports the devices you intend to use in
+   DEBUG: 2023-06-04 20:35:23,932:      pdf_renderer.py:  470: printSegment: your IoT application.
+   DEBUG: 2023-06-04 20:35:23,932:      pdf_renderer.py:  470: printSegment:  5 
+   DEBUG: 2023-06-04 20:35:23,932:      pdf_renderer.py:  470: printSegment: Integration requirements: If integration with other services or systems is essential, AWS IoT
+   DEBUG: 2023-06-04 20:35:23,932:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-06-04 20:35:23,933:      pdf_renderer.py:  470: printSegment: s
+   DEBUG: 2023-06-04 20:35:23,933:      pdf_renderer.py:  470: printSegment: seamless integration may be advantageous.
+   DEBUG: 2023-06-04 20:35:23,933:      pdf_renderer.py:  470: printSegment:  6 
+   DEBUG: 2023-06-04 20:35:23,933:      pdf_renderer.py:  470: printSegment: Cost: Consider the maintenance costs, setup costs, and pricing associated with the technology stack.
+   DEBUG: 2023-06-04 20:35:23,933:      pdf_renderer.py:  470: printSegment: Choosing the right tech stack for an IoT application depends on several factors and requirements. Here
+   DEBUG: 2023-06-04 20:35:23,933:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-06-04 20:35:23,933:      pdf_renderer.py:  470: printSegment: s a brief
+   DEBUG: 2023-06-04 20:35:23,933:      pdf_renderer.py:  470: printSegment: discussion based on the comparison table provided:
+   DEBUG: 2023-06-04 20:35:23,934:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-06-04 20:35:23,934:      pdf_renderer.py:  470: printSegment: Zigbee: Zigbee offers low power consumption and is suitable for applications that require a
+   DEBUG: 2023-06-04 20:35:23,934:      pdf_renderer.py:  470: printSegment: moderate setup cost, moderate setup time, and scalability. It is commonly used in smart home
+   DEBUG: 2023-06-04 20:35:23,934:      pdf_renderer.py:  470: printSegment: automation systems. However, its limited range may be a drawback for larger deployments.
+   DEBUG: 2023-06-04 20:35:23,935:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-06-04 20:35:23,935:      pdf_renderer.py:  470: printSegment: MQTT: MQTT is a lightweight and efficient messaging protocol, making it ideal for
+   DEBUG: 2023-06-04 20:35:23,935:      pdf_renderer.py:  470: printSegment: resource-constrained devices. It has low maintenance cost, low setup cost, and low setup time.
+   DEBUG: 2023-06-04 20:35:23,936:      pdf_renderer.py:  470: printSegment: MQTT is commonly used in IoT applications where low overhead and reliable messaging are
+   DEBUG: 2023-06-04 20:35:23,936:      pdf_renderer.py:  470: printSegment: crucial. However, it requires an additional communication layer to establish the MQTT broker.
+   DEBUG: 2023-06-04 20:35:23,936:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2023-06-04 20:35:23,936:      pdf_renderer.py:  470: printSegment: Z-Wave: Z-Wave provides secure and reliable wireless communication. It offers high scalability and
+   DEBUG: 2023-06-04 20:35:23,936:      pdf_renderer.py:  470: printSegment: is suitable for applications where a high level of interoperability is required. However, Z-Wave
+   DEBUG: 2023-06-04 20:35:23,936:      pdf_renderer.py:  470: printSegment: devices may have limited compatibility with other ecosystems, and the setup cost can be higher
+   DEBUG: 2023-06-04 20:35:23,937:      pdf_renderer.py:  470: printSegment: compared to other technologies.
+   DEBUG: 2023-06-04 20:35:23,937:      pdf_renderer.py:  470: printSegment:  4 
+   DEBUG: 2023-06-04 20:35:23,937:      pdf_renderer.py:  470: printSegment: Wi-Fi Direct: Wi-Fi Direct allows direct device-to-device connection without the need for a network
+   DEBUG: 2023-06-04 20:35:23,937:      pdf_renderer.py:  470: printSegment: infrastructure. It has low setup cost and low setup time, making it suitable for peer-to-peer IoT
+   DEBUG: 2023-06-04 20:35:23,937:      pdf_renderer.py:  470: printSegment: applications. However, Wi-Fi Direct consumes higher network resources and may have moderate
+   DEBUG: 2023-06-04 20:35:23,937:      pdf_renderer.py:  470: printSegment: interferences.
+   DEBUG: 2023-06-04 20:35:23,938:      pdf_renderer.py:  470: printSegment:  5 
+   DEBUG: 2023-06-04 20:35:23,938:      pdf_renderer.py:  470: printSegment: AWS IoT: AWS IoT offers integration with various AWS services and provides scalability for
+   DEBUG: 2023-06-04 20:35:23,938:      pdf_renderer.py:  470: printSegment: cloud-based IoT applications. It is suitable for enterprise-level deployments. However, it has higher
+   DEBUG: 2023-06-04 20:35:23,938:      pdf_renderer.py:  470: printSegment: maintenance cost, setup cost, and setup time compared to other technologies. AWS IoT may be
+   DEBUG: 2023-06-04 20:35:23,938:      pdf_renderer.py:  470: printSegment: more suitable for projects with specific requirements that align with AWS services.
+   DEBUG: 2023-06-04 20:35:23,939:      pdf_renderer.py:  470: printSegment:  6 
+   DEBUG: 2023-06-04 20:35:23,939:      pdf_renderer.py:  470: printSegment: Cloud Storage: Cloud storage allows easy access to data from anywhere, making it suitable for
+   DEBUG: 2023-06-04 20:35:23,939:      pdf_renderer.py:  470: printSegment: applications that require remote data management and analysis. It has low maintenance cost and low
+   DEBUG: 2023-06-04 20:35:23,939:      pdf_renderer.py:  470: printSegment: setup cost. However, it relies on a stable internet connection, and the network consumption can be
+   DEBUG: 2023-06-04 20:35:23,939:      pdf_renderer.py:  470: printSegment: high.
+   DEBUG: 2023-06-04 20:35:23,940:      pdf_renderer.py:  470: printSegment:  7 
+   DEBUG: 2023-06-04 20:35:23,940:      pdf_renderer.py:  470: printSegment: Bluetooth: Bluetooth offers low power consumption and is suitable for battery-operated devices.
+   DEBUG: 2023-06-04 20:35:23,940:      pdf_renderer.py:  470: printSegment: Bluetooth Classic provides wide device compatibility but has limited range and data throughput.
+   DEBUG: 2023-06-04 20:35:23,940:      pdf_renderer.py:  470: printSegment: BLE is suitable for low power applications with small data payloads. Bluetooth Mesh offers a
+   DEBUG: 2023-06-04 20:35:23,941:      pdf_renderer.py:  470: printSegment: scalable mesh network but has higher setup complexity and maintenance cost compared to other
+   DEBUG: 2023-06-04 20:35:23,941:      pdf_renderer.py:  470: printSegment: Bluetooth technologies.
+   DEBUG: 2023-06-04 20:35:23,941:      pdf_renderer.py:  470: printSegment: Technical stack combinations for the development
+   DEBUG: 2023-06-04 20:35:23,941:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-06-04 20:35:23,941:      pdf_renderer.py:  470: printSegment: LoRaWAN + MQTT + AWS IoT + Cloud Storage:
+   DEBUG: 2023-06-04 20:35:23,942:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,942:      pdf_renderer.py:  470: printSegment: LoRaWAN for long-range, low-power wireless communication.
+   DEBUG: 2023-06-04 20:35:23,942:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,942:      pdf_renderer.py:  470: printSegment: MQTT as the messaging protocol for lightweight communication.
+   DEBUG: 2023-06-04 20:35:23,942:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,943:      pdf_renderer.py:  470: printSegment: AWS IoT for device management, data processing, and analytics.
+   DEBUG: 2023-06-04 20:35:23,943:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,943:      pdf_renderer.py:  470: printSegment: Cloud storage for storing and retrieving IoT data.
+   DEBUG: 2023-06-04 20:35:23,943:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-06-04 20:35:23,943:      pdf_renderer.py:  470: printSegment: Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing:
+   DEBUG: 2023-06-04 20:35:23,943:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,943:      pdf_renderer.py:  470: printSegment: BLE for short-range communication with low power consumption.
+   DEBUG: 2023-06-04 20:35:23,944:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,944:      pdf_renderer.py:  470: printSegment: MQTT for efficient and reliable messaging.
+   DEBUG: 2023-06-04 20:35:23,944:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,944:      pdf_renderer.py:  470: printSegment: Azure IoT for device management, data processing, and edge computing
+   DEBUG: 2023-06-04 20:35:23,944:      pdf_renderer.py:  470: printSegment: capabilities.
+   DEBUG: 2023-06-04 20:35:23,944:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,944:      pdf_renderer.py:  470: printSegment: Edge computing to perform real-time analytics and decision-making at the network
+   DEBUG: 2023-06-04 20:35:23,945:      pdf_renderer.py:  470: printSegment: edge.
+   DEBUG: 2023-06-04 20:35:23,945:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2023-06-04 20:35:23,945:      pdf_renderer.py:  470: printSegment: Thread + CoAP + Google Cloud IoT + Cloud Functions:
+   DEBUG: 2023-06-04 20:35:23,945:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,945:      pdf_renderer.py:  470: printSegment: Thread as a low-power, mesh networking protocol for IoT devices.
+   DEBUG: 2023-06-04 20:35:23,945:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,946:      pdf_renderer.py:  470: printSegment: CoAP (Constrained Application Protocol) for resource-constrained devices and
+   DEBUG: 2023-06-04 20:35:23,946:      pdf_renderer.py:  470: printSegment: efficient communication.
+   DEBUG: 2023-06-04 20:35:23,946:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,946:      pdf_renderer.py:  470: printSegment: Google Cloud IoT for device registration, management, and integration with Google
+   DEBUG: 2023-06-04 20:35:23,946:      pdf_renderer.py:  470: printSegment: Cloud services.
+   DEBUG: 2023-06-04 20:35:23,946:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,946:      pdf_renderer.py:  470: printSegment: Cloud Functions to trigger serverless functions and perform actions based on IoT
+   DEBUG: 2023-06-04 20:35:23,947:      pdf_renderer.py:  470: printSegment: data.
+   DEBUG: 2023-06-04 20:35:23,947:      pdf_renderer.py:  470: printSegment:  4 
+   DEBUG: 2023-06-04 20:35:23,947:      pdf_renderer.py:  470: printSegment: NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain ( not low cost ):
+   DEBUG: 2023-06-04 20:35:23,947:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,948:      pdf_renderer.py:  470: printSegment: NB-IoT (Narrowband IoT) for wide-area coverage and low-power communication.
+   DEBUG: 2023-06-04 20:35:23,948:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,948:      pdf_renderer.py:  470: printSegment: MQTT for lightweight messaging between devices and the cloud.
+   DEBUG: 2023-06-04 20:35:23,948:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,949:      pdf_renderer.py:  470: printSegment: IBM Watson IoT Platform for device management, data visualization, and analytics.
+   DEBUG: 2023-06-04 20:35:23,949:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,949:      pdf_renderer.py:  470: printSegment: Blockchain for secure and transparent transaction recording and smart contract
+   DEBUG: 2023-06-04 20:35:23,949:      pdf_renderer.py:  470: printSegment: execution.
+   DEBUG: 2023-06-04 20:35:23,949:      pdf_renderer.py:  470: printSegment: Comparative analysis of technical stacks:
+   DEBUG: 2023-06-04 20:35:23,951:      pdf_renderer.py:  470: printSegment: | Technical Stack Combination                                    | Communication Protocol | Cloud Platform          | Edge
+   DEBUG: 2023-06-04 20:35:23,951:      pdf_renderer.py:  470: printSegment: Computing | Data Storage   | Key Features and Benefits                                                                                                  
+   DEBUG: 2023-06-04 20:35:23,951:      pdf_renderer.py:  470: printSegment:                                                                                                                |
+   DEBUG: 2023-06-04 20:35:23,951:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2023-06-04 20:35:23,952:      pdf_renderer.py:  470: printSegment: |
+   DEBUG: 2023-06-04 20:35:23,952:      pdf_renderer.py:  470: printSegment: -------------------------------------------------------------- | ---------------------- | ----------------------- | -------------- |
+   DEBUG: 2023-06-04 20:35:23,952:      pdf_renderer.py:  470: printSegment: -------------- |
+   DEBUG: 2023-06-04 20:35:23,952:      pdf_renderer.py:  470: printSegment: ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+   DEBUG: 2023-06-04 20:35:23,953:      pdf_renderer.py:  470: printSegment: | LoRaWAN + MQTT + AWS IoT + Cloud Storage                       | LoRaWAN, MQTT          | AWS IoT                 | Not applicable | Cloud storage  | - Long-range, low-power communication, lightweight messaging protocol, device management, data processing, and analytics with AWS IoT, scalable and reliable cloud storage                                                                 |
+   DEBUG: 2023-06-04 20:35:23,953:      pdf_renderer.py:  470: printSegment: | Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing | BLE, MQTT              | Azure IoT               | Edge computing | Not applicable | - Short-range communication with low power consumption, efficient and reliable messaging protocol, device management, data processing, and edge computing with Azure IoT, real-time analytics and decision-making at the network edge      |
+   DEBUG: 2023-06-04 20:35:23,954:      pdf_renderer.py:  470: printSegment: | Thread + CoAP + Google Cloud IoT + Cloud Functions             | Thread, CoAP           | Google Cloud IoT        | Not applicable | Cloud storage  | - Low-power, mesh networking protocol for IoT devices, efficient communication with resource-constrained devices, device management, integration with Google Cloud services, serverless functions for triggering actions based on IoT data |
+   DEBUG: 2023-06-04 20:35:23,954:      pdf_renderer.py:  470: printSegment: | NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain           | NB-IoT, MQTT           | IBM Watson IoT Platform | Not applicable | Blockchain     | - Wide-area coverage and low-power communication, lightweight messaging protocol, device management, data visualization, and analytics with IBM Watson IoT Platform, secure and transparent transaction recording with blockchain          |
+   DEBUG: 2023-06-04 20:35:23,955:      pdf_renderer.py:  470: printSegment: Why suggest Zigbee + MQTT ?
+   DEBUG: 2023-06-04 20:35:23,955:      pdf_renderer.py:  470: printSegment: Zigbee, being a low-power wireless communication protocol, is well-suited for connecting and controlling devices
+   DEBUG: 2023-06-04 20:35:23,955:      pdf_renderer.py:  470: printSegment: in a local area network. It enables efficient communication between devices, consuming minimal network resources.
+   DEBUG: 2023-06-04 20:35:23,956:      pdf_renderer.py:  470: printSegment: Zigbee devices can operate in a mesh network, allowing them to relay messages and form a robust and scalable
+   DEBUG: 2023-06-04 20:35:23,956:      pdf_renderer.py:  470: printSegment: network infrastructure.
+   DEBUG: 2023-06-04 20:35:23,956:      pdf_renderer.py:  470: printSegment: On the other hand, MQTT is a lightweight messaging protocol designed for efficient data exchange in IoT
+   DEBUG: 2023-06-04 20:35:23,956:      pdf_renderer.py:  470: printSegment: applications. It follows a publish-subscribe pattern, where devices (publishers) publish messages to a central broker,
+   DEBUG: 2023-06-04 20:35:23,957:      pdf_renderer.py:  470: printSegment: and other devices (subscribers) receive those messages based on their subscription topics. MQTT is highly efficient
+   DEBUG: 2023-06-04 20:35:23,957:      pdf_renderer.py:  470: printSegment: in terms of network consumption, minimizing the amount of data sent over the network.
+   DEBUG: 2023-06-04 20:35:23,957:      pdf_renderer.py:  470: printSegment: By combining Zigbee and MQTT, the sync operations can be performed in the following way:
+   DEBUG: 2023-06-04 20:35:23,957:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-06-04 20:35:23,957:      pdf_renderer.py:  470: printSegment: Devices (such as smart light bulbs) connected through Zigbee protocol can have their configurations
+   DEBUG: 2023-06-04 20:35:23,957:      pdf_renderer.py:  470: printSegment: synchronized using MQTT messages.
+   DEBUG: 2023-06-04 20:35:23,958:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-06-04 20:35:23,958:      pdf_renderer.py:  470: printSegment: When a user updates the configuration parameters in the user application, the application sends an
+   DEBUG: 2023-06-04 20:35:23,958:      pdf_renderer.py:  470: printSegment: MQTT message to the backend server indicating the desired changes.
+   DEBUG: 2023-06-04 20:35:23,958:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2023-06-04 20:35:23,958:      pdf_renderer.py:  470: printSegment: The backend server receives the MQTT message and updates the respective device
+   DEBUG: 2023-06-04 20:35:23,958:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-06-04 20:35:23,958:      pdf_renderer.py:  470: printSegment: s configuration
+   DEBUG: 2023-06-04 20:35:23,959:      pdf_renderer.py:  470: printSegment: information in its database.
+   DEBUG: 2023-06-04 20:35:23,959:      pdf_renderer.py:  470: printSegment:  4 
+   DEBUG: 2023-06-04 20:35:23,959:      pdf_renderer.py:  470: printSegment: The backend server then forwards the configuration update to the Zigbee gateway using MQTT,
+   DEBUG: 2023-06-04 20:35:23,959:      pdf_renderer.py:  470: printSegment: which acts as a bridge between the Zigbee devices and the server.
+   DEBUG: 2023-06-04 20:35:23,959:      pdf_renderer.py:  470: printSegment:  5 
+   DEBUG: 2023-06-04 20:35:23,959:      pdf_renderer.py:  470: printSegment: The Zigbee gateway translates the MQTT message to Zigbee protocol and communicates with the
+   DEBUG: 2023-06-04 20:35:23,960:      pdf_renderer.py:  470: printSegment: corresponding Zigbee devices to apply the configuration changes.
+   DEBUG: 2023-06-04 20:35:23,960:      pdf_renderer.py:  470: printSegment: This approach offloads the heavy lifting of device synchronization from the server by utilizing the efficient Zigbee
+   DEBUG: 2023-06-04 20:35:23,960:      pdf_renderer.py:  470: printSegment: protocol for local device communication. MQTT is used as a lightweight and scalable messaging protocol for
+   DEBUG: 2023-06-04 20:35:23,960:      pdf_renderer.py:  470: printSegment: transmitting configuration updates between the server, gateway, and devices. This helps in minimizing the load on
+   DEBUG: 2023-06-04 20:35:23,960:      pdf_renderer.py:  470: printSegment: the server and network during sync operations.
+   DEBUG: 2023-06-04 20:35:23,961:      pdf_renderer.py:  470: printSegment: Here
+   DEBUG: 2023-06-04 20:35:23,961:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-06-04 20:35:23,961:      pdf_renderer.py:  470: printSegment: s a small diagram illustrating the sync operations using Zigbee + MQTT:
+   DEBUG: 2023-06-04 20:35:23,961:      pdf_renderer.py:  470: printSegment: graph LR
+   DEBUG: 2023-06-04 20:35:23,961:      pdf_renderer.py:  470: printSegment: subgraph User Applications
+   DEBUG: 2023-06-04 20:35:23,962:      pdf_renderer.py:  470: printSegment:   UA((User Application))
+   DEBUG: 2023-06-04 20:35:23,962:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,962:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
+   DEBUG: 2023-06-04 20:35:23,962:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
+   DEBUG: 2023-06-04 20:35:23,963:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,963:      pdf_renderer.py:  470: printSegment: subgraph Zigbee Gateway
+   DEBUG: 2023-06-04 20:35:23,963:      pdf_renderer.py:  470: printSegment:   ZG((Zigbee Gateway))
+   DEBUG: 2023-06-04 20:35:23,963:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,963:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulbs
+   DEBUG: 2023-06-04 20:35:23,963:      pdf_renderer.py:  470: printSegment:   LB1((Light Bulb 1))
+   DEBUG: 2023-06-04 20:35:23,963:      pdf_renderer.py:  470: printSegment:   LB2((Light Bulb 2))
+   DEBUG: 2023-06-04 20:35:23,963:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,964:      pdf_renderer.py:  470: printSegment: UA -->|MQTT Config| BS
+   DEBUG: 2023-06-04 20:35:23,964:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| ZG
+   DEBUG: 2023-06-04 20:35:23,964:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB1
+   DEBUG: 2023-06-04 20:35:23,964:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB2
+   DEBUG: 2023-06-04 20:35:23,964:      pdf_renderer.py:  470: printSegment: In the diagram, the user application (UA) sends an MQTT configuration message to the backend server (BS). The
+   DEBUG: 2023-06-04 20:35:23,965:      pdf_renderer.py:  470: printSegment: backend server then forwards the configuration update to the Zigbee gateway (ZG) using MQTT. The Zigbee
+   DEBUG: 2023-06-04 20:35:23,965:      pdf_renderer.py:  470: printSegment: gateway translates the MQTT message to Zigbee protocol and communicates with the respective smart light bulbs
+   DEBUG: 2023-06-04 20:35:23,965:      pdf_renderer.py:  470: printSegment: (LB1, LB2) to apply the configuration changes.
+   DEBUG: 2023-06-04 20:35:23,965:      pdf_renderer.py:  470: printSegment: This architecture ensures minimal load on the server and network as the synchronization is performed efficiently
+   DEBUG: 2023-06-04 20:35:23,966:      pdf_renderer.py:  470: printSegment: through the Zigbee protocol for local communication and MQTT for lightweight messaging between the server and
+   DEBUG: 2023-06-04 20:35:23,966:      pdf_renderer.py:  470: printSegment: gateway.
+   DEBUG: 2023-06-04 20:35:23,966:      pdf_renderer.py:  470: printSegment: Communication Flow
+   DEBUG: 2023-06-04 20:35:23,966:      pdf_renderer.py:  470: printSegment: flowchart LR
+   DEBUG: 2023-06-04 20:35:23,967:      pdf_renderer.py:  470: printSegment: subgraph User Applications
+   DEBUG: 2023-06-04 20:35:23,967:      pdf_renderer.py:  470: printSegment:   UA1((User Application 1))
+   DEBUG: 2023-06-04 20:35:23,967:      pdf_renderer.py:  470: printSegment:   UA2((User Application 2))
+   DEBUG: 2023-06-04 20:35:23,967:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,967:      pdf_renderer.py:  470: printSegment: subgraph Zigbee Gateway
+   DEBUG: 2023-06-04 20:35:23,967:      pdf_renderer.py:  470: printSegment:   ZG((Zigbee Gateway))
+   DEBUG: 2023-06-04 20:35:23,967:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,968:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
+   DEBUG: 2023-06-04 20:35:23,968:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
+   DEBUG: 2023-06-04 20:35:23,968:      pdf_renderer.py:  470: printSegment:   subgraph Database
+   DEBUG: 2023-06-04 20:35:23,968:      pdf_renderer.py:  470: printSegment:     DB
+   DEBUG: 2023-06-04 20:35:23,968:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:23,968:      pdf_renderer.py:  470: printSegment:   subgraph Message Queue
+   DEBUG: 2023-06-04 20:35:23,968:      pdf_renderer.py:  470: printSegment:     MQ
+   DEBUG: 2023-06-04 20:35:23,968:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:23,969:      pdf_renderer.py:  470: printSegment:   subgraph Identity and Access Management
+   DEBUG: 2023-06-04 20:35:23,969:      pdf_renderer.py:  470: printSegment:     IAM
+   DEBUG: 2023-06-04 20:35:23,969:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:23,969:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,969:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulbs
+   DEBUG: 2023-06-04 20:35:23,969:      pdf_renderer.py:  470: printSegment:   LB1((Light Bulb 1))
+   DEBUG: 2023-06-04 20:35:23,969:      pdf_renderer.py:  470: printSegment:   LB2((Light Bulb 2))
+   DEBUG: 2023-06-04 20:35:23,969:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,969:      pdf_renderer.py:  470: printSegment: subgraph Invited Users
+   DEBUG: 2023-06-04 20:35:23,970:      pdf_renderer.py:  470: printSegment:   IU1((Invited User 1))
+   DEBUG: 2023-06-04 20:35:23,970:      pdf_renderer.py:  470: printSegment:   IU2((Invited User 2))
+   DEBUG: 2023-06-04 20:35:23,970:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,970:      pdf_renderer.py:  470: printSegment: LB1 -->|Zigbee State Change| ZG
+   DEBUG: 2023-06-04 20:35:23,971:      pdf_renderer.py:  470: printSegment: LB2 -->|Zigbee State Change| ZG
+   DEBUG: 2023-06-04 20:35:23,971:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB1
+   DEBUG: 2023-06-04 20:35:23,971:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB2
+   DEBUG: 2023-06-04 20:35:23,971:      pdf_renderer.py:  470: printSegment: ZG <-->|MQTT State Change| BS
+   DEBUG: 2023-06-04 20:35:23,971:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Config| BS
+   DEBUG: 2023-06-04 20:35:23,971:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Access| BS
+   DEBUG: 2023-06-04 20:35:23,971:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Notifications| IU1
+   DEBUG: 2023-06-04 20:35:23,971:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Notifications| IU2
+   DEBUG: 2023-06-04 20:35:23,972:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Config| BS
+   DEBUG: 2023-06-04 20:35:23,972:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Access| BS
+   DEBUG: 2023-06-04 20:35:23,972:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Notifications| IU1
+   DEBUG: 2023-06-04 20:35:23,972:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Notifications| IU2
+   DEBUG: 2023-06-04 20:35:23,972:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| ZG
+   DEBUG: 2023-06-04 20:35:23,972:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| UA1
+   DEBUG: 2023-06-04 20:35:23,972:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| UA2
+   DEBUG: 2023-06-04 20:35:23,972:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU1
+   DEBUG: 2023-06-04 20:35:23,972:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU2
+   DEBUG: 2023-06-04 20:35:23,973:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Control| LB1
+   DEBUG: 2023-06-04 20:35:23,973:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Control| LB2
+   DEBUG: 2023-06-04 20:35:23,973:      pdf_renderer.py:  470: printSegment: BS -->|MQTT State Change| UA1
+   DEBUG: 2023-06-04 20:35:23,973:      pdf_renderer.py:  470: printSegment: BS -->|MQTT State Change| UA2
+   DEBUG: 2023-06-04 20:35:23,973:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Access| BS
+   DEBUG: 2023-06-04 20:35:23,973:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Config| BS
+   DEBUG: 2023-06-04 20:35:23,973:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Control| BS
+   DEBUG: 2023-06-04 20:35:23,973:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT State Change| LB1
+   DEBUG: 2023-06-04 20:35:23,974:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT State Change| LB2
+   DEBUG: 2023-06-04 20:35:23,974:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Access| BS
+   DEBUG: 2023-06-04 20:35:23,974:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Config| BS
+   DEBUG: 2023-06-04 20:35:23,974:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Control| BS
+   DEBUG: 2023-06-04 20:35:23,974:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT State Change| LB1
+   DEBUG: 2023-06-04 20:35:23,974:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT State Change| LB2
+   DEBUG: 2023-06-04 20:35:23,974:      pdf_renderer.py:  470: printSegment: The above diagram illustrates the communication flow for the given points - ( other smart devices are not included
+   DEBUG: 2023-06-04 20:35:23,975:      pdf_renderer.py:  470: printSegment: in the diagram )
+   DEBUG: 2023-06-04 20:35:23,975:      pdf_renderer.py:  470: printSegment: The diagram includes the following components and flows:
+   DEBUG: 2023-06-04 20:35:23,975:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-06-04 20:35:23,975:      pdf_renderer.py:  470: printSegment: User Applications (UA1, UA2): User applications through which users configure parameters and
+   DEBUG: 2023-06-04 20:35:23,975:      pdf_renderer.py:  470: printSegment: send MQTT messages to the backend server.
+   DEBUG: 2023-06-04 20:35:23,975:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-06-04 20:35:23,976:      pdf_renderer.py:  470: printSegment: Backend Server (BS): Manages configuration updates, state changes, and access permissions.
+   DEBUG: 2023-06-04 20:35:23,976:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2023-06-04 20:35:23,976:      pdf_renderer.py:  470: printSegment: Zigbee Gateway (ZG): Acts as a bridge between the backend server and the smart light bulbs,
+   DEBUG: 2023-06-04 20:35:23,976:      pdf_renderer.py:  470: printSegment: translating messages between MQTT and Zigbee protocols.
+   DEBUG: 2023-06-04 20:35:23,976:      pdf_renderer.py:  470: printSegment:  4 
+   DEBUG: 2023-06-04 20:35:23,976:      pdf_renderer.py:  470: printSegment: Smart Light Bulbs (LB1, LB2): Light bulbs that receive configuration changes and state change
+   DEBUG: 2023-06-04 20:35:23,976:      pdf_renderer.py:  470: printSegment: notifications via Zigbee messages.
+   DEBUG: 2023-06-04 20:35:23,977:      pdf_renderer.py:  470: printSegment:  5 
+   DEBUG: 2023-06-04 20:35:23,977:      pdf_renderer.py:  470: printSegment: IAM System (IAM): Manages user authentication and authorization.
+   DEBUG: 2023-06-04 20:35:23,977:      pdf_renderer.py:  470: printSegment:  6 
+   DEBUG: 2023-06-04 20:35:23,977:      pdf_renderer.py:  470: printSegment: Invited Users (IU1, IU2): Users who have been granted access to specific light bulbs by the backend
+   DEBUG: 2023-06-04 20:35:23,977:      pdf_renderer.py:  470: printSegment: server.
+   DEBUG: 2023-06-04 20:35:23,977:      pdf_renderer.py:  470: printSegment: The flows in the diagram are as follows:
+   DEBUG: 2023-06-04 20:35:23,977:      pdf_renderer.py:  470: printSegment: Configuration and Control:
+   DEBUG: 2023-06-04 20:35:23,978:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,978:      pdf_renderer.py:  470: printSegment: User applications send MQTT configuration messages to the backend server.
+   DEBUG: 2023-06-04 20:35:23,979:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,979:      pdf_renderer.py:  470: printSegment: The backend server forwards the configuration updates to the Zigbee gateway in MQTT format.
+   DEBUG: 2023-06-04 20:35:23,979:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,979:      pdf_renderer.py:  470: printSegment: The gateway translates the MQTT messages to Zigbee protocol and communicates with the
+   DEBUG: 2023-06-04 20:35:23,980:      pdf_renderer.py:  470: printSegment: corresponding light bulbs to apply the configuration changes.
+   DEBUG: 2023-06-04 20:35:23,980:      pdf_renderer.py:  470: printSegment: Physical Button Interaction:
+   DEBUG: 2023-06-04 20:35:23,980:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,980:      pdf_renderer.py:  470: printSegment: When a physical button on a light bulb is pressed, the bulb sends a Zigbee message to the Zigbee
+   DEBUG: 2023-06-04 20:35:23,980:      pdf_renderer.py:  470: printSegment: gateway indicating the state change.
+   DEBUG: 2023-06-04 20:35:23,981:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,981:      pdf_renderer.py:  470: printSegment: The gateway converts the Zigbee message to MQTT format and forwards it to the backend server.
+   DEBUG: 2023-06-04 20:35:23,981:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,981:      pdf_renderer.py:  470: printSegment: The server updates the state of the respective light bulb and sends notifications to the user
+   DEBUG: 2023-06-04 20:35:23,981:      pdf_renderer.py:  470: printSegment: applications via MQTT, indicating the state change.
+   DEBUG: 2023-06-04 20:35:23,981:      pdf_renderer.py:  470: printSegment: User Access and Sharing:
+   DEBUG: 2023-06-04 20:35:23,982:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,982:      pdf_renderer.py:  470: printSegment: The backend server manages user authentication and authorization using an IAM system.
+   DEBUG: 2023-06-04 20:35:23,982:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,982:      pdf_renderer.py:  470: printSegment: Users can share access to specific light bulbs with others through the applications.
+   DEBUG: 2023-06-04 20:35:23,982:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,982:      pdf_renderer.py:  470: printSegment: The server updates the access permissions, and notifications are sent to the invited users via MQTT.
+   DEBUG: 2023-06-04 20:35:23,983:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,983:      pdf_renderer.py:  470: printSegment: Invited users can control and configure the shared light bulbs through their authorized user
+   DEBUG: 2023-06-04 20:35:23,983:      pdf_renderer.py:  470: printSegment: applications.
+   DEBUG: 2023-06-04 20:35:23,983:      pdf_renderer.py:  470: printSegment: Simple Functionality interaction diagrams
+   DEBUG: 2023-06-04 20:35:23,983:      pdf_renderer.py:  470: printSegment: Time-based Modes
+   DEBUG: 2023-06-04 20:35:23,983:      pdf_renderer.py:  470: printSegment: flowchart LR
+   DEBUG: 2023-06-04 20:35:23,984:      pdf_renderer.py:  470: printSegment: subgraph User Applications
+   DEBUG: 2023-06-04 20:35:23,984:      pdf_renderer.py:  470: printSegment:   UA((User Application))
+   DEBUG: 2023-06-04 20:35:23,984:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,984:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
+   DEBUG: 2023-06-04 20:35:23,984:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
+   DEBUG: 2023-06-04 20:35:23,984:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,984:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
+   DEBUG: 2023-06-04 20:35:23,985:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
+   DEBUG: 2023-06-04 20:35:23,985:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,985:      pdf_renderer.py:  470: printSegment: UA -->|MQTT Mode Change| BS
+   DEBUG: 2023-06-04 20:35:23,985:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Mode Change| LB
+   DEBUG: 2023-06-04 20:35:23,985:      pdf_renderer.py:  470: printSegment: Motion Sensor Mode
+   DEBUG: 2023-06-04 20:35:23,985:      pdf_renderer.py:  470: printSegment: flowchart LR
+   DEBUG: 2023-06-04 20:35:23,985:      pdf_renderer.py:  470: printSegment: subgraph Motion Sensor
+   DEBUG: 2023-06-04 20:35:23,986:      pdf_renderer.py:  470: printSegment:   MS((Motion Sensor))
+   DEBUG: 2023-06-04 20:35:23,986:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,986:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
+   DEBUG: 2023-06-04 20:35:23,986:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
+   DEBUG: 2023-06-04 20:35:23,986:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,986:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
+   DEBUG: 2023-06-04 20:35:23,986:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
+   DEBUG: 2023-06-04 20:35:23,986:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,986:      pdf_renderer.py:  470: printSegment: MS -->|Motion Detection| LB
+   DEBUG: 2023-06-04 20:35:23,987:      pdf_renderer.py:  470: printSegment: LB -->|MQTT State Change| BS
+   DEBUG: 2023-06-04 20:35:23,987:      pdf_renderer.py:  470: printSegment: Light Sensor Mode
+   DEBUG: 2023-06-04 20:35:23,988:      pdf_renderer.py:  470: printSegment: flowchart LR
+   DEBUG: 2023-06-04 20:35:23,988:      pdf_renderer.py:  470: printSegment: subgraph Light Sensor
+   DEBUG: 2023-06-04 20:35:23,988:      pdf_renderer.py:  470: printSegment:   LS((Light Sensor))
+   DEBUG: 2023-06-04 20:35:23,988:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,988:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
+   DEBUG: 2023-06-04 20:35:23,988:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
+   DEBUG: 2023-06-04 20:35:23,988:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,989:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
+   DEBUG: 2023-06-04 20:35:23,989:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
+   DEBUG: 2023-06-04 20:35:23,989:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,989:      pdf_renderer.py:  470: printSegment: LS -->|Light Level| LB
+   DEBUG: 2023-06-04 20:35:23,989:      pdf_renderer.py:  470: printSegment: LS -->|Light Level| BS
+   DEBUG: 2023-06-04 20:35:23,989:      pdf_renderer.py:  470: printSegment: Environment-based Sensors
+   DEBUG: 2023-06-04 20:35:23,989:      pdf_renderer.py:  470: printSegment: flowchart LR
+   DEBUG: 2023-06-04 20:35:23,989:      pdf_renderer.py:  470: printSegment: subgraph Environment Sensors
+   DEBUG: 2023-06-04 20:35:23,990:      pdf_renderer.py:  470: printSegment:   ES((Environment Sensors))
+   DEBUG: 2023-06-04 20:35:23,990:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,990:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
+   DEBUG: 2023-06-04 20:35:23,990:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
+   DEBUG: 2023-06-04 20:35:23,990:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,990:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
+   DEBUG: 2023-06-04 20:35:23,990:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
+   DEBUG: 2023-06-04 20:35:23,990:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,991:      pdf_renderer.py:  470: printSegment: ES -->|Sensor Data| LB
+   DEBUG: 2023-06-04 20:35:23,991:      pdf_renderer.py:  470: printSegment: ES -->|Sensor Data| BS
+   DEBUG: 2023-06-04 20:35:23,991:      pdf_renderer.py:  470: printSegment: Mood-based Modes
+   DEBUG: 2023-06-04 20:35:23,991:      pdf_renderer.py:  470: printSegment: flowchart LR
+   DEBUG: 2023-06-04 20:35:23,991:      pdf_renderer.py:  470: printSegment: subgraph User Applications
+   DEBUG: 2023-06-04 20:35:23,991:      pdf_renderer.py:  470: printSegment:   UA((User Application))
+   DEBUG: 2023-06-04 20:35:23,991:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,991:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
+   DEBUG: 2023-06-04 20:35:23,992:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
+   DEBUG: 2023-06-04 20:35:23,992:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,992:      pdf_renderer.py:  470: printSegment: subgraph Smart Light Bulb
+   DEBUG: 2023-06-04 20:35:23,992:      pdf_renderer.py:  470: printSegment:   LB((Light Bulb))
+   DEBUG: 2023-06-04 20:35:23,992:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:23,992:      pdf_renderer.py:  470: printSegment: UA -->|MQTT Mode Change| BS
+   DEBUG: 2023-06-04 20:35:23,992:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Mode Change| LB
+   DEBUG: 2023-06-04 20:35:23,992:      pdf_renderer.py:  470: printSegment: Full System Interaction with Features
+   DEBUG: 2023-06-04 20:35:23,993:      pdf_renderer.py:  470: printSegment: The functionalities described below pertain to the smart light bulb system, which incorporates various modes and
+   DEBUG: 2023-06-04 20:35:23,993:      pdf_renderer.py:  470: printSegment: sensor-based controls to enhance user experience and energy efficiency. Here is a summary of each functionality:
+   DEBUG: 2023-06-04 20:35:23,994:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2023-06-04 20:35:23,994:      pdf_renderer.py:  470: printSegment: Time-based Modes:
+   DEBUG: 2023-06-04 20:35:23,994:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,994:      pdf_renderer.py:  470: printSegment: The smart light bulb adjusts its lighting configuration based on different time
+   DEBUG: 2023-06-04 20:35:23,995:      pdf_renderer.py:  470: printSegment: periods such as Morning, Daytime, Evening, and Night.
+   DEBUG: 2023-06-04 20:35:23,995:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,995:      pdf_renderer.py:  470: printSegment: Mode changes are scheduled by the backend server, and the bulb receives
+   DEBUG: 2023-06-04 20:35:23,995:      pdf_renderer.py:  470: printSegment: commands via MQTT to adjust its color, brightness, and other parameters
+   DEBUG: 2023-06-04 20:35:23,995:      pdf_renderer.py:  470: printSegment: accordingly.
+   DEBUG: 2023-06-04 20:35:23,995:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,996:      pdf_renderer.py:  470: printSegment: This feature ensures appropriate lighting for different times of the day, creating a
+   DEBUG: 2023-06-04 20:35:23,996:      pdf_renderer.py:  470: printSegment: comfortable and suitable environment.
+   DEBUG: 2023-06-04 20:35:23,996:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2023-06-04 20:35:23,996:      pdf_renderer.py:  470: printSegment: Motion Sensor Mode:
+   DEBUG: 2023-06-04 20:35:23,996:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,996:      pdf_renderer.py:  470: printSegment: When the motion sensor detects activity, the smart light bulb automatically turns on.
+   DEBUG: 2023-06-04 20:35:23,996:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,997:      pdf_renderer.py:  470: printSegment: The motion sensor sends a signal to the bulb or backend server upon detecting
+   DEBUG: 2023-06-04 20:35:23,997:      pdf_renderer.py:  470: printSegment: motion, and the bulb adjusts its state accordingly.
+   DEBUG: 2023-06-04 20:35:23,997:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,997:      pdf_renderer.py:  470: printSegment: This functionality ensures that the light is activated only when someone is present in
+   DEBUG: 2023-06-04 20:35:23,997:      pdf_renderer.py:  470: printSegment: the area, improving energy efficiency and convenience.
+   DEBUG: 2023-06-04 20:35:23,997:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2023-06-04 20:35:23,997:      pdf_renderer.py:  470: printSegment: Light Sensor Mode:
+   DEBUG: 2023-06-04 20:35:23,998:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,998:      pdf_renderer.py:  470: printSegment: The smart light bulb adjusts its brightness based on the ambient light level.
+   DEBUG: 2023-06-04 20:35:23,998:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,998:      pdf_renderer.py:  470: printSegment: The light sensor continuously measures the surrounding light, and the bulb or
+   DEBUG: 2023-06-04 20:35:23,998:      pdf_renderer.py:  470: printSegment: backend server receives the sensor data.
+   DEBUG: 2023-06-04 20:35:23,998:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,999:      pdf_renderer.py:  470: printSegment: The bulb then adjusts its brightness or turns off based on the received light sensor
+   DEBUG: 2023-06-04 20:35:23,999:      pdf_renderer.py:  470: printSegment: data.
+   DEBUG: 2023-06-04 20:35:23,999:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:23,999:      pdf_renderer.py:  470: printSegment: This feature optimizes lighting based on the available natural light, enhancing
+   DEBUG: 2023-06-04 20:35:23,999:      pdf_renderer.py:  470: printSegment: comfort and energy savings.
+   DEBUG: 2023-06-04 20:35:23,999:      pdf_renderer.py:  470: printSegment:  4 
+   DEBUG: 2023-06-04 20:35:23,999:      pdf_renderer.py:  470: printSegment: Environment-based Sensors:
+   DEBUG: 2023-06-04 20:35:24,000:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:24,000:      pdf_renderer.py:  470: printSegment: Additional sensors like temperature, humidity, or air quality sensors can be
+   DEBUG: 2023-06-04 20:35:24,000:      pdf_renderer.py:  470: printSegment: integrated with the smart light bulb.
+   DEBUG: 2023-06-04 20:35:24,000:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:24,000:      pdf_renderer.py:  470: printSegment: These sensors provide data about the surrounding environment, allowing the bulb to
+   DEBUG: 2023-06-04 20:35:24,000:      pdf_renderer.py:  470: printSegment: respond accordingly.
+   DEBUG: 2023-06-04 20:35:24,001:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:24,001:      pdf_renderer.py:  470: printSegment: The collected sensor data is analyzed by the bulb or backend server, triggering
+   DEBUG: 2023-06-04 20:35:24,001:      pdf_renderer.py:  470: printSegment: appropriate actions or changes in the bulb
+   DEBUG: 2023-06-04 20:35:24,001:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2023-06-04 20:35:24,001:      pdf_renderer.py:  470: printSegment: s behavior.
+   DEBUG: 2023-06-04 20:35:24,001:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:24,001:      pdf_renderer.py:  470: printSegment: This functionality enables the bulb to indicate warnings or adjust its lighting based
+   DEBUG: 2023-06-04 20:35:24,002:      pdf_renderer.py:  470: printSegment: on environmental conditions, promoting safety and comfort.
+   DEBUG: 2023-06-04 20:35:24,002:      pdf_renderer.py:  470: printSegment:  5 
+   DEBUG: 2023-06-04 20:35:24,002:      pdf_renderer.py:  470: printSegment: Mood-based Modes:
+   DEBUG: 2023-06-04 20:35:24,002:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:24,002:      pdf_renderer.py:  470: printSegment: The smart light bulb offers pre-defined or customizable modes to create different
+   DEBUG: 2023-06-04 20:35:24,002:      pdf_renderer.py:  470: printSegment: moods or atmospheres.
+   DEBUG: 2023-06-04 20:35:24,002:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:24,003:      pdf_renderer.py:  470: printSegment: Users can select desired modes, such as Relaxing, Energizing, or Romantic, from the
+   DEBUG: 2023-06-04 20:35:24,003:      pdf_renderer.py:  470: printSegment: application.
+   DEBUG: 2023-06-04 20:35:24,003:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:24,003:      pdf_renderer.py:  470: printSegment: The backend server sends the mode configuration to the bulb via MQTT, adjusting
+   DEBUG: 2023-06-04 20:35:24,003:      pdf_renderer.py:  470: printSegment: its color, brightness, and effects accordingly.
+   DEBUG: 2023-06-04 20:35:24,003:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2023-06-04 20:35:24,004:      pdf_renderer.py:  470: printSegment: This feature allows users to personalize their lighting experience and create desired
+   DEBUG: 2023-06-04 20:35:24,004:      pdf_renderer.py:  470: printSegment: ambiances for different occasions.
+   DEBUG: 2023-06-04 20:35:24,004:      pdf_renderer.py:  470: printSegment: Overall, these functionalities provide users with flexibility and automation in controlling their smart light bulbs. The
+   DEBUG: 2023-06-04 20:35:24,004:      pdf_renderer.py:  470: printSegment: integration of sensors, MQTT communication, and coordination with the backend server enable dynamic
+   DEBUG: 2023-06-04 20:35:24,004:      pdf_renderer.py:  470: printSegment: adjustments, energy efficiency, and a tailored lighting experience.
+   DEBUG: 2023-06-04 20:35:24,004:      pdf_renderer.py:  470: printSegment: Complete System Diagram
+   DEBUG: 2023-06-04 20:35:24,005:      pdf_renderer.py:  470: printSegment: flowchart LR
+   DEBUG: 2023-06-04 20:35:24,005:      pdf_renderer.py:  470: printSegment: subgraph User Applications
+   DEBUG: 2023-06-04 20:35:24,006:      pdf_renderer.py:  470: printSegment:   UA1((User Application 1))
+   DEBUG: 2023-06-04 20:35:24,006:      pdf_renderer.py:  470: printSegment:   UA2((User Application 2))
+   DEBUG: 2023-06-04 20:35:24,006:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:24,006:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
+   DEBUG: 2023-06-04 20:35:24,007:      pdf_renderer.py:  470: printSegment:   BS((Backend Server))
+   DEBUG: 2023-06-04 20:35:24,007:      pdf_renderer.py:  470: printSegment:   subgraph Database
+   DEBUG: 2023-06-04 20:35:24,007:      pdf_renderer.py:  470: printSegment:     DB
+   DEBUG: 2023-06-04 20:35:24,007:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:24,007:      pdf_renderer.py:  470: printSegment:   subgraph Message Queue
+   DEBUG: 2023-06-04 20:35:24,007:      pdf_renderer.py:  470: printSegment:     MQ
+   DEBUG: 2023-06-04 20:35:24,007:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:24,007:      pdf_renderer.py:  470: printSegment:   subgraph Identity and Access Management
+   DEBUG: 2023-06-04 20:35:24,007:      pdf_renderer.py:  470: printSegment:     IAM
+   DEBUG: 2023-06-04 20:35:24,008:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:24,008:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:24,008:      pdf_renderer.py:  470: printSegment: subgraph Smart Devices
+   DEBUG: 2023-06-04 20:35:24,008:      pdf_renderer.py:  470: printSegment:   subgraph Zigbee Gateway
+   DEBUG: 2023-06-04 20:35:24,008:      pdf_renderer.py:  470: printSegment:     ZG((Zigbee Gateway))
+   DEBUG: 2023-06-04 20:35:24,008:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:24,008:      pdf_renderer.py:  470: printSegment:   subgraph Smart Light Bulbs
+   DEBUG: 2023-06-04 20:35:24,008:      pdf_renderer.py:  470: printSegment:     LB((Smart Light Bulb))
+   DEBUG: 2023-06-04 20:35:24,009:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:24,009:      pdf_renderer.py:  470: printSegment:   subgraph Motion Sensors
+   DEBUG: 2023-06-04 20:35:24,009:      pdf_renderer.py:  470: printSegment:     MS((Motion Sensor))
+   DEBUG: 2023-06-04 20:35:24,009:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:24,009:      pdf_renderer.py:  470: printSegment:   subgraph Light Sensors
+   DEBUG: 2023-06-04 20:35:24,009:      pdf_renderer.py:  470: printSegment:     LS((Light Sensor))
+   DEBUG: 2023-06-04 20:35:24,009:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:24,009:      pdf_renderer.py:  470: printSegment:   subgraph Environment Sensors
+   DEBUG: 2023-06-04 20:35:24,010:      pdf_renderer.py:  470: printSegment:     ES((Environment Sensors))
+   DEBUG: 2023-06-04 20:35:24,010:      pdf_renderer.py:  470: printSegment:   end
+   DEBUG: 2023-06-04 20:35:24,010:      pdf_renderer.py:  470: printSegment:   MM((Mood-based Modes))
+   DEBUG: 2023-06-04 20:35:24,010:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:24,010:      pdf_renderer.py:  470: printSegment: subgraph Invited Users
+   DEBUG: 2023-06-04 20:35:24,010:      pdf_renderer.py:  470: printSegment:   IU1((Invited User 1))
+   DEBUG: 2023-06-04 20:35:24,010:      pdf_renderer.py:  470: printSegment:   IU2((Invited User 2))
+   DEBUG: 2023-06-04 20:35:24,010:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:24,011:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Config| BS
+   DEBUG: 2023-06-04 20:35:24,011:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Config| BS
+   DEBUG: 2023-06-04 20:35:24,011:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| ZG
+   DEBUG: 2023-06-04 20:35:24,011:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB
+   DEBUG: 2023-06-04 20:35:24,011:      pdf_renderer.py:  470: printSegment: LB -->|Time-based Mode Command| MM
+   DEBUG: 2023-06-04 20:35:24,011:      pdf_renderer.py:  470: printSegment: LB -->|Motion Sensor Command| MS
+   DEBUG: 2023-06-04 20:35:24,011:      pdf_renderer.py:  470: printSegment: LB -->|Light Sensor Command| LS
+   DEBUG: 2023-06-04 20:35:24,012:      pdf_renderer.py:  470: printSegment: LB -->|Environment Sensor Data| ES
+   DEBUG: 2023-06-04 20:35:24,012:      pdf_renderer.py:  470: printSegment: LB -->|Mood-based Mode Command| MM
+   DEBUG: 2023-06-04 20:35:24,012:      pdf_renderer.py:  470: printSegment: LB -->|State Change Notification| BS
+   DEBUG: 2023-06-04 20:35:24,012:      pdf_renderer.py:  470: printSegment: LB -->|Sensor Data| BS
+   DEBUG: 2023-06-04 20:35:24,012:      pdf_renderer.py:  470: printSegment: LB -->|Mode Change Notification| BS
+   DEBUG: 2023-06-04 20:35:24,012:      pdf_renderer.py:  470: printSegment: LB -->|State Change Notification| UA1
+   DEBUG: 2023-06-04 20:35:24,012:      pdf_renderer.py:  470: printSegment: LB -->|State Change Notification| UA2
+   DEBUG: 2023-06-04 20:35:24,012:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Notifications| IU1
+   DEBUG: 2023-06-04 20:35:24,013:      pdf_renderer.py:  470: printSegment: UA1 -->|MQTT Notifications| IU2
+   DEBUG: 2023-06-04 20:35:24,013:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Notifications| IU1
+   DEBUG: 2023-06-04 20:35:24,013:      pdf_renderer.py:  470: printSegment: UA2 -->|MQTT Notifications| IU2
+   DEBUG: 2023-06-04 20:35:24,013:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Control| BS
+   DEBUG: 2023-06-04 20:35:24,014:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Control| BS
+   DEBUG: 2023-06-04 20:35:24,014:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Control| LB
+   DEBUG: 2023-06-04 20:35:24,014:      pdf_renderer.py:  470: printSegment: LB -->|Motion Sensor Command| MS
+   DEBUG: 2023-06-04 20:35:24,014:      pdf_renderer.py:  470: printSegment: LB -->|Light Sensor Command| LS
+   DEBUG: 2023-06-04 20:35:24,014:      pdf_renderer.py:  470: printSegment: LB -->|Environment Sensor Data| ES
+   DEBUG: 2023-06-04 20:35:24,014:      pdf_renderer.py:  470: printSegment: LB -->|Mood-based Mode Command| MM
+   DEBUG: 2023-06-04 20:35:24,014:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Config| BS
+   DEBUG: 2023-06-04 20:35:24,015:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Config| BS
+   DEBUG: 2023-06-04 20:35:24,015:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| ZG
+   DEBUG: 2023-06-04 20:35:24,015:      pdf_renderer.py:  470: printSegment: ZG -->|Zigbee Config| LB
+   DEBUG: 2023-06-04 20:35:24,015:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT State Change| LB
+   DEBUG: 2023-06-04 20:35:24,015:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT State Change| LB
+   DEBUG: 2023-06-04 20:35:24,015:      pdf_renderer.py:  470: printSegment: LB -->|Motion Detection Command| MS
+   DEBUG: 2023-06-04 20:35:24,015:      pdf_renderer.py:  470: printSegment: LB -->|Light Sensor Data| LS
+   DEBUG: 2023-06-04 20:35:24,015:      pdf_renderer.py:  470: printSegment: LB -->|Environment Sensor Data| ES
+   DEBUG: 2023-06-04 20:35:24,016:      pdf_renderer.py:  470: printSegment: LB -->|Mode Configuration| MM
+   DEBUG: 2023-06-04 20:35:24,016:      pdf_renderer.py:  470: printSegment: IU1 -->|MQTT Access| BS
+   DEBUG: 2023-06-04 20:35:24,016:      pdf_renderer.py:  470: printSegment: IU2 -->|MQTT Access| BS
+   DEBUG: 2023-06-04 20:35:24,016:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU1
+   DEBUG: 2023-06-04 20:35:24,016:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU2
+   DEBUG: 2023-06-04 20:35:24,016:      pdf_renderer.py:  470: printSegment: subgraph Backend Server
+   DEBUG: 2023-06-04 20:35:24,016:      pdf_renderer.py:  470: printSegment:   BS
+   DEBUG: 2023-06-04 20:35:24,016:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:24,017:      pdf_renderer.py:  470: printSegment: subgraph Identity and Access Management
+   DEBUG: 2023-06-04 20:35:24,017:      pdf_renderer.py:  470: printSegment:   IAM
+   DEBUG: 2023-06-04 20:35:24,017:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:24,017:      pdf_renderer.py:  470: printSegment: subgraph User Applications
+   DEBUG: 2023-06-04 20:35:24,017:      pdf_renderer.py:  470: printSegment:   UA1
+   DEBUG: 2023-06-04 20:35:24,017:      pdf_renderer.py:  470: printSegment:   UA2
+   DEBUG: 2023-06-04 20:35:24,017:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:24,017:      pdf_renderer.py:  470: printSegment: subgraph Smart Devices
+   DEBUG: 2023-06-04 20:35:24,018:      pdf_renderer.py:  470: printSegment:   ZG
+   DEBUG: 2023-06-04 20:35:24,018:      pdf_renderer.py:  470: printSegment:   LB
+   DEBUG: 2023-06-04 20:35:24,018:      pdf_renderer.py:  470: printSegment:   MS
+   DEBUG: 2023-06-04 20:35:24,018:      pdf_renderer.py:  470: printSegment:   LS
+   DEBUG: 2023-06-04 20:35:24,018:      pdf_renderer.py:  470: printSegment:   ES
+   DEBUG: 2023-06-04 20:35:24,018:      pdf_renderer.py:  470: printSegment:   MM
+   DEBUG: 2023-06-04 20:35:24,018:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:24,018:      pdf_renderer.py:  470: printSegment: subgraph Sensors
+   DEBUG: 2023-06-04 20:35:24,019:      pdf_renderer.py:  470: printSegment:   MS
+   DEBUG: 2023-06-04 20:35:24,019:      pdf_renderer.py:  470: printSegment:   LS
+   DEBUG: 2023-06-04 20:35:24,019:      pdf_renderer.py:  470: printSegment:   ES
+   DEBUG: 2023-06-04 20:35:24,019:      pdf_renderer.py:  470: printSegment: end
+   DEBUG: 2023-06-04 20:35:24,019:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| UA1
+   DEBUG: 2023-06-04 20:35:24,019:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Config| UA2
+   DEBUG: 2023-06-04 20:35:24,019:      pdf_renderer.py:  470: printSegment: BS -->|MQTT State Change| LB
+   DEBUG: 2023-06-04 20:35:24,019:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU1
+   DEBUG: 2023-06-04 20:35:24,019:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Access| IU2
+   DEBUG: 2023-06-04 20:35:24,020:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Control| LB
+   DEBUG: 2023-06-04 20:35:24,020:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Notifications| UA1
+   DEBUG: 2023-06-04 20:35:24,020:      pdf_renderer.py:  470: printSegment: BS -->|MQTT Notifications| UA2
+   DEBUG: 2023-06-04 20:35:24,020:      pdf_renderer.py:  470: printSegment: LB -->|Sensor Data| BS
+   DEBUG: 2023-06-04 20:35:24,020:      pdf_renderer.py:  470: printSegment: LS -->|Light Sensor Data| LB
+   DEBUG: 2023-06-04 20:35:24,021:      pdf_renderer.py:  470: printSegment: MS -->|Motion Detection Command| LB
+   DEBUG: 2023-06-04 20:35:24,021:      pdf_renderer.py:  470: printSegment: ES -->|Environment Sensor Data| LB
+   DEBUG: 2023-06-04 20:35:24,021:      pdf_renderer.py:  470: printSegment: MM -->|Mode Configuration| LB
+   DEBUG: 2023-06-04 20:35:24,021:      pdf_renderer.py:   53: 0, [1, 'Overview of Research Document', 1, 68.0]
+   DEBUG: 2023-06-04 20:35:24,021:      pdf_renderer.py:   53: 1, [2, 'Table of Contents', 1, 106.0]
+   DEBUG: 2023-06-04 20:35:24,021:      pdf_renderer.py:   53: 2, [2, 'Simple Architecture Description', 1, 235.60000000000002]
+   DEBUG: 2023-06-04 20:35:24,021:      pdf_renderer.py:   53: 3, [3, '1. Backend and Synchronization:', 1, 622.8000000000001]
+   DEBUG: 2023-06-04 20:35:24,021:      pdf_renderer.py:   53: 4, [3, '2. User Access and Authentication:', 2, 72.0]
+   DEBUG: 2023-06-04 20:35:24,021:      pdf_renderer.py:   53: 5, [3, '3. Hybrid Application Development:', 2, 160.8]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 6, [3, '4. Integration with Home IoT Devices:', 2, 225.60000000000002]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 7, [2, 'Comparative Study of IoT Technologies and Protocols', 2, 314.8]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 8, [2, 'Technical stack combinations for the development', 4, 404.8]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 9, [3, 'Comparative analysis of technical stacks:', 5, 164.4]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 10, [2, 'Why suggest Zigbee + MQTT ?', 5, 331.6]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 11, [2, 'Communication Flow', 6, 380.8]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 12, [3, 'Configuration and Control:', 7, 698.4]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 13, [3, 'Physical Button Interaction:', 8, 146.4]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 14, [3, 'User Access and Sharing:', 8, 247.2]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 15, [2, 'Simple Functionality interaction diagrams', 8, 348.4]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 16, [3, 'Time-based Modes', 8, 381.59999999999997]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 17, [3, 'Motion Sensor Mode', 8, 566.4]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 18, [3, 'Light Sensor Mode', 9, 104.4]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 19, [3, 'Environment-based Sensors', 9, 289.2]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 20, [3, 'Mood-based Modes', 9, 473.99999999999994]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 21, [2, 'Full System Interaction with Features', 9, 659.1999999999998]
+   DEBUG: 2023-06-04 20:35:24,022:      pdf_renderer.py:   53: 22, [3, 'Complete System Diagram', 10, 674.4]
