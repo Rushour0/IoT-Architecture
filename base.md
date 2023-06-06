@@ -1,4 +1,4 @@
-# Overview of Research Document
+# IoT Smart Light Bulb System
 
 ## Table of Contents
 

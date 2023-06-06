@@ -1,24 +1,19 @@
-## Problem Statement
+# IoT Smart Light Bulb System
+## Overview
 
-IoT nodes connect to the backend, and users interact with them through iOS, Android, and Web applications. The backend manages the state of IoT nodes and applications, ensuring synchronization. MQTT is used for communication with IoT nodes. Applications are expected to go offline intermittently and need to maintain offline state, syncing with the backend upon reconnection. Identify scalable and cost-effective technologies for these requirements, minimizing server and network load during sync operations. Provide a use case example for a smart light bulb application.
-
-1. Configurable parameters: The light bulb can be customized with settings such as Name, Location, color, brightness, on time, and off time.
-2. Physical button interaction: The light bulb has a button for manual control, and its state change should be communicated to the applications.
-3. User access to multiple light bulbs: A user can manage and control multiple light bulbs within the application.
-4. Sharing light bulb access: Users can share access to a light bulb with other users, enabling collaborative control.
-5. Hybrid application: The application is designed to be compatible with multiple platforms, such as iOS, Android, and web, providing a seamless user experience across devices.
+The research, modelling and prototyping done outlines a system architecture for a smart light bulb control mechanism. The proposed architecture is built on the given brief-case and enunciates how the backend manages the state of IoT nodes and applications, ensuring synchronization. The proposed solution incorporates the pre-given constraints and framework support for implementing features that help in complying with requirements like storing the application state and prototyping various functional models that are expected. The architecture is made in a manner that comprehensively adds the bulbs on the same network as that of the various centralizing it wishes to incoproate for maintaing abstracted connectivity. The study analyzes various technology combination suites and comparitively explores them on their efficiency, pricing, scalability and other relveant parameters, justifying the choices made.
 
 ## Table of Contents
-
 
 - [Simple Architecture Description](#simple-architecture-description)
 - [Comparative Study of IoT Technologies and Protocols](#comparative-study-of-iot-technologies-and-protocols)
 - [Technical stack combinations for the development](#technical-stack-combinations-for-the-development)
-- 
 - [Why suggest Zigbee + MQTT ?](#why-suggest-zigbee--mqtt-)
 - [Communication Flow](#communication-flow)
 - [Simple Functionality interaction diagrams](#simple-functionality-interaction-diagrams)
 - [Full System Interaction with Features](#full-system-interaction-with-features)
+- [Functional Process Flow](#functional-process-flow)
+- [UI/UX Design](#uiux-design)
 
 ## Simple Architecture Description
 
@@ -77,7 +72,6 @@ The proposed architecture for the smart light bulb system with seamless connecti
 
 - Integrate with Alexa using the Alexa Skills Kit (ASK) and AWS Lambda for developing Alexa skills.
 - Integrate with Google Home using the Actions on Google platform and Cloud Functions for Firebase to create conversational actions for Google Assistant.
-
 ## Comparative Study of IoT Technologies and Protocols
 
 Here's a comparison table for Zigbee, MQTT, Z-Wave, Wi-Fi Direct, AWS IoT, and Cloud Storage based on various factors:
@@ -179,6 +173,31 @@ Choosing the right tech stack for an IoT application depends on several factors 
    - IBM Watson IoT Platform for device management, data visualization, and analytics.
    - Blockchain for secure and transparent transaction recording and smart contract execution.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Comparative analysis of technical stacks:
 
 | Technical Stack Combination                                    | Communication Protocol | Cloud Platform          | Edge Computing | Data Storage   | Key Features and Benefits                                                                                                                                                                                                                  |
@@ -186,8 +205,7 @@ Choosing the right tech stack for an IoT application depends on several factors 
 | LoRaWAN + MQTT + AWS IoT + Cloud Storage                       | LoRaWAN, MQTT          | AWS IoT                 | Not applicable | Cloud storage  | - Long-range, low-power communication, lightweight messaging protocol, device management, data processing, and analytics with AWS IoT, scalable and reliable cloud storage                                                                 |
 | Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing | BLE, MQTT              | Azure IoT               | Edge computing | Not applicable | - Short-range communication with low power consumption, efficient and reliable messaging protocol, device management, data processing, and edge computing with Azure IoT, real-time analytics and decision-making at the network edge      |
 | Thread + CoAP + Google Cloud IoT + Cloud Functions             | Thread, CoAP           | Google Cloud IoT        | Not applicable | Cloud storage  | - Low-power, mesh networking protocol for IoT devices, efficient communication with resource-constrained devices, device management, integration with Google Cloud services, serverless functions for triggering actions based on IoT data |
-| NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain           | NB-IoT, MQTT           | IBM Watson IoT Platform | Not applicable | Blockchain     | - Wide-area coverage and low-power communication, lightweight messaging protocol, device management, data visualization, and analytics with IBM Watson IoT Platform, secure and transparent transaction recording with blockchain          |
-## Why suggest Zigbee + MQTT ?
+| NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain           | NB-IoT, MQTT           | IBM Watson IoT Platform | Not applicable | Blockchain     | - Wide-area coverage and low-power communication, lightweight messaging protocol, device management, data visualization, and analytics with IBM Watson IoT Platform, secure and transparent transaction recording with blockchain          |## Why suggest Zigbee + MQTT ?
 
 Zigbee, being a low-power wireless communication protocol, is well-suited for connecting and controlling devices in a local area network. It enables efficient communication between devices, consuming minimal network resources. Zigbee devices can operate in a mesh network, allowing them to relay messages and form a robust and scalable network infrastructure.
 
@@ -239,7 +257,6 @@ ZG -->|Zigbee Config| LB2
 In the diagram, the user application (UA) sends an MQTT configuration message to the backend server (BS). The backend server then forwards the configuration update to the Zigbee gateway (ZG) using MQTT. The Zigbee gateway translates the MQTT message to Zigbee protocol and communicates with the respective smart light bulbs (LB1, LB2) to apply the configuration changes.
 
 This architecture ensures minimal load on the server and network as the synchronization is performed efficiently through the Zigbee protocol for local communication and MQTT for lightweight messaging between the server and gateway.
-
 ## Communication Flow
 
 ```mermaid
@@ -455,7 +472,6 @@ end
 UA -->|MQTT Mode Change| BS
 BS -->|MQTT Mode Change| LB
 ```
-
 ## Full System Interaction with Features
 
 The functionalities described below pertain to the smart light bulb system, which incorporates various modes and sensor-based controls to enhance user experience and energy efficiency. Here is a summary of each functionality:
@@ -494,7 +510,7 @@ The functionalities described below pertain to the smart light bulb system, whic
 
 Overall, these functionalities provide users with flexibility and automation in controlling their smart light bulbs. The integration of sensors, MQTT communication, and coordination with the backend server enable dynamic adjustments, energy efficiency, and a tailored lighting experience.
 
-### Complete System Diagram
+### Completed System Diagram
 
 ```mermaid
 flowchart LR
@@ -633,3 +649,81 @@ MS -->|Motion Detection Command| LB
 ES -->|Environment Sensor Data| LB
 MM -->|Mode Configuration| LB
 ```
+## Function Process Flow
+
+The objective of specifying this flow is to provide users with a clear understanding of how to effectively use the smart light bulb application and its associated features. The use-case outlines steps undertaken by users for seamlessly integrating their smart light bulbs into their homes, controlling them remotely, and personalising their settings. It takes only prototype-level model implementation and focuses on how the basic functionalities would ensue. Additionally, the objective is to ensure that users can easily share access with others, enabling a collaborative and connected experience for multiple users within a household or shared space.
+
+### Actors:
+
+1. Primary User - The primary user who owns and controls the smart light bulbs.
+2. Shared Users - Other users with whom the primary user shares access to the light bulbs.
+
+### Preconditions:
+
+1. The smart light bulbs are installed and connected to the user's home network.
+2. The user and shared users have installed the smart light bulb application on their respective devices.
+
+### Flow of Events:
+
+#### 1. User Registration and Login:
+
+a. The user downloads and installs the smart light bulb application on their device.
+b. The user opens the application and registers a new account or logs in using existing credentials through either standard google-based login.
+
+#### 2. Adding Device:
+
+a. After logging in, the user navigates to the "Add Device" section within the application.
+b. The user enters the lightbulb code or scans the QR to add the device (Assumption: Set-up codes available on devices) which connects the application through bluetooth or WiFi based pairing.
+c. The user then saves the device, and the smart light bulb is added as one of the devices being automated using the account.
+
+#### 3. Controlling Light Bulbs:
+
+a. On the application's home screen, the user can see a list of their connected light bulbs.
+b. The user selects a specific light bulb to control.
+c. The user can turn the light bulb on or off by using the physical button on the light bulb or by tapping the corresponding button in the application.
+d. When the light bulb state changes, the application receives a notification and updates the status accordingly.
+
+#### 4. Managing Light Bulb Settings:
+
+a. The user can access and modify the settings of each light bulb by selecting it from the application's "Your devices" section.
+b. The user can change the light bulb's name, color, brightness, on time, and off time.
+c. The modified settings are sent to the light bulb, and the application updates the displayed information.
+
+#### 5. Sharing Light Bulbs:
+
+a. The user can choose to share access to a specific light bulb with other users.
+b. The user navigates to the "Share access" section within the application.
+c. The user enters the name and email addresses or usernames of the shared users.
+d. The shared users receive an invitation to access the light bulb and can control it through their own installed smart light bulb application.
+
+#### 6. Adaptable Application:
+
+a. The smart light bulb application is developed as a hybrid application to ensure compatibility across various platforms, including iOS, Android, and web.
+b. Users can download and install the application from their respective app stores or access it through a web browser.
+
+### Postconditions:
+
+1. The user and shared users can control their connected smart light bulbs through the application, adjusting their settings, turning them on or off, and scheduling their operation.
+2. The hybrid application provides a consistent user experience on different platforms, ensuring accessibility and convenience.
+
+### Alternative Flows (Addressing potential break-points):
+
+1. If there is a connectivity issue between the smart light bulbs and the user's home network, the application displays a message indicating the inability to connect and prompts the user to check their network settings or contact support.
+2. If a shared user is removed from the access list by the primary user, their access to the shared light bulb is revoked, and they no longer have control over it.
+3. If there are multiple users trying to control the same light bulb simultaneously, the application should prioritise the most recent command to avoid conflicts or confusion.
+
+## UI/UX Design
+
+### Diagrammatic Screen Flow:
+
+![UI Diagram](https://github.com/Rushour0/IoT-Architecture/assets/72869428/28fda407-12d8-4a42-9a59-074565b5ad21)
+
+### UI/UX (High fedility Prototype):
+
+![ui 6](https://github.com/Rushour0/IoT-Architecture/assets/72869428/e23c1f4f-a380-4ec9-a546-1e5eeda522f9)
+![Ui 1](https://github.com/Rushour0/IoT-Architecture/assets/72869428/47904f00-3801-41d8-88f8-06b14e8c06d2)
+![UI 2](https://github.com/Rushour0/IoT-Architecture/assets/72869428/7246c2a5-7669-4877-a68a-bd644109e40a)
+![UI 4](https://github.com/Rushour0/IoT-Architecture/assets/72869428/32d9fdb3-6ed9-42d8-af2b-3c2616da8174)
+![UI 5](https://github.com/Rushour0/IoT-Architecture/assets/72869428/ba2552b0-3904-4431-9ac5-96ee6695b486)
+
+[Figma Link](https://www.figma.com/file/P4U1dVRlv7KrgxzU4X1HVE/Untitled?type=design&node-id=0%3A1&t=tCX6LMKfiqBtG0Ig-1)

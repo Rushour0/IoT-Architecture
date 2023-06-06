@@ -1,0 +1,1197 @@
+<!DOCTYPE html><html><head>
+      <title>readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Rushikesh Patade\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.8\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\Rushikesh Patade\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.6.8\node_modules\@shd101wyy\mume\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="iot-smart-light-bulb-system">IoT Smart Light Bulb System</h1>
+
+<h2 class="mume-header" id="table-of-contents">Table of Contents</h2>
+
+<ul>
+<li><a href="#simple-architecture-description">Simple Architecture Description</a></li>
+<li><a href="#comparative-study-of-iot-technologies-and-protocols">Comparative Study of IoT Technologies and Protocols</a></li>
+<li><a href="#technical-stack-combinations-for-the-development">Technical stack combinations for the development</a></li>
+<li><a href="#why-suggest-zigbee--mqtt-">Why suggest Zigbee + MQTT ?</a></li>
+<li><a href="#communication-flow">Communication Flow</a></li>
+<li><a href="#simple-functionality-interaction-diagrams">Simple Functionality interaction diagrams</a></li>
+<li><a href="#full-system-interaction-with-features">Full System Interaction with Features</a></li>
+<li><a href="#function-process-flow">Function Process Flow</a></li>
+<li><a href="#uiux-design">UI/UX Design</a></li>
+</ul>
+<h2 class="mume-header" id="simple-architecture-description">Simple Architecture Description</h2>
+
+<div class="mermaid">graph LR
+
+subgraph Smart Light Bulb System
+    A(Smart Light Bulb) &lt;--&gt;|Zigbee| B(Zigbee Gateway)
+    B &lt;--&gt;|MQTT| C(Backend Server)
+
+    C --&gt;|MQTT| D(User Applications)
+end
+
+subgraph Surrounding Sensors
+    E(Daylight Sensor) --&gt;|Zigbee| B
+    F(Motion Sensor) --&gt;|Zigbee| B
+    G(Time Sensor) --&gt;|Zigbee| B
+    H(Environment-based Sensors) --&gt;|Zigbee| B
+end
+
+subgraph Home IoT Devices
+    I(Alexa) --&gt;|Skills Kit| C
+    J(Google Home) --&gt;|Actions on Google| C
+end
+
+style A fill:#85C1E9,stroke:#1F618D
+style B fill:#D7BDE2,stroke:#5B2C6F
+style C fill:#82E0AA,stroke:#1E8449
+style D fill:#F9E79F,stroke:#B7950B
+style E fill:#AED6F1,stroke:#2471A3
+style F fill:#F8C471,stroke:#D35400
+style G fill:#D2B4DE,stroke:#7D3C98
+style H fill:#F5B7B1,stroke:#E74C3C
+style I fill:#A9DFBF,stroke:#196F3D
+style J fill:#FADBD8,stroke:#D91E18
+</div><p>The proposed architecture for the smart light bulb system with seamless connectivity to home IoT devices like Alexa and Google Home can be described as follows:</p>
+<h3 class="mume-header" id="1-backend-and-synchronization">1. Backend and Synchronization:</h3>
+
+<ul>
+<li>Utilize serverless functions (e.g., AWS Lambda) for handling backend logic and API endpoints.</li>
+<li>Use Firebase Realtime Database to maintain the state of IoT nodes and applications, ensuring real-time synchronization and offline capabilities.</li>
+<li>Employ Apache Kafka or AWS IoT Core for pub/sub messaging, enabling real-time updates and notifications to connected applications and home IoT devices.</li>
+</ul>
+<h3 class="mume-header" id="2-user-access-and-authentication">2. User Access and Authentication:</h3>
+
+<ul>
+<li>Integrate an Identity and Access Management (IAM) system like AWS Cognito or Auth0 for user authentication and authorization.</li>
+<li>Enable sharing functionality by leveraging the IAM system to securely manage user access to light bulbs.</li>
+</ul>
+<h3 class="mume-header" id="3-hybrid-application-development">3. Hybrid Application Development:</h3>
+
+<ul>
+<li>Utilize a hybrid framework like React Native or Flutter to build applications that work seamlessly on iOS, Android, and Web platforms.</li>
+</ul>
+<h3 class="mume-header" id="4-integration-with-home-iot-devices">4. Integration with Home IoT Devices:</h3>
+
+<ul>
+<li>Integrate with Alexa using the Alexa Skills Kit (ASK) and AWS Lambda for developing Alexa skills.</li>
+<li>Integrate with Google Home using the Actions on Google platform and Cloud Functions for Firebase to create conversational actions for Google Assistant.</li>
+</ul>
+<h2 class="mume-header" id="comparative-study-of-iot-technologies-and-protocols">Comparative Study of IoT Technologies and Protocols</h2>
+
+<p>Here&apos;s a comparison table for Zigbee, MQTT, Z-Wave, Wi-Fi Direct, AWS IoT, and Cloud Storage based on various factors:</p>
+<table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Maintenance Cost</th>
+<th>Setup Cost</th>
+<th>Setup Time</th>
+<th>Setup Complexity</th>
+<th>Scalability</th>
+<th>Pricing</th>
+<th>Network Consumption</th>
+<th>Interferences</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zigbee</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>High</td>
+<td>Moderate</td>
+<td>Low</td>
+<td>Low</td>
+<td>- Low power consumption</td>
+<td>- Limited range</td>
+</tr>
+<tr>
+<td>MQTT</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>High</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>- Lightweight and efficient messaging protocol</td>
+<td>- Requires an additional communication layer</td>
+</tr>
+<tr>
+<td>Z-Wave</td>
+<td>Low</td>
+<td>High</td>
+<td>Medium</td>
+<td>High</td>
+<td>High</td>
+<td>High</td>
+<td>Low</td>
+<td>Low</td>
+<td>- Secure and reliable wireless communication</td>
+<td>- Limited device compatibility and ecosystem</td>
+</tr>
+<tr>
+<td>Wi-Fi Direct</td>
+<td>High</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>High</td>
+<td>Low</td>
+<td>High</td>
+<td>Medium</td>
+<td>- Direct connection between devices without a network</td>
+<td>- High power consumption</td>
+</tr>
+<tr>
+<td>AWS IoT</td>
+<td>High</td>
+<td>High</td>
+<td>High</td>
+<td>High</td>
+<td>High</td>
+<td>High</td>
+<td>Low</td>
+<td>Low</td>
+<td>- Integration with AWS services and scalability</td>
+<td>- Higher cost compared to self-hosted solutions</td>
+</tr>
+<tr>
+<td>Cloud Storage</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>High</td>
+<td>Variable</td>
+<td>High</td>
+<td>Low</td>
+<td>- Easy access to data from anywhere</td>
+<td>- Relies on a stable internet connection</td>
+</tr>
+<tr>
+<td>Bluetooth Classic</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>Medium</td>
+<td>Low</td>
+<td>Low</td>
+<td>Medium</td>
+<td>- Wide device compatibility</td>
+<td>- Limited range and data throughput</td>
+</tr>
+<tr>
+<td>Bluetooth Low Energy (BLE)</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>High</td>
+<td>Low</td>
+<td>Low</td>
+<td>Low</td>
+<td>- Low power consumption</td>
+<td>- Limited data payload and range</td>
+</tr>
+<tr>
+<td>Bluetooth Mesh</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>Medium</td>
+<td>High</td>
+<td>Low</td>
+<td>Low</td>
+<td>Medium</td>
+<td>- Scalable mesh network</td>
+<td>- Higher setup complexity and maintenance cost</td>
+</tr>
+</tbody>
+</table>
+<p>Choosing the right tech stack for an IoT application depends on several factors, including the specific requirements of the application, the environment in which it will operate, and the available resources. Let&apos;s analyze the table to understand the considerations for selecting the appropriate technology stack:</p>
+<ol>
+<li>
+<p>Zigbee:</p>
+<ul>
+<li>Pros: Zigbee offers low power consumption and is suitable for battery-operated devices. It provides moderate pricing and low network consumption.</li>
+<li>Cons: However, Zigbee has limited range, which may restrict its usability in larger deployments.</li>
+</ul>
+</li>
+<li>
+<p>MQTT:</p>
+<ul>
+<li>Pros: MQTT is a lightweight and efficient messaging protocol, making it ideal for IoT applications. It has low maintenance costs, low setup complexity, and low network consumption.</li>
+<li>Cons: MQTT requires an additional communication layer, which may increase implementation complexity.</li>
+</ul>
+</li>
+<li>
+<p>Z-Wave:</p>
+<ul>
+<li>Pros: Z-Wave is known for its secure and reliable wireless communication. It offers high scalability and has a low maintenance cost.</li>
+<li>Cons: Z-Wave has limited device compatibility and ecosystem, which may limit the options for integrating with other devices or systems.</li>
+</ul>
+</li>
+<li>
+<p>Wi-Fi Direct:</p>
+<ul>
+<li>Pros: Wi-Fi Direct allows direct device-to-device connection without the need for a network. It offers low setup costs and low complexity.</li>
+<li>Cons: However, Wi-Fi Direct consumes high network resources and requires higher power consumption, which may not be suitable for battery-powered devices.</li>
+</ul>
+</li>
+<li>
+<p>AWS IoT:</p>
+<ul>
+<li>Pros: AWS IoT provides seamless integration with AWS services and offers scalability. It enables easy access to data from anywhere and provides reliable cloud storage.</li>
+<li>Cons: However, AWS IoT has higher setup costs, high maintenance costs, and higher pricing compared to self-hosted solutions.</li>
+</ul>
+</li>
+<li>
+<p>Cloud Storage:</p>
+<ul>
+<li>Pros: Cloud storage enables easy access to data from anywhere and offers high scalability.</li>
+<li>Cons: It relies on a stable internet connection and may have variable pricing based on usage.</li>
+</ul>
+</li>
+</ol>
+<p>When choosing the right tech stack for an IoT application, consider the following factors:</p>
+<ol>
+<li>Power consumption: If low power consumption is crucial, Zigbee or MQTT may be preferred.</li>
+<li>Range: Consider the coverage area and choose a technology that provides sufficient range, such as Wi-Fi Direct or AWS IoT.</li>
+<li>Security: Evaluate the security features provided by the technology, such as Z-Wave&apos;s secure communication.</li>
+<li>Device compatibility: Ensure that the selected technology supports the devices you intend to use in your IoT application.</li>
+<li>Integration requirements: If integration with other services or systems is essential, AWS IoT&apos;s seamless integration may be advantageous.</li>
+<li>Cost: Consider the maintenance costs, setup costs, and pricing associated with the technology stack.</li>
+</ol>
+<p>Choosing the right tech stack for an IoT application depends on several factors and requirements. Here&apos;s a brief discussion based on the comparison table provided:</p>
+<ol>
+<li>
+<p>Zigbee: Zigbee offers low power consumption and is suitable for applications that require a moderate setup cost, moderate setup time, and scalability. It is commonly used in smart home automation systems. However, its limited range may be a drawback for larger deployments.</p>
+</li>
+<li>
+<p>MQTT: MQTT is a lightweight and efficient messaging protocol, making it ideal for resource-constrained devices. It has low maintenance cost, low setup cost, and low setup time. MQTT is commonly used in IoT applications where low overhead and reliable messaging are crucial. However, it requires an additional communication layer to establish the MQTT broker.</p>
+</li>
+<li>
+<p>Z-Wave: Z-Wave provides secure and reliable wireless communication. It offers high scalability and is suitable for applications where a high level of interoperability is required. However, Z-Wave devices may have limited compatibility with other ecosystems, and the setup cost can be higher compared to other technologies.</p>
+</li>
+<li>
+<p>Wi-Fi Direct: Wi-Fi Direct allows direct device-to-device connection without the need for a network infrastructure. It has low setup cost and low setup time, making it suitable for peer-to-peer IoT applications. However, Wi-Fi Direct consumes higher network resources and may have moderate interferences.</p>
+</li>
+<li>
+<p>AWS IoT: AWS IoT offers integration with various AWS services and provides scalability for cloud-based IoT applications. It is suitable for enterprise-level deployments. However, it has higher maintenance cost, setup cost, and setup time compared to other technologies. AWS IoT may be more suitable for projects with specific requirements that align with AWS services.</p>
+</li>
+<li>
+<p>Cloud Storage: Cloud storage allows easy access to data from anywhere, making it suitable for applications that require remote data management and analysis. It has low maintenance cost and low setup cost. However, it relies on a stable internet connection, and the network consumption can be high.</p>
+</li>
+<li>
+<p>Bluetooth: Bluetooth offers low power consumption and is suitable for battery-operated devices. Bluetooth Classic provides wide device compatibility but has limited range and data throughput. BLE is suitable for low power applications with small data payloads. Bluetooth Mesh offers a scalable mesh network but has higher setup complexity and maintenance cost compared to other Bluetooth technologies.</p>
+</li>
+</ol>
+<h2 class="mume-header" id="technical-stack-combinations-for-the-development">Technical stack combinations for the development</h2>
+
+<ol>
+<li>
+<p>LoRaWAN + MQTT + AWS IoT + Cloud Storage:</p>
+<ul>
+<li>LoRaWAN for long-range, low-power wireless communication.</li>
+<li>MQTT as the messaging protocol for lightweight communication.</li>
+<li>AWS IoT for device management, data processing, and analytics.</li>
+<li>Cloud storage for storing and retrieving IoT data.</li>
+</ul>
+</li>
+<li>
+<p>Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing:</p>
+<ul>
+<li>BLE for short-range communication with low power consumption.</li>
+<li>MQTT for efficient and reliable messaging.</li>
+<li>Azure IoT for device management, data processing, and edge computing capabilities.</li>
+<li>Edge computing to perform real-time analytics and decision-making at the network edge.</li>
+</ul>
+</li>
+<li>
+<p>Thread + CoAP + Google Cloud IoT + Cloud Functions:</p>
+<ul>
+<li>Thread as a low-power, mesh networking protocol for IoT devices.</li>
+<li>CoAP (Constrained Application Protocol) for resource-constrained devices and efficient communication.</li>
+<li>Google Cloud IoT for device registration, management, and integration with Google Cloud services.</li>
+<li>Cloud Functions to trigger serverless functions and perform actions based on IoT data.</li>
+</ul>
+</li>
+<li>
+<p>NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain ( not low cost ):</p>
+<ul>
+<li>NB-IoT (Narrowband IoT) for wide-area coverage and low-power communication.</li>
+<li>MQTT for lightweight messaging between devices and the cloud.</li>
+<li>IBM Watson IoT Platform for device management, data visualization, and analytics.</li>
+<li>Blockchain for secure and transparent transaction recording and smart contract execution.</li>
+</ul>
+</li>
+</ol>
+<h3 class="mume-header" id="comparative-analysis-of-technical-stacks">Comparative analysis of technical stacks:</h3>
+
+<table>
+<thead>
+<tr>
+<th>Technical Stack Combination</th>
+<th>Communication Protocol</th>
+<th>Cloud Platform</th>
+<th>Edge Computing</th>
+<th>Data Storage</th>
+<th>Key Features and Benefits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LoRaWAN + MQTT + AWS IoT + Cloud Storage</td>
+<td>LoRaWAN, MQTT</td>
+<td>AWS IoT</td>
+<td>Not applicable</td>
+<td>Cloud storage</td>
+<td>- Long-range, low-power communication, lightweight messaging protocol, device management, data processing, and analytics with AWS IoT, scalable and reliable cloud storage</td>
+</tr>
+<tr>
+<td>Bluetooth Low Energy (BLE) + MQTT + Azure IoT + Edge Computing</td>
+<td>BLE, MQTT</td>
+<td>Azure IoT</td>
+<td>Edge computing</td>
+<td>Not applicable</td>
+<td>- Short-range communication with low power consumption, efficient and reliable messaging protocol, device management, data processing, and edge computing with Azure IoT, real-time analytics and decision-making at the network edge</td>
+</tr>
+<tr>
+<td>Thread + CoAP + Google Cloud IoT + Cloud Functions</td>
+<td>Thread, CoAP</td>
+<td>Google Cloud IoT</td>
+<td>Not applicable</td>
+<td>Cloud storage</td>
+<td>- Low-power, mesh networking protocol for IoT devices, efficient communication with resource-constrained devices, device management, integration with Google Cloud services, serverless functions for triggering actions based on IoT data</td>
+</tr>
+<tr>
+<td>NB-IoT + MQTT + IBM Watson IoT Platform + Blockchain</td>
+<td>NB-IoT, MQTT</td>
+<td>IBM Watson IoT Platform</td>
+<td>Not applicable</td>
+<td>Blockchain</td>
+<td>- Wide-area coverage and low-power communication, lightweight messaging protocol, device management, data visualization, and analytics with IBM Watson IoT Platform, secure and transparent transaction recording with blockchain</td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="why-suggest-zigbee--mqtt-">Why suggest Zigbee + MQTT ?</h2>
+
+<p>Zigbee, being a low-power wireless communication protocol, is well-suited for connecting and controlling devices in a local area network. It enables efficient communication between devices, consuming minimal network resources. Zigbee devices can operate in a mesh network, allowing them to relay messages and form a robust and scalable network infrastructure.</p>
+<p>On the other hand, MQTT is a lightweight messaging protocol designed for efficient data exchange in IoT applications. It follows a publish-subscribe pattern, where devices (publishers) publish messages to a central broker, and other devices (subscribers) receive those messages based on their subscription topics. MQTT is highly efficient in terms of network consumption, minimizing the amount of data sent over the network.</p>
+<p>By combining Zigbee and MQTT, the sync operations can be performed in the following way:</p>
+<ol>
+<li>
+<p>Devices (such as smart light bulbs) connected through Zigbee protocol can have their configurations synchronized using MQTT messages.</p>
+</li>
+<li>
+<p>When a user updates the configuration parameters in the user application, the application sends an MQTT message to the backend server indicating the desired changes.</p>
+</li>
+<li>
+<p>The backend server receives the MQTT message and updates the respective device&apos;s configuration information in its database.</p>
+</li>
+<li>
+<p>The backend server then forwards the configuration update to the Zigbee gateway using MQTT, which acts as a bridge between the Zigbee devices and the server.</p>
+</li>
+<li>
+<p>The Zigbee gateway translates the MQTT message to Zigbee protocol and communicates with the corresponding Zigbee devices to apply the configuration changes.</p>
+</li>
+</ol>
+<p>This approach offloads the heavy lifting of device synchronization from the server by utilizing the efficient Zigbee protocol for local device communication. MQTT is used as a lightweight and scalable messaging protocol for transmitting configuration updates between the server, gateway, and devices. This helps in minimizing the load on the server and network during sync operations.</p>
+<p>Here&apos;s a small diagram illustrating the sync operations using Zigbee + MQTT:</p>
+<div class="mermaid">graph LR
+
+subgraph User Applications
+  UA((User Application))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+end
+
+subgraph Zigbee Gateway
+  ZG((Zigbee Gateway))
+end
+
+subgraph Smart Light Bulbs
+  LB1((Light Bulb 1))
+  LB2((Light Bulb 2))
+end
+
+UA --&gt;|MQTT Config| BS
+BS --&gt;|MQTT Config| ZG
+ZG --&gt;|Zigbee Config| LB1
+ZG --&gt;|Zigbee Config| LB2
+
+</div><p>In the diagram, the user application (UA) sends an MQTT configuration message to the backend server (BS). The backend server then forwards the configuration update to the Zigbee gateway (ZG) using MQTT. The Zigbee gateway translates the MQTT message to Zigbee protocol and communicates with the respective smart light bulbs (LB1, LB2) to apply the configuration changes.</p>
+<p>This architecture ensures minimal load on the server and network as the synchronization is performed efficiently through the Zigbee protocol for local communication and MQTT for lightweight messaging between the server and gateway.</p>
+<h2 class="mume-header" id="communication-flow">Communication Flow</h2>
+
+<div class="mermaid">flowchart LR
+
+subgraph User Applications
+  UA1((User Application 1))
+  UA2((User Application 2))
+end
+
+subgraph Zigbee Gateway
+  ZG((Zigbee Gateway))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+  subgraph Database
+    DB
+  end
+
+  subgraph Message Queue
+    MQ
+  end
+
+  subgraph Identity and Access Management
+    IAM
+  end
+end
+
+subgraph Smart Light Bulbs
+  LB1((Light Bulb 1))
+  LB2((Light Bulb 2))
+end
+
+subgraph Invited Users
+  IU1((Invited User 1))
+  IU2((Invited User 2))
+end
+
+LB1 --&gt;|Zigbee State Change| ZG
+LB2 --&gt;|Zigbee State Change| ZG
+
+ZG --&gt;|Zigbee Config| LB1
+ZG --&gt;|Zigbee Config| LB2
+ZG &lt;--&gt;|MQTT State Change| BS
+
+UA1 --&gt;|MQTT Config| BS
+UA1 --&gt;|MQTT Access| BS
+UA1 --&gt;|MQTT Notifications| IU1
+UA1 --&gt;|MQTT Notifications| IU2
+UA2 --&gt;|MQTT Config| BS
+UA2 --&gt;|MQTT Access| BS
+UA2 --&gt;|MQTT Notifications| IU1
+UA2 --&gt;|MQTT Notifications| IU2
+
+
+BS --&gt;|MQTT Config| ZG
+BS --&gt;|MQTT Access| UA1
+BS --&gt;|MQTT Access| UA2
+BS --&gt;|MQTT Access| IU1
+BS --&gt;|MQTT Access| IU2
+BS --&gt;|MQTT Control| LB1
+BS --&gt;|MQTT Control| LB2
+BS --&gt;|MQTT State Change| UA1
+BS --&gt;|MQTT State Change| UA2
+
+IU1 --&gt;|MQTT Access| BS
+IU1 --&gt;|MQTT Config| BS
+IU1 --&gt;|MQTT Control| BS
+IU1 --&gt;|MQTT State Change| LB1
+IU1 --&gt;|MQTT State Change| LB2
+IU2 --&gt;|MQTT Access| BS
+IU2 --&gt;|MQTT Config| BS
+IU2 --&gt;|MQTT Control| BS
+IU2 --&gt;|MQTT State Change| LB1
+IU2 --&gt;|MQTT State Change| LB2
+</div><p>The above diagram illustrates the communication flow for the given points - ( other smart devices are not included in the diagram )</p>
+<p>The diagram includes the following components and flows:</p>
+<ol>
+<li>User Applications (UA1, UA2): User applications through which users configure parameters and send MQTT messages to the backend server.</li>
+<li>Backend Server (BS): Manages configuration updates, state changes, and access permissions.</li>
+<li>Zigbee Gateway (ZG): Acts as a bridge between the backend server and the smart light bulbs, translating messages between MQTT and Zigbee protocols.</li>
+<li>Smart Light Bulbs (LB1, LB2): Light bulbs that receive configuration changes and state change notifications via Zigbee messages.</li>
+<li>IAM System (IAM): Manages user authentication and authorization.</li>
+<li>Invited Users (IU1, IU2): Users who have been granted access to specific light bulbs by the backend server.</li>
+</ol>
+<p>The flows in the diagram are as follows:</p>
+<h3 class="mume-header" id="configuration-and-control">Configuration and Control:</h3>
+
+<ul>
+<li>User applications send MQTT configuration messages to the backend server.</li>
+<li>The backend server forwards the configuration updates to the Zigbee gateway in MQTT format.</li>
+<li>The gateway translates the MQTT messages to Zigbee protocol and communicates with the corresponding light bulbs to apply the configuration changes.</li>
+</ul>
+<h3 class="mume-header" id="physical-button-interaction">Physical Button Interaction:</h3>
+
+<ul>
+<li>When a physical button on a light bulb is pressed, the bulb sends a Zigbee message to the Zigbee gateway indicating the state change.</li>
+<li>The gateway converts the Zigbee message to MQTT format and forwards it to the backend server.</li>
+<li>The server updates the state of the respective light bulb and sends notifications to the user applications via MQTT, indicating the state change.</li>
+</ul>
+<h3 class="mume-header" id="user-access-and-sharing">User Access and Sharing:</h3>
+
+<ul>
+<li>The backend server manages user authentication and authorization using an IAM system.</li>
+<li>Users can share access to specific light bulbs with others through the applications.</li>
+<li>The server updates the access permissions, and notifications are sent to the invited users via MQTT.</li>
+<li>Invited users can control and configure the shared light bulbs through their authorized user applications.</li>
+</ul>
+<h2 class="mume-header" id="simple-functionality-interaction-diagrams">Simple Functionality interaction diagrams</h2>
+
+<h3 class="mume-header" id="time-based-modes">Time-based Modes</h3>
+
+<div class="mermaid">flowchart LR
+
+subgraph User Applications
+  UA((User Application))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+end
+
+subgraph Smart Light Bulb
+  LB((Light Bulb))
+end
+
+UA --&gt;|MQTT Mode Change| BS
+BS --&gt;|MQTT Mode Change| LB
+</div><h3 class="mume-header" id="motion-sensor-mode">Motion Sensor Mode</h3>
+
+<div class="mermaid">flowchart LR
+
+subgraph Motion Sensor
+  MS((Motion Sensor))
+end
+
+subgraph Smart Light Bulb
+  LB((Light Bulb))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+end
+
+MS --&gt;|Motion Detection| LB
+LB --&gt;|MQTT State Change| BS
+</div><h3 class="mume-header" id="light-sensor-mode">Light Sensor Mode</h3>
+
+<div class="mermaid">flowchart LR
+
+subgraph Light Sensor
+  LS((Light Sensor))
+end
+
+subgraph Smart Light Bulb
+  LB((Light Bulb))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+end
+
+LS --&gt;|Light Level| LB
+LS --&gt;|Light Level| BS
+</div><h3 class="mume-header" id="environment-based-sensors">Environment-based Sensors</h3>
+
+<div class="mermaid">flowchart LR
+
+subgraph Environment Sensors
+  ES((Environment Sensors))
+end
+
+subgraph Smart Light Bulb
+  LB((Light Bulb))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+end
+
+ES --&gt;|Sensor Data| LB
+ES --&gt;|Sensor Data| BS
+</div><h3 class="mume-header" id="mood-based-modes">Mood-based Modes</h3>
+
+<div class="mermaid">flowchart LR
+
+subgraph User Applications
+  UA((User Application))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+end
+
+subgraph Smart Light Bulb
+  LB((Light Bulb))
+end
+
+UA --&gt;|MQTT Mode Change| BS
+BS --&gt;|MQTT Mode Change| LB
+</div><h2 class="mume-header" id="full-system-interaction-with-features">Full System Interaction with Features</h2>
+
+<p>The functionalities described below pertain to the smart light bulb system, which incorporates various modes and sensor-based controls to enhance user experience and energy efficiency. Here is a summary of each functionality:</p>
+<ol>
+<li>
+<p>Time-based Modes:</p>
+<ul>
+<li>The smart light bulb adjusts its lighting configuration based on different time periods such as Morning, Daytime, Evening, and Night.</li>
+<li>Mode changes are scheduled by the backend server, and the bulb receives commands via MQTT to adjust its color, brightness, and other parameters accordingly.</li>
+<li>This feature ensures appropriate lighting for different times of the day, creating a comfortable and suitable environment.</li>
+</ul>
+</li>
+<li>
+<p>Motion Sensor Mode:</p>
+<ul>
+<li>When the motion sensor detects activity, the smart light bulb automatically turns on.</li>
+<li>The motion sensor sends a signal to the bulb or backend server upon detecting motion, and the bulb adjusts its state accordingly.</li>
+<li>This functionality ensures that the light is activated only when someone is present in the area, improving energy efficiency and convenience.</li>
+</ul>
+</li>
+<li>
+<p>Light Sensor Mode:</p>
+<ul>
+<li>The smart light bulb adjusts its brightness based on the ambient light level.</li>
+<li>The light sensor continuously measures the surrounding light, and the bulb or backend server receives the sensor data.</li>
+<li>The bulb then adjusts its brightness or turns off based on the received light sensor data.</li>
+<li>This feature optimizes lighting based on the available natural light, enhancing comfort and energy savings.</li>
+</ul>
+</li>
+<li>
+<p>Environment-based Sensors:</p>
+<ul>
+<li>Additional sensors like temperature, humidity, or air quality sensors can be integrated with the smart light bulb.</li>
+<li>These sensors provide data about the surrounding environment, allowing the bulb to respond accordingly.</li>
+<li>The collected sensor data is analyzed by the bulb or backend server, triggering appropriate actions or changes in the bulb&apos;s behavior.</li>
+<li>This functionality enables the bulb to indicate warnings or adjust its lighting based on environmental conditions, promoting safety and comfort.</li>
+</ul>
+</li>
+<li>
+<p>Mood-based Modes:</p>
+<ul>
+<li>The smart light bulb offers pre-defined or customizable modes to create different moods or atmospheres.</li>
+<li>Users can select desired modes, such as Relaxing, Energizing, or Romantic, from the application.</li>
+<li>The backend server sends the mode configuration to the bulb via MQTT, adjusting its color, brightness, and effects accordingly.</li>
+<li>This feature allows users to personalize their lighting experience and create desired ambiances for different occasions.</li>
+</ul>
+</li>
+</ol>
+<p>Overall, these functionalities provide users with flexibility and automation in controlling their smart light bulbs. The integration of sensors, MQTT communication, and coordination with the backend server enable dynamic adjustments, energy efficiency, and a tailored lighting experience.</p>
+<h3 class="mume-header" id="complete-system-diagram">Complete System Diagram</h3>
+
+<div class="mermaid">flowchart LR
+
+subgraph User Applications
+  UA1((User Application 1))
+  UA2((User Application 2))
+end
+
+subgraph Backend Server
+  BS((Backend Server))
+  subgraph Database
+    DB
+  end
+
+  subgraph Message Queue
+    MQ
+  end
+
+  subgraph Identity and Access Management
+    IAM
+  end
+end
+
+subgraph Smart Devices
+  subgraph Zigbee Gateway
+    ZG((Zigbee Gateway))
+  end
+
+  subgraph Smart Light Bulbs
+    LB((Smart Light Bulb))
+  end
+
+  subgraph Motion Sensors
+    MS((Motion Sensor))
+  end
+
+  subgraph Light Sensors
+    LS((Light Sensor))
+  end
+
+  subgraph Environment Sensors
+    ES((Environment Sensors))
+  end
+
+  MM((Mood-based Modes))
+end
+
+subgraph Invited Users
+  IU1((Invited User 1))
+  IU2((Invited User 2))
+end
+
+UA1 --&gt;|MQTT Config| BS
+UA2 --&gt;|MQTT Config| BS
+BS --&gt;|MQTT Config| ZG
+ZG --&gt;|Zigbee Config| LB
+LB --&gt;|Time-based Mode Command| MM
+LB --&gt;|Motion Sensor Command| MS
+LB --&gt;|Light Sensor Command| LS
+LB --&gt;|Environment Sensor Data| ES
+LB --&gt;|Mood-based Mode Command| MM
+
+LB --&gt;|State Change Notification| BS
+LB --&gt;|Sensor Data| BS
+LB --&gt;|Mode Change Notification| BS
+LB --&gt;|State Change Notification| UA1
+LB --&gt;|State Change Notification| UA2
+
+UA1 --&gt;|MQTT Notifications| IU1
+UA1 --&gt;|MQTT Notifications| IU2
+UA2 --&gt;|MQTT Notifications| IU1
+UA2 --&gt;|MQTT Notifications| IU2
+
+IU1 --&gt;|MQTT Control| BS
+IU2 --&gt;|MQTT Control| BS
+BS --&gt;|MQTT Control| LB
+LB --&gt;|Motion Sensor Command| MS
+LB --&gt;|Light Sensor Command| LS
+LB --&gt;|Environment Sensor Data| ES
+LB --&gt;|Mood-based Mode Command| MM
+IU1 --&gt;|MQTT Config| BS
+IU2 --&gt;|MQTT Config| BS
+BS --&gt;|MQTT Config| ZG
+ZG --&gt;|Zigbee Config| LB
+IU1 --&gt;|MQTT State Change| LB
+IU2 --&gt;|MQTT State Change| LB
+LB --&gt;|Motion Detection Command| MS
+LB --&gt;|Light Sensor Data| LS
+LB --&gt;|Environment Sensor Data| ES
+LB --&gt;|Mode Configuration| MM
+IU1 --&gt;|MQTT Access| BS
+IU2 --&gt;|MQTT Access| BS
+BS --&gt;|MQTT Access| IU1
+BS --&gt;|MQTT Access| IU2
+
+subgraph Backend Server
+  BS
+end
+
+subgraph Identity and Access Management
+  IAM
+end
+
+subgraph User Applications
+  UA1
+  UA2
+end
+
+subgraph Smart Devices
+  ZG
+  LB
+  MS
+  LS
+  ES
+  MM
+end
+
+subgraph Sensors
+  MS
+  LS
+  ES
+end
+
+BS --&gt;|MQTT Config| UA1
+BS --&gt;|MQTT Config| UA2
+BS --&gt;|MQTT State Change| LB
+BS --&gt;|MQTT Access| IU1
+BS --&gt;|MQTT Access| IU2
+BS --&gt;|MQTT Control| LB
+BS --&gt;|MQTT Notifications| UA1
+BS --&gt;|MQTT Notifications| UA2
+LB --&gt;|Sensor Data| BS
+LS --&gt;|Light Sensor Data| LB
+MS --&gt;|Motion Detection Command| LB
+ES --&gt;|Environment Sensor Data| LB
+MM --&gt;|Mode Configuration| LB
+</div><h2 class="mume-header" id="function-process-flow">Function Process Flow</h2>
+
+<p>The objective of specifying this flow is to provide users with a clear understanding of how to effectively use the smart light bulb application and its associated features. The use-case outlines steps undertaken by users for seamlessly integrating their smart light bulbs into their homes, controlling them remotely, and personalising their settings. It takes only prototype-level model implementation and focuses on how the basic functionalities would ensue. Additionally, the objective is to ensure that users can easily share access with others, enabling a collaborative and connected experience for multiple users within a household or shared space.</p>
+<p>Actors:</p>
+<ol>
+<li>Primary User - The primary user who owns and controls the smart light bulbs.</li>
+<li>Shared Users - Other users with whom the primary user shares access to the light bulbs.</li>
+</ol>
+<p>Preconditions:</p>
+<ol>
+<li>The smart light bulbs are installed and connected to the user&apos;s home network.</li>
+<li>The user and shared users have installed the smart light bulb application on their respective devices.</li>
+</ol>
+<p>Flow of Events:</p>
+<ol>
+<li>
+<p>User Registration and Login:<br>
+a. The user downloads and installs the smart light bulb application on their device.<br>
+b. The user opens the application and registers a new account or logs in using existing credentials through either standard google-based login.</p>
+</li>
+<li>
+<p>Adding Device:<br>
+a. After logging in, the user navigates to the &quot;Add Device&quot; section within the application.<br>
+b. The user enters the lightbulb code or scans the QR to add the device (Assumption: Set-up codes available on devices) which connects the application through bluetooth or WiFi based pairing.<br>
+c. The user then saves the device, and the smart light bulb is added as one of the devices being automated using the account.</p>
+</li>
+<li>
+<p>Controlling Light Bulbs:<br>
+a. On the application&apos;s home screen, the user can see a list of their connected light bulbs.<br>
+b. The user selects a specific light bulb to control.<br>
+c. The user can turn the light bulb on or off by using the physical button on the light bulb or by tapping the corresponding button in the application.<br>
+d. When the light bulb state changes, the application receives a notification and updates the status accordingly.</p>
+</li>
+<li>
+<p>Managing Light Bulb Settings:<br>
+a. The user can access and modify the settings of each light bulb by selecting it from the application&apos;s &quot;Your devices&quot; section.<br>
+b. The user can change the light bulb&apos;s name, color, brightness, on time, and off time.<br>
+c. The modified settings are sent to the light bulb, and the application updates the displayed information.</p>
+</li>
+<li>
+<p>Sharing Light Bulbs:<br>
+a. The user can choose to share access to a specific light bulb with other users.<br>
+b. The user navigates to the &quot;Share access&quot; section within the application.<br>
+c. The user enters the name and email addresses or usernames of the shared users.<br>
+d. The shared users receive an invitation to access the light bulb and can control it through their own installed smart light bulb application.</p>
+</li>
+<li>
+<p>Adaptable Application:<br>
+a. The smart light bulb application is developed as a hybrid application to ensure compatibility across various platforms, including iOS, Android, and web.<br>
+b. Users can download and install the application from their respective app stores or access it through a web browser.</p>
+</li>
+</ol>
+<p>Postconditions:</p>
+<ol>
+<li>The user and shared users can control their connected smart light bulbs through the application, adjusting their settings, turning them on or off, and scheduling their operation.</li>
+<li>The hybrid application provides a consistent user experience on different platforms, ensuring accessibility and convenience.</li>
+</ol>
+<p>Alternative Flows (Addressing potential break-points):</p>
+<ol>
+<li>If there is a connectivity issue between the smart light bulbs and the user&apos;s home network, the application displays a message indicating the inability to connect and prompts the user to check their network settings or contact support.</li>
+<li>If a shared user is removed from the access list by the primary user, their access to the shared light bulb is revoked, and they no longer have control over it.</li>
+<li>If there are multiple users trying to control the same light bulb simultaneously, the application should prioritise the most recent command to avoid conflicts or confusion.</li>
+</ol>
+<h2 class="mume-header" id="uiux-design">UI/UX Design</h2>
+
+<p>Diagrammatic Screen Flow:<br>
+<img src="https://github.com/Rushour0/IoT-Architecture/assets/72869428/28fda407-12d8-4a42-9a59-074565b5ad21" alt="UI Diagram"></p>
+<p>UI/UX (High fedility Prototype):<br>
+<img src="https://github.com/Rushour0/IoT-Architecture/assets/72869428/47904f00-3801-41d8-88f8-06b14e8c06d2" alt="Ui 1"><br>
+<img src="https://github.com/Rushour0/IoT-Architecture/assets/72869428/7246c2a5-7669-4877-a68a-bd644109e40a" alt="UI 2"><br>
+<img src="https://github.com/Rushour0/IoT-Architecture/assets/72869428/32d9fdb3-6ed9-42d8-af2b-3c2616da8174" alt="UI 4"><br>
+<img src="https://github.com/Rushour0/IoT-Architecture/assets/72869428/ba2552b0-3904-4431-9ac5-96ee6695b486" alt="UI 5"><br>
+<img src="https://github.com/Rushour0/IoT-Architecture/assets/72869428/e23c1f4f-a380-4ec9-a546-1e5eeda522f9" alt="ui 6"></p>
+
+      </div>
+      
+      
+    
+    
+    <script>
+// config mermaid init call
+// http://knsv.github.io/mermaid/#configuration
+//
+// You can edit the 'MERMAID_CONFIG' variable below.
+MERMAID_CONFIG = {
+  startOnLoad: false
+}
+
+if (window['MERMAID_CONFIG']) {
+  window['MERMAID_CONFIG'].startOnLoad = false
+  window['MERMAID_CONFIG'].cloneCssStyles = false
+  window['MERMAID_CONFIG'].theme = "default"
+}
+mermaid.initialize(window['MERMAID_CONFIG'] || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+} else {
+  mermaid.init(null, document.querySelectorAll('.mermaid'))
+}
+</script>
+    
+    
+    
+    
+    
+  
+    </body></html>
