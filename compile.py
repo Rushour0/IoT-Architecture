@@ -3,7 +3,7 @@ import os
 
 def to_pdf(file_path: str, out_file_name: str = None, output_path: str = None):
     if output_path is None:
-        output_path = "components/pdf/"
+        output_path = "components/pdfs/"
     
     file_name = file_path.split("/")[-1].split(".")[0]
     
