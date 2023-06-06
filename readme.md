@@ -1,10 +1,20 @@
-# Overview of Research Document
+## Problem Statement
+
+IoT nodes connect to the backend, and users interact with them through iOS, Android, and Web applications. The backend manages the state of IoT nodes and applications, ensuring synchronization. MQTT is used for communication with IoT nodes. Applications are expected to go offline intermittently and need to maintain offline state, syncing with the backend upon reconnection. Identify scalable and cost-effective technologies for these requirements, minimizing server and network load during sync operations. Provide a use case example for a smart light bulb application.
+
+1. Configurable parameters: The light bulb can be customized with settings such as Name, Location, color, brightness, on time, and off time.
+2. Physical button interaction: The light bulb has a button for manual control, and its state change should be communicated to the applications.
+3. User access to multiple light bulbs: A user can manage and control multiple light bulbs within the application.
+4. Sharing light bulb access: Users can share access to a light bulb with other users, enabling collaborative control.
+5. Hybrid application: The application is designed to be compatible with multiple platforms, such as iOS, Android, and web, providing a seamless user experience across devices.
 
 ## Table of Contents
+
 
 - [Simple Architecture Description](#simple-architecture-description)
 - [Comparative Study of IoT Technologies and Protocols](#comparative-study-of-iot-technologies-and-protocols)
 - [Technical stack combinations for the development](#technical-stack-combinations-for-the-development)
+- 
 - [Why suggest Zigbee + MQTT ?](#why-suggest-zigbee--mqtt-)
 - [Communication Flow](#communication-flow)
 - [Simple Functionality interaction diagrams](#simple-functionality-interaction-diagrams)
