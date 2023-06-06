@@ -1,10 +1,17 @@
 import os
 
 
-def to_pdf(file_path: str, output_path: str = None):
+def to_pdf(file_path: str, out_file_name: str = None, output_path: str = None):
+    if output_path is None:
+        output_path = "components/pdf/"
+    
     file_name = file_path.split("/")[-1].split(".")[0]
-    os.system(f"mdpdf {file_path} -o {output_path}{file_name}.pdf")
-    print(f"Compiled {file_name}.md to {file_name}.pdf")
+    
+    if out_file_name is None:
+        out_file_name = file_name
+
+    os.system(f"mdpdf {file_path} -o {output_path}{out_file_name}.pdf")
+    print(f"Compiled {file_name}.md to {out_file_name}.pdf")
 
 
 def research_document():
@@ -22,10 +29,10 @@ def research_document():
             with open(f"components/md/{file}", "r") as f:
                 content += f.read()
 
-    with open("research-document.md", "w") as f:
+    with open("readme.md", "w") as f:
         f.write(content)
 
-    to_pdf("research-document.md")
+    to_pdf("readme.md","research-document")
 
 
 def compile_all():
