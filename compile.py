@@ -35,6 +35,7 @@ def research_document():
     to_pdf("readme.md","research-document")
 
 
+
 def compile_all():
     for file in os.listdir("components/md"):
         if file.endswith(".md"):

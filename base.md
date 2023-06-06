@@ -9,4 +9,5 @@
 - [Communication Flow](#communication-flow)
 - [Simple Functionality interaction diagrams](#simple-functionality-interaction-diagrams)
 - [Full System Interaction with Features](#full-system-interaction-with-features)
-
+- [Functional Process Flow](#functional-process-flow)
+- [UI/UX Design](#uiux-design)
